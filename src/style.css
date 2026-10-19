@@ -19,3 +19,27 @@
 .batman-logo{display:block;width:46px;height:28px;object-fit:contain}
 .map-bottomline{justify-content:flex-end}
 @media(max-width:760px){.game-identity{display:none}}
+
+/* User-provided artwork stays fixed while the interactive map pans above it. */
+body{background:#0b0e11;isolation:isolate}
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background-image:linear-gradient(rgba(5,7,9,.38),rgba(5,7,9,.38)),url('../background/background-desktop.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+.app{background:linear-gradient(90deg,rgba(7,9,11,.55),rgba(7,9,11,.12) 30%,rgba(7,9,11,.12))}
+.header{background:transparent}
+.map-stage{background:rgba(8,10,13,.55)!important}
+.leaflet-map,.mini-map .leaflet-container{background:transparent!important}
+.mini-map{background:#0b0d10}
+@media(max-width:760px){
+  body::before{background-image:linear-gradient(rgba(5,7,9,.42),rgba(5,7,9,.42)),url('../background/background-mobile.png')}
+  .app{background:rgba(7,9,11,.12)}
+  .map-stage{background:rgba(8,10,13,.52)!important}
+}
