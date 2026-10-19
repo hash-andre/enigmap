@@ -1,0 +1,151 @@
+[bleake-riddle]
+Ossa sotto il faro|Scansiona le ossa fumanti nell’edificio sotto la gru al largo.
+Laboratorio Langstrom|Dopo il primo incontro con Man-Bat, entra nel laboratorio; scansiona la lavagna a sinistra.
+Deacon’s Mission|Scansiona l’insegna della missione a livello strada.
+Il costume di Oracle|Attiva il busto nella torre; hackera il pannello e scansiona il costume nell’armadio.
+Ballo in maschera|Scansiona il manifesto al terzo piano della torre dell’orologio.
+Bat-segnale|Scansiona il Bat-segnale sul tetto della GCPD.
+Arkham Asylum|Dal serbatoio Falcone, guarda a est e ingrandisci; scansiona il manicomio oltre l’acqua.
+Lady of Gotham|Scansiona la statua sull’isoletta centrale.
+La scrivania del giornalista|Nella sala interrogatori della massima sicurezza GCPD, scansiona il tavolo con i documenti.
+La famiglia di Cash|Scansiona la foto di famiglia sul tavolo accanto ad Aaron Cash alla GCPD.
+Il dossier del mercenario|Nella sala comunicazioni GCPD, scansiona la bacheca con Deathstroke, Arkham Knight e Spaventapasseri.
+[miagani-riddle]
+Il ritorno della Lega|Scansiona il graffito «The Demon’s Head shall return» dietro il barile in fiamme.
+Wonder Tower|Guarda a nordest oltre i ponti interrotti; ingrandisci e scansiona Wonder Tower.
+Ritratto dei Wayne|Scansiona il ritratto nell’ufficio in cima alla Wayne Tower.
+Quincy Sharp sindaco|Scansiona il manifesto elettorale nel vicolo.
+The Vicki Vale Show|Scansiona l’insegna luminosa sui tetti.
+Hell’s Gate|Scansiona l’insegna sul lato della strada.
+Un fiore per Ivy|Dopo gli eventi finali della storia, scansiona il fiore davanti all’albero dell’orto botanico.
+Elliot Memorial Hospital|Inquadra l’ospedale per intero da sudest e scansiona.
+Il collare della gatta|Scansiona il collare di Catwoman dentro l’orfanotrofio.
+Il progetto dell’Enigmista|Nella stanza Final Exam, hackera il pannello; scansiona il progetto sul tavolo.
+[founders-riddle]
+Pescatori immobili|Segui il molo verso ovest; scansiona i tre corpi in posa da pescatori.
+La canzone di Grundy|Nei bassifondi sotto la gru, oltrepassa la recinzione e apri la porta; scansiona la stanza.
+Saint Dumas|Sul lato ovest della chiesa, scansiona la statua sotto il nome del santo.
+Il calendario abbandonato|Scendi dal tombino fra LexCorp e Logerquist Towers; sali nella costruzione di legno, scansiona tavolo e lavagna.
+Wayne Manor|Dalla stazione a ovest di Wayne International Plaza, ingrandisci verso ovest e scansiona la villa.
+Il circo del professor Pyg|Dopo Il crimine perfetto, scansiona il manifesto del circo vicino all’ingresso della sala operatoria.
+GothCorp|Scansiona il logo GothCorp a sud della borsa.
+Cobblepot Manor|Scansiona l’insegna sopra la porta, a nord di Port Adams.
+L’equipaggiamento di Bane|Nel container semiaperto a nordovest del porto, apri la cassa col Bat-artiglio; scansiona il contenuto.
+Il destriero del Cavaliere|Esci dalla Batmobile e scansiona il veicolo. Si può risolvere ovunque.
+[stagg-riddle]
+La scimmia bianca|Alpha, laboratorio di ricerca: scansiona la scimmia albina sotto la piattaforma d’ingresso.
+Il giornalista e Deadshot|Beta, laboratorio biologico: scansiona la rivista sulla scrivania del livello superiore a nord.
+Trasporti refrigerati|Beta, ufficio della camera stagna: scansiona il volantino accanto ai controlli di stabilità.
+[panessa-riddle]
+Le armi davanti alla cella|Scansiona le armi davanti alla cella più vicina all’ascensore.
+Un amore a lume di candela|Apri vocalmente la porta vicino al set A; scansiona la statua fra le candele.
+Il manifesto di Inferno|Nel locale a destra entrando nel set A, scansiona manifesto e scatole nella stessa inquadratura.
+[hq-riddle]
+Il coniglio bianco|Ingresso nord: fra le ventole raggiungi l’ascensore sud e scendi; scansiona i manichini di conigli.
+Il negozio della paura|Ingresso sud, sala sud, livello inferiore: scansiona dalla vetrina il negozio pieno di gas giallo.
+La vendetta nelle fotografie|Ingresso sud, sala ovest, piano inferiore: scansiona la bacheca accanto alle casse di munizioni.
+[bleake-breakable]
+Royal Flush Gang|Fra le insegne Royal Flush Gang e Grinning Fishmonger, sopra il muro.
+Happy Halloween|In alto accanto al cartellone Happy Halloween.
+Urbarail Chinatown|A sinistra dell’insegna rossa della stazione.
+Sushi e tatuaggi|In alto fra il ristorante Sushi e il negozio di tatuaggi.
+Di fronte alla torre|Sul lato dell’edificio rivolto alla torre dell’orologio.
+McKenzie’s Gems|Nel vicolo dietro l’insegna, in alto.
+Canale vuoto|Sul muro vicino all’entrata delle fogne.
+Dixon Dock West|Sul muro sudovest; spara dall’altra sponda.
+Antenna Panessa|Sotto l’antenna, sul muro verso la strada.
+Parcheggio Panessa|In cima al cancello nordest.
+Rampa del faro|Sul pilone presso l’uscita per il faro.
+Stazione Panessa|Sul fianco della passerella rialzata.
+Gru Sionis|Sui supporti della gru, in fondo al complesso.
+A nordest della GCPD|Sul muro sud dell’edificio di fronte.
+GCPD, parete est|Sul muro est della centrale.
+[miagani-breakable]
+Mercy Bridge|Sul pilone orientale del ponte.
+Insegna dei delfini|Accanto ai delfini luminosi sulla facciata.
+Bank of Gotham|Sulla torre occidentale della banca, in alto.
+Tunnel di Grand Avenue|Sopra l’ingresso del tunnel.
+Tunnel orientale|Sopra l’entrata del tunnel alle coordinate.
+A est della stazione|Sulla facciata sud dell’edificio a est di Grand Avenue Station.
+Wayne Tower, lungomare|Salta con l’auto dalla rampa nordovest; cerca sul muro ovest.
+Parcheggio multipiano|Dal tetto del parcheggio, guarda l’edificio di fronte.
+Koul Brau|Sopra l’insegna, davanti a Gotham Tailor.
+Scale dei cavalli|Sotto la passerella, sopra le scale con le statue.
+Facciata orientale|In alto sulla facciata rivolta a est.
+Pinkney Orphanage|Sul muro est dell’orfanotrofio.
+Newton Fairgrounds|Sul lato ovest del luna park; spara da nordovest, oltre l’acqua.
+Gotham Tonight, nord|Sulla facciata settentrionale.
+Gotham Tonight, ingresso|Sul pilastro di fronte all’ingresso.
+[founders-breakable]
+City Vision Construction|Sul lato est del cantiere.
+LexCorp|Sopra l’accesso orientale ai bassifondi.
+Parcheggio della stazione|Sul soffitto sotto la stazione a ovest di Wayne International Plaza.
+Gotham Stock Exchange|Sopra l’ingresso della borsa, muro destro.
+Di fronte ai pompieri|Sul palazzo grigio a nord della caserma.
+Passerella stradale|Sotto la passerella sopra la strada.
+A sud della chiesa|Sotto la rampa per il livello superiore.
+Cortile con statua|Sulla facciata sud dell’edificio.
+Port Adams, ingresso est|Sul container a est del cancello principale.
+Port Adams, gru|Sul corpo della gru nel porto.
+Port Adams, ingresso ovest|Sul container dietro i veicoli della milizia.
+[subway-breakable]
+Ascensore del porto|All’uscita dell’ascensore, guarda in alto a destra.
+Prima rampa|Sul portale circolare a destra prima della rampa.
+Oltre la prima rampa|Al primo ostacolo, voltati: sopra l’ingresso del tunnel.
+Tre pareti, ramo centrale|Sfonda la parete centrale; guarda sopra la grande roccia.
+[stagg-breakable]
+Alpha, corridoio d’ingresso|In fondo al corridoio, di fronte al primo trofeo.
+Alpha, stanza delle casse|Nell’angolo sotto la scala.
+Alpha, passaggio a Beta|Sopra la piattaforma della porta verso Beta.
+Alpha, sala principale|Sulla piattaforma opposta all’ingresso.
+Alpha, stabilità|A destra della console dietro la serratura vocale.
+Alpha, primo pozzo|Dopo il puzzle sotterraneo, sali e voltati.
+Alpha, sotto le scale|Sul ripiano sotto le scale del laboratorio.
+Alpha, angolo del laboratorio|Sul ripiano nell’angolo sinistro dall’ingresso.
+Alpha, sopra il laboratorio|Sopra il laboratorio sul fondo della sala.
+Beta, Cloudburst|Sul ripiano a destra delle scale della porta di sicurezza.
+Beta, angolo sudest|Sul ripiano al piano inferiore del laboratorio biologico.
+Beta, sotto la scala|Sotto la scala sud verso la piattaforma vetrata.
+Beta, condotto nord|Sopra l’ingresso alto del condotto sulla parete nord.
+Beta, parete fragile|Demolisci col gel la parete sud dell’area test.
+Beta, camera stagna|Sopra la gabbia nella camera stagna.
+[panessa-breakable]
+Corridoio delle celle|A terra fra quarantena e backstage.
+Scale del backstage|In cima alle scale a sinistra entrando.
+Grata del backstage|Accanto alla grata sul muro sinistro.
+Cactus del set A|A terra vicino al cactus verso il set A.
+Set A, stanza destra|A terra nella stanza a destra entrando.
+Set A, stanza sinistra|Sulla scrivania nella stanza sinistra.
+Ingresso del set B|Nell’angolo destro della porta principale.
+Set B, libreria|Accanto alla libreria nel corridoio del mitragliere.
+Set B, stanza ovest|Sopra le casse nella stanza occidentale.
+Set B, stanza centrale|A terra vicino al trofeo nella stanza centrale.
+Set B, stanza est|A terra sotto il trofeo nella stanza orientale.
+Verso il set C|Svolta a sinistra alla fine del corridoio.
+Set C, parete fragile|Demolisci col gel la parete accanto all’entrata.
+Corridoio dello specchio|Sul divano nel corridoio col tastierino.
+Ufficio del set C|Attraversa il condotto dal corridoio dello specchio.
+[hq-breakable]
+Ingresso del pozzo|Sul muro destro prima di calare la Batmobile.
+Pozzo, parete sinistra|Vicino all’ingresso, sul lato sinistro.
+Pozzo, parte alta|Calati col verricello e guarda sopra di te.
+Fra le ventole, destra|Sulla parete destra fra le due ventole.
+Fra le ventole, ascensore|Sul muro della sporgenza verso l’ascensore.
+Sotto la seconda ventola|Nel passaggio sul lato est del pozzo.
+Primo ascensore, uscita|Nella sala d’uscita, in alto a destra.
+Fondo del pozzo|Sali alla sporgenza nord; guarda il muro sinistro.
+Sotto il secondo ascensore|Sul fondo dell’ascensore nel vano superiore.
+Ingresso sud, sala est|Sul muro sinistro entrando nella sala est.
+Sala sud, parete alta|Sul muro sinistro in alto entrando.
+Sala sud, scala mobile|Sotto la scala mobile, sul soffitto inferiore.
+Sala ovest, soffitto|Al centro del soffitto al piano inferiore.
+Sala ovest, parete alta|Sul muro sinistro in alto entrando.
+Ristorante cinese|Sul soffitto della sala nord.
+[bleake-bomb]
+Chinatown, sopra la strada|Sali sulla pedana del collegamento fra edifici; cerca il bersaglio nella strada sotto.
+Torre dell’orologio, est|Sali sulla pedana a nordest della torre; cerca sotto i carri della parata.
+Chinatown, tetto nord|Sali sulla pedana sul tetto; cerca il bersaglio nelle strade sottostanti.
+[miagani-bomb]
+Ferris Mall|Pedana a ovest del parcheggio; cerca il bersaglio intorno al centro commerciale.
+Wayne Tower, nordovest|Pedana nell’angolo nordovest; cerca oltre l’acqua a nord, vicino all’insegna Cuffs.
+Salvation Bridge|Pedana sulla passerella fra edifici; cerca nella strada direttamente sotto.

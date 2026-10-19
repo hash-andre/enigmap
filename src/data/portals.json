@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Dirigibile Alpha",
+    "position": [
+      1227,
+      2021
+    ],
+    "map": "stagg-alpha",
+    "area": "stagg"
+  },
+  {
+    "title": "Dirigibile Beta",
+    "position": [
+      1369,
+      1865
+    ],
+    "map": "stagg-beta",
+    "area": "stagg"
+  },
+  {
+    "title": "Metropolitana di Port Adams",
+    "position": [
+      1429,
+      3095
+    ],
+    "map": "subway",
+    "area": "subway"
+  },
+  {
+    "title": "Panessa Studios",
+    "position": [
+      2917,
+      1805
+    ],
+    "map": "panessa",
+    "area": "panessa"
+  },
+  {
+    "title": "QG nord · Killinger’s",
+    "position": [
+      1678,
+      2155
+    ],
+    "map": "hq-2",
+    "area": "hq"
+  }
+]

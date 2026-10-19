@@ -1,0 +1,186 @@
+[bleake]
+Gru al largo|Raggiungi l’estremità nord della gru.
+Parete sul molo|Spara alla parete dal ponte a sudovest; entra nell’apertura.
+Magazzino sul mare|Sali ai piani superiori del magazzino.
+Pavimento elettrico|Ordina al robot di prendere il trofeo e tornare; abbattilo.
+Container mobili|Alza i container col «?»; pedana, Bat-artiglio. Per uscire, Batarang telecomandato sul «?» discendente.
+Traccia verso ACE|Scansiona il pannello; segui i «?» verso ACE. Spara al bersaglio a 1498, 1840.
+Sotto il ponte ACE|Cerca dietro i generatori, sotto il ponte.
+Insegna ACE|Tira l’ancoraggio col verricello.
+Pannelli sul mare|Sfonda le assi planando dal tetto.
+Fogne di Chinatown|Dopo la quarta fase del Contrabbando, cerca vicino al comando del cancello.
+Tre robot, tre round|Abbatti i robot tre volte, riattivandoli col «?».
+Corsa alla Osamu Tower|Attiva il generatore a 1665, 3171. Espulsione dalla Batmobile, poi plana al trofeo prima della scadenza.
+Robot e sentinelle|Robot sulla prima torretta; acceca la seconda. Fagli recuperare il trofeo, richiamalo e abbattilo.
+Verricello e generatore|Tira l’ancoraggio, poi aziona il generatore con la carica elettrica.
+Edificio abbandonato|Raccogli al piano superiore sotto la gru.
+Sotto la passerella|Recupera col Bat-artiglio dalla rampa delle barche.
+Due ancoraggi|Tira il sinistro; apri col «?» ed entra. Telecomanda la Batmobile sull’ancoraggio destro.
+Finestra dal monorotaia|Plana dal binario attraverso il vetro fragile.
+Corsa alla Mendo Soap|Attiva il generatore a 3496, 2540. Attraversa il ponte in auto, poi espulsione e planata.
+Soffitto fragile|Spara sotto l’edificio a cavallo della strada; usa il Bat-artiglio.
+Bersagli scorrevoli|Tira il verricello e spara ai punti quando attraversano gli anelli; centrale per ultimo.
+Sotto il treno|Sposta il treno col verricello; entra nella grata liberata.
+Flipper nel canale|Dosando il verricello, lancia la sfera oltre lo sportello senza urtare l’angolo superiore.
+Container a vapore|Estrai la parete, applica gel verso i tubi. Rilascia, detona, estrai ancora; scivola dentro.
+Due pedane sul tetto|Robot su una pedana; Batman sull’altra. Recupera col Bat-artiglio.
+Rampa del canale|Sfonda le porte con la Batmobile; sali sulla passerella.
+Container sospeso|Entra dal lato mare planando o calandoti dall’alto.
+Riparo sul tetto|Cerca nell’angolo occidentale del tetto Panessa.
+Sequenza alla parete|Batmobile sulla pedana; spara rapidamente ai «?» illuminati.
+Traccia dai Panessa|Scansiona sul tetto, segui la traccia nelle fogne; spara sotto il ponte del canale.
+Scudo e missili|Alimenta col verricello. Lancia missili multipli e subito un impulso EMP per abbassare lo scudo.
+Vetri rotanti|Ruota col verricello; colpisci i tre «?» quando scoperti.
+Torre sul percorso|Demolisci la parete della torre con la Batmobile.
+Assi sulla facciata|Sfonda le assi dal tetto in planata.
+Faro Panessa|Raccogli sulla sommità del faro.
+Sotto Merchant Bridge|Cerca sul tetto vicino alla sedia a sdraio.
+Espositore GCPD|Rompi il vetro dell’espositore dell’Enigmista di fronte all’ingresso della sala prove.
+[miagani]
+Pilone di Mercy Bridge|Entra nella stanzetta sul lato ovest del pilone.
+Parete sul lungomare|Spara dal Mercy Bridge alla parete fragile.
+Robot al ponte|Demolisci la parete. Sposta il robot dietro il pannello; schiaccialo, riattivalo, ordinagli la pedana.
+Mausoleo|Raccogli sul mausoleo a nord della cattedrale.
+Trappola della cattedrale|Demolisci la parete, tira il verricello, entra dalla grata. Rilascia per schiacciare i robot; riapri.
+Corsa alla cattedrale|Parti dalla pedana a 2887, 2171 sul tetto dell’ospedale; plana al trofeo.
+Ingranaggi sul ponte|Tira finché ruotano entrambi; Bat-artiglio sulla sfera quando passa nell’apertura.
+Parete sul mare|Salta alla Wayne Tower con l’auto e spara alla parete; raggiungila col lancia-cavo.
+Scala della Wayne Tower|Dal giardino intermedio, entra nella scala antincendio; sali al deposito.
+Traccia dalla Wayne Tower|Segui lo scanner a Grand Avenue Station. Hackera la serranda; spara al bersaglio interno.
+Vetrate opposte|Plana attraverso una delle finestre fragili.
+Treno a Grand Avenue|Raccogli sopra il treno fermo.
+Grata della stazione|Cerca sotto la botola al piano alto, lato nordovest.
+Tunnel Miagani|Raccogli sulla sporgenza sopra la sala principale.
+Lacey’s Department Store|Tira l’insegna col verricello; spara alla parete liberata.
+Paul’s Diner|Usa il Bat-artiglio dietro il bancone.
+Grattacielo Grand Avenue|Sali in cima al grattacielo a ovest della stazione.
+The Gotham Pony|Tira lo sportello, entra. Prima d’uscire, distruggi la torretta con la Batmobile telecomandata.
+Torre dalle assi fragili|Dal tetto, inverti la planata e sfonda le assi.
+Dang-Good Donut|Plana dentro l’anello dell’insegna; raccogli sul fondo.
+Doppio cursore|Verricello superiore: sinistra, destra. Inferiore: destra, sinistra; raccogli la sfera.
+Gotham Herald, parete|Plana dall’edificio a sud contro le assi.
+Gotham Herald, robot|Attacca solo i verdi; il «?» inverte i colori. Sconfitti tutti, usa il Bat-artiglio.
+Parete del casinò|Demolisci la parete a metà altezza con la Batmobile.
+Salto dal parcheggio|Salta dalla rampa del parcheggio al tetto; alimenta il generatore col verricello.
+Quattro interruttori|Robot sulla pedana bassa; gel sui due «?» del pilone. Batman sull’altra: Batarang agli altri due, detona entro 3 secondi.
+Traccia dall’ospedale|Scansiona e segui la traccia al bersaglio a 2866, 2201; spara.
+Colonna dell’orfanotrofio|Tira in alto, respingi il generatore superiore. Tira al centro, aziona il secondo; tira in basso.
+Tetto dell’orfanotrofio|Cerca sotto il riparo nell’angolo nordest.
+Bersagli dell’orfanotrofio|Batmobile sulla pedana; spara ai bersagli accesi. Usa missili multipli nella sequenza finale.
+Balcone della stazione|Cerca sul balcone nordest della stazione rialzata.
+Ascensore della torre|Entra nell’ascensore bloccato della torre metallica.
+Deposito botanico|Cerca sulla mensola nel deposito ai piani superiori, lato ovest.
+Piante illuminate|Cerca fra i vasi al piano superiore, lato sud.
+Vagone sospeso|Calati nel vagone dalla porta laterale aperta.
+Tre pedane al molo|Due robot su due pedane; Batman sulla terza. Usa il Bat-artiglio.
+Fine del pontile|Raccogli sul tetto oltre la ruota panoramica.
+Lady of Gotham|Plana attraverso le assi delle impalcature sotto la statua.
+[founders]
+Faro dei moli|Sali alla terrazza superiore; attenzione al cecchino.
+Trade House|Plana dal tetto attraverso le assi sul lato mare.
+Di fronte al Fish Market|Plana attraverso le assi della facciata sul mare.
+Pavimento a pedane|Apri col verricello, entra sulla pedana verde. Rilascia; attraversa col lancia-cavo evitando le pedane rosse.
+Rovine sull’acqua|Entra nell’edificio diroccato sopra i bassifondi.
+Corsa a Killinger’s|Attiva la pedana a 2147, 1492. Scendi in Batmobile ai bassifondi prima della scadenza.
+Robot al cantiere|Alimenta il generatore col verricello; ordina al robot di salire sulla pedana.
+Riparo sotto l’arco|Libera il posto di blocco; sali sulla sporgenza riparata.
+Tre interruttori nascosti|Tira il verricello; Batarang rapido ai tre «?», poi Bat-artiglio.
+Torretta dietro la serranda|Apri col generatore; «?» per schermare la torretta. Raccolto il trofeo, riaprila contro i robot, poi richiudila.
+Robot nei bassifondi|Robot sulla pedana. Entra, gel sulla parete, attraversa il condotto; sconfiggi i robot.
+Sotto la rampa|Cerca nella fossa sotto la rampa del cantiere.
+Traccia nei bassifondi|Scansiona e segui i «?». Al ventilatore risali dal tombino corrispondente; continua e demolisci il bersaglio.
+Wayne International Plaza|Raccogli sul balcone rivolto a est.
+Stazione in costruzione|Cerca sulla cassa gialla nella sala d’attesa nord.
+Balcone LexCorp|Robot sulla pedana, Batman sull’altra. Fumogeno e Bat-artiglio prima che attacchi.
+Pretty Dolls Parlour|Dopo Il crimine perfetto, passa nella grata; gel sulla parete fragile.
+Porta a spuntoni|Apri col verricello, pedana e Bat-artiglio. Telecomanda subito la Batmobile per tirare indietro la porta.
+Scala nelle rovine|Raccogli sulle scale ai piani alti.
+Parete delle rovine|Spara alla parete nord da una posizione rialzata.
+Traccia e salto|Segui lo scanner; tira la rampa e salta con la Batmobile. Spara al bersaglio finale.
+Bank of Gotham|Demolisci la parete alta a est dalla strada a nordest.
+Corsa dalla GCPD|Attiva il generatore a 2456, 2663. Accelera sul lungomare, espulsione verso la statua, plana al binario.
+Robot sul pavimento elettrico|Acceca la torretta; robot al trofeo e ritorno. Abbattilo per raccogliere.
+Sotto Penitence Bridge|Scendi alla piattaforma sull’acqua a sud del ponte.
+Sfera magnetica|Generatore alto a sinistra, destro in alto: attrai entrambi, tira l’alto a destra. Attrai destra, poi alto. In basso, attrai alto e respingi destra.
+Parete della sopraelevata|Demolisci la parete ovest dalla strada a sud.
+Impalcature|Cerca fra le pareti rotte ai piani superiori.
+Ufficio di Port Adams|Entra nell’ufficio sotto la gru, a est dell’ingresso.
+Container e robot|Raduna tutti i robot sotto il container col sintetizzatore; colpisci il «?» per schiacciarli.
+Corsa a Port Adams|Parti dalla pedana a 3253, 2136 su Miagani. Plana al porto; raccogli col Bat-artiglio prima della scadenza.
+Tre barre del container|Estrai rapidamente le tre barre col verricello. Batarang telecomandato attraverso i fori fino al «?».
+Piattaforma della gru|Scendi sotto la gru sul lato est del porto.
+[subway]
+Ufficio all’ingresso|Sali sulla passerella sopra i treni; entra nell’ufficio dal tetto.
+Deposito del drone|Cerca sullo scaffale nella stanza del drone fermo.
+Seconda rampa|Sali sul tetto della sala di controllo.
+Passerella superiore|Nella sala delle tre pareti fragili, sali fino alla passerella.
+Ramo destro, scale|Sfonda la parete destra; sali le scale del cantiere.
+Ramo destro, soffitto|Dalle scale, sali alle piattaforme vicino al soffitto.
+Vasca del cantiere|Prosegui nel ramo destro; cerca sulla piattaforma nord della vasca.
+Ramo sinistro|Sfonda la parete sinistra; sali la rampa. Guarda a destra sul bordo.
+[stagg]
+Alpha, ingresso|Hackera il pannello vicino alla gabbia.
+Alpha, sfera|Hackera il pannello; inclina il dirigibile per far scorrere la sfera.
+Alpha, generatore|Ripristina le casse iniziali; aziona il generatore sopra la serranda.
+Alpha, condotto|Sblocca la cassa, inclina a destra; entra nel condotto liberato.
+Alpha, pedana|Dalla pedana, pilota il Batarang sopra il trofeo fino al «?».
+Alpha, casse sotterranee|Sposta la cassa bloccabile contro la parete demolita col gel; entra dietro.
+Alpha, controllo stabilità|Apri vocalmente il pannello sinistro; cerca dietro la torretta.
+Alpha, pavimento a pedane|Attraversa sul cavo senza toccare terra; sali alla botola finale.
+Alpha, cassa dall’alto|Gel sul soffitto sopra il tavolo. Inclina per far cadere la cassa e sfondare il vetro.
+Alpha, tre bersagli|Sali nel condotto sopra la porta biometrica; colpisci i tre «?» con Batarang rapidi.
+Alpha, due pedane|Hackera. Guida la scimmia sulle due pedane; cambia le barriere col «?».
+Alpha, scimmia|Hackera, aziona il «?» e guida la scimmia sulla pedana.
+Beta, scimmie sotto la porta|Hackera; spostati a destra, aziona «?». Due scimmie sulle pedane; bloccale col «?».
+Beta, serratura vocale|Apri la porta a nordest del laboratorio col sintetizzatore.
+Beta, tre generatori|Entra dai condotti sud; aziona i tre generatori sul soffitto.
+Beta, scimmie a ovest|Hackera; guida entrambe le scimmie sulle pedane e bloccale col «?».
+Beta, vapore|Congela il tubo sul muro nord; entra nel condotto.
+Beta, cella|Aziona il computer entrando nell’area test; cerca nella cella aperta.
+Beta, casse e botole|Gel sulla parete sud. Sblocca e inclina a sinistra; sali due botole. Inclina a destra, blocca la cassa vicina alla grata; inclina indietro e scendi.
+Beta, cassa all’esterno|Apri vocalmente davanti alle torrette. Inclina a destra, poi fuori dal vetro: raccogli sulla piattaforma sotto il dirigibile.
+Beta, camera stagna|Apri col pulsante e sali sulla pedana. Batarang all’ultimo «?» a destra su Alpha quando si illumina.
+[panessa]
+Batarang elettrificato|Elettrifica il Batarang sopra il Batcomputer; guidalo dalla finestra, giù per le scale, al fusibile.
+Interruttori sulle scale|Dopo il trofeo 1, sali; spegni tutti i «?» coi Batarang.
+Robot e paura|Entra nel condotto; sfonda la parete e usa l’eliminazione multipla per paura entro il tempo.
+Statua del robot|Tira l’anello sul petto col Bat-artiglio.
+Statua rotante|«?» cambia verso; carica elettrica avvia/ferma. Ferma sui settori A, B, C evitando Reset.
+Tre pedane elettrificate|Apri col generatore. Dalla prima pedana, lancia-cavo con cambio direzione alla seconda; torna verso il trofeo e devia alla terza.
+Colori del set A|Riproduci coi Batarang i colori mostrati nella stanza opposta.
+Generatore nella statua|Sali dietro il fondale; apri il petto col Bat-artiglio e sovraccarica il generatore.
+Torrette del set A|Acceca una torretta, disattiva l’altra alle spalle. Riapplica l’hack e disattiva la seconda.
+Ventilatore del set B|Hackera il pannello sopra il ventilatore per fermarlo.
+Vapore sopra il set|Sali alla botola; attraversa col cavo, cammina sul cavo. Congela entrambi gli sfiati e sali.
+Mine sotto le scale|Disinnesca le mine col disturbatore potenziato; scivola sotto la parete.
+Contrappeso esplosivo|Abbassa il peso; applica gel verso la parete. Rialza e detona all’altezza della parete fragile.
+Condotto della stanza centrale|Dalla pedana, guida il Batarang nel condotto fino al «?» nella stanza ovest.
+Sfera nel vapore|Congela lo sfiato dietro la sfera a ogni arresto, finché raggiunge l’uscita.
+Cassa sabotata|Congela lo sfiato e sali. Sabota la cassa col disturbatore; ordina al robot di aprirla.
+Tre lanci nel condotto|Gel sulla parete. Pedana: Batarang a destra, sinistra; secondo a destra al nuovo «?». Terzo elettrificato: destra, destra, fusibile sopra il trofeo.
+Le età della vita|Aziona i generatori: gravidanza, neonato, bambino piccolo, bambino che corre, giovane, uomo d’affari, anziano, tomba.
+Specchio del set C|Voltati dal trofeo; carica elettrica al «?» sopra il condotto.
+Memoria dei colori|Conta il colore delle lettere. Sequenze: blu-verde-rosso-giallo; giallo-verde-blu-blu-giallo-rosso; verde-blu-giallo-rosso-blu-rosso-giallo-verde.
+Slot machine|Hackera i comandi sotto le ruote, fermandole tutte sullo stesso simbolo.
+[hq]
+Pista delle sfere|Cala la Batmobile col verricello. Spara ai «?» per chiudere le buche: prima una sfera, poi due insieme.
+Schermi e tempismo|Colpisci il «?» quando il cerchio arancione coincide col «?» verde; tre round.
+Panchina superiore|Sali alla stanza del primo generatore; cerca sulla panchina.
+Tubi della sala alta|Hackera la porta; carica elettrica al «?» per allineare i tubi al passaggio della sfera.
+Tre ruote|Hackera le ruote; Batarang cambia verso. Con raccoglitori inizialmente in alto: prima sinistra, poi destra, poi sinistra.
+Labirinto rotante|Dal condotto est sotto la seconda ventola, respingi finché sfera e uscita condividono il settore; poi attrai.
+Parete nell’ascensore|Porta l’ascensore alla parete fragile con la carica elettrica; usa gel.
+Dietro la tenda|Scendi col primo ascensore; cerca dietro la tenda all’uscita.
+Insegna Bar Lounge|Cerca sopra l’insegna rosa dopo il secondo ascensore.
+Torretta e fusibile|Acceca la torretta, sali sulla pedana. Batarang nel condotto: sinistra, fondo, destra al «?». Riacceca; elettrifica il secondo Batarang e colpisci il fusibile.
+Serranda sotto il pavimento|Hackera la porta della seconda ventola, poi il pannello sotto il pavimento; Bat-artiglio.
+Sotto l’ascensore|Dal fondo sali sopra l’accesso chiuso all’escavatore. Manda su l’ascensore e scendi nel vano.
+Sala est, fioriera|Ingresso sud: cerca sotto l’appiglio nella sala est.
+Due sfere, due colori|Hackera la porta sud della sala est. Allinea i primi tubi prima di avviare il generatore. Quando la sfera destra entra nel primo tubo verde, ruota il verde; quando la sinistra esce dal primo rosso, ruota il rosso. Destra nel tubo basso: verde; sinistra nel secondo rosso: rosso; destra esce dal secondo verde: verde; destra nel terzo verde: verde; sinistra nel terzo rosso: rosso.
+Sala sud, passerella|Cerca sotto il pavimento fragile della passerella.
+Robot e due torrette|Hackera l’accesso alto a est. Acceca destra, robot disattiva sinistra; riacceca, pedana, Bat-artiglio.
+Sala ovest, fioriera|Cerca nella fioriera in fondo al livello inferiore.
+Rotazione della sfera|Carica elettrica: attrai 3 volte, respingi 4, attrai 3.
+Ristorante cinese|Entra nelle grate sotto il tavolo centrale.
+Memory degli schermi|Hackera gli schermi e abbina tutte le coppie di immagini identiche.
+Condotto verso l’escavatore|Dal centro alto, segui i condotti verso l’escavatore; Bat-artiglio alla parete opposta prima di scendere.
