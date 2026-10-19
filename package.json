@@ -10,7 +10,8 @@
     "test": "node --import tsx -e \"await import('./tests/catalog.test.ts'); await import('./tests/progress.test.ts'); await import('./tests/language.test.ts'); await import('./tests/transfer.test.ts')\"",
     "test:browser": "node scripts/check-browser.mjs",
     "test:language": "node scripts/check-language.mjs",
-    "test:transfer": "node scripts/check-transfer.mjs"
+    "test:transfer": "node scripts/check-transfer.mjs",
+    "test:categories": "node scripts/check-categories.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

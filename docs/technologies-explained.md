@@ -479,7 +479,15 @@ node scripts/check-transfer.mjs
 
 Verifica codice, copia e ripiego manuale, trasferimento fra sessioni, unione, lingua, errori e persistenza.
 
-I tre controlli browser richiedono il server su localhost e un browser compatibile installato. `npm test` e la build non ne hanno bisogno.
+### test:categories
+
+```sh
+node scripts/check-categories.mjs
+```
+
+Verifica le 16 combinazioni delle quattro categorie, tutte inizialmente spuntate, i marker esclusi, il ripristino, il cambio lingua e l’uso da tastiera su desktop e telefono. Le categorie si combinano liberamente: non sono una selezione esclusiva. Ricaricare la pagina le riattiva tutte.
+
+I quattro controlli browser richiedono il server su localhost e un browser compatibile installato. `npm test` e la build non ne hanno bisogno.
 
 Riferimento per il meccanismo dei comandi: [npm scripts](https://docs.npmjs.com/cli/v11/using-npm/scripts/).
 
