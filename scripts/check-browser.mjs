@@ -44,6 +44,19 @@ try {
  await page.locator('input[type=file]').setInputFiles({name:'invalid.json',mimeType:'application/json',buffer:Buffer.from('{bad')});
  await page.getByRole('status').filter({hasText:'JSON valido'}).waitFor();
  assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('enigmap.progress.v1')).completed.length),1);
+ // Hostile metadata and unknown IDs must never reach the DOM, storage or prototypes.
+ const hostile = '{"app":"enigmap","version":1,"completed":["bleake-trophy-01","__proto__","constructor","<img src=x onerror=window.enigmapExploit=true>"],"__proto__":{"enigmapPolluted":true},"title":"<img src=x onerror=window.enigmapExploit=true>","language":"it"}';
+ await page.locator('input[type=file]').setInputFiles({name:'hostile.json',mimeType:'application/json',buffer:Buffer.from(hostile)});
+ await page.getByRole('status').filter({hasText:'3 ID sconosciuti ignorati'}).waitFor();
+ const saved = await page.evaluate(()=>localStorage.getItem('enigmap.progress.v1'));
+ assert.deepEqual(JSON.parse(saved).completed,['bleake-trophy-01','miagani-trophy-01']);
+ assert.equal(saved.includes('<img'),false);
+ assert.equal(await page.evaluate(()=>window.enigmapExploit === true || Object.hasOwn(Object.prototype,'enigmapPolluted')),false);
+ await page.locator('input[type=file]').setInputFiles({name:'oversized.json',mimeType:'application/json',buffer:Buffer.alloc(1_000_001,32)});
+ await page.getByRole('status').filter({hasText:'troppo grande'}).waitFor();
+ assert.equal(await page.evaluate(()=>localStorage.getItem('enigmap.progress.v1')),saved);
+ await page.reload({waitUntil:'networkidle'});
+ assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('enigmap.progress.v1')).completed),['bleake-trophy-01','miagani-trophy-01']);
  // localStorage can be denied; app stays usable and export remains available.
  const denied = await browser.newContext({viewport:{width:1100,height:800}});
  await denied.addInitScript(()=>{Object.defineProperty(window,'localStorage',{get(){throw new Error('Storage denied')}})});

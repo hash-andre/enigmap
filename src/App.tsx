@@ -1,28 +1,23 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, ChevronRight, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, SlidersHorizontal, Languages, X } from 'lucide-react';
-import { points as originalPoints, categories as originalCategories } from './data';
+import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, SlidersHorizontal, Languages, X } from 'lucide-react';
+import { categories as originalCategories } from './data';
 import { useLanguage, useTranslatedData, pointSearchIndex } from './i18n';
 import type { Area, Category, MapId, Point } from './types';
-import { parseProgress, readProgress, serializeProgress, STORAGE_KEY } from './progress';
+import { readProgressFile, serializeProgress } from './progress';
+import { useProgress, knownPointIds } from './hooks/useProgress';
 import MapView from './components/MapView';
 import Dialog from './components/Dialog';
+import PointDialog from './components/PointDialog';
 import { CategoryIcon } from './components/Icons';
 
-const known = new Set(originalPoints.map(p => p.id));
 const categoryKeys = Object.keys(originalCategories) as Category[];
-function initial() {
-  try { return { ids: readProgress(localStorage, known), error: '' }; }
-  catch { return { ids: new Set<string>(), error: 'Salvataggio locale non disponibile o danneggiato. Esporta i progressi prima di chiudere.' }; }
-}
 const mapForArea: Partial<Record<Area, MapId>> = { panessa: 'panessa', subway: 'subway', stagg: 'stagg-alpha', hq: 'hq-2' };
 
 export default function App() {
   const { language, setLanguage, t } = useLanguage();
-  const { points, areas, categories, maps, mapById } = useTranslatedData();
-  const [loaded] = useState(initial);
-  const [completed, setCompleted] = useState(loaded.ids);
-  const [storageError, setStorageError] = useState(loaded.error);
+  const { points, areas, categories, maps } = useTranslatedData();
+  const { completed, storageError, toggle, merge } = useProgress();
   const [notice, setNotice] = useState('');
   const [area, setArea] = useState<Area | 'all'>('all');
   const [mapId, setMapId] = useState<MapId>('gotham');
@@ -38,11 +33,6 @@ export default function App() {
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
 
-  useEffect(() => {
-    if (completed === loaded.ids && loaded.error) return;
-    try { localStorage.setItem(STORAGE_KEY, serializeProgress(completed)); setStorageError(''); }
-    catch { setStorageError('Salvataggio nel browser non riuscito. Esporta i progressi prima di chiudere.'); }
-  }, [completed, loaded]);
   useEffect(() => { if (!notice) return; const timer = setTimeout(() => setNotice(''), 7000); return () => clearTimeout(timer); }, [notice]);
   useEffect(() => {
     if (!progressMenu) return;
@@ -56,9 +46,8 @@ export default function App() {
   const onMap = useMemo(() => visible.filter(p => p.map === mapId && p.position), [visible, mapId]);
   const offMap = visible.filter(p => p.map !== mapId || !p.position);
   const physicalDone = points.filter(p => completed.has(p.id)).length;
-  const percent = Math.round(physicalDone / 315 * 100);
+  const percent = Math.round(physicalDone / points.length * 100);
 
-  function toggle(p: Point) { setCompleted(previous => { const next = new Set(previous); if (next.has(p.id)) next.delete(p.id); else next.add(p.id); return next; }); }
   function chooseMap(id: MapId) { setMapId(id); const point = points.find(p => p.map === id); if (id !== 'gotham' && point) setArea(point.area); else setArea('all'); }
   function chooseArea(value: Area | 'all') { setArea(value); setMapId(value === 'all' ? 'gotham' : mapForArea[value] ?? 'gotham'); }
   function exportFile() {
@@ -68,10 +57,9 @@ export default function App() {
   async function importFile(file: File | undefined) {
     if (!file) return;
     try {
-      if (file.size > 1_000_000) throw new Error('Il file è troppo grande.');
-      const { ids, ignored } = parseProgress(await file.text(), known);
+      const { ids, ignored } = await readProgressFile(file, knownPointIds);
       const added = [...ids].filter(id => !completed.has(id)).length;
-      setCompleted(previous => new Set([...previous, ...ids]));
+      merge(ids);
       setNotice(t('{count} nuovi completamenti importati.', { count: added }) + (ignored ? t(' {count} ID sconosciuti ignorati.', { count: ignored }) : ''));
     } catch (error) { setNotice(t(error instanceof Error ? error.message : 'Impossibile leggere il file. I progressi non sono stati modificati.')); }
     if (fileInput.current) fileInput.current.value = '';
@@ -88,7 +76,7 @@ export default function App() {
         <div className="sidebar-mobile-heading"><span>{t('Esplora Gotham')}</span><button className="icon-button" aria-label={t('Chiudi filtri')} onClick={() => setFiltersOpen(false)}><X size={20} /></button></div>
         <div className="progress-panel">
           <div className="eyebrow">{t('LA TUA INDAGINE')}<div className="progress-actions"><button className="icon-button" aria-label={t('Gestisci progressi')} aria-expanded={progressMenu} onClick={() => setProgressMenu(!progressMenu)}><Ellipsis size={20} /></button>{progressMenu && <div className="progress-menu"><button onClick={exportFile}><ArrowDownToLine size={16} />{t('Esporta progressi')}</button><button onClick={() => fileInput.current?.click()}><ArrowUpFromLine size={16} />{t('Importa progressi')}</button><p>{t('Salvati in questo browser.')}<br />{t('Trasferiscili con un file.')}</p></div>}</div></div>
-          <div className="progress-number"><strong>{physicalDone}<span>/ 315</span></strong><span className="percentage">{percent}%</span></div><div className="progress-track"><div style={{ width: `${percent}%` }} /></div><div className="progress-caption"><span>{t('Elementi completati')}</span><span className="local-indicator"><span />{t('Locale')}</span></div>
+          <div className="progress-number"><strong>{physicalDone}<span>/ {points.length}</span></strong><span className="percentage">{percent}%</span></div><div className="progress-track"><div style={{ width: `${percent}%` }} /></div><div className="progress-caption"><span>{t('Elementi completati')}</span><span className="local-indicator"><span />{t('Locale')}</span></div>
         </div>
         <div className="sidebar-filters">
           <label className="search"><Search size={17} /><input type="search" aria-label={t('Cerca un punto')} placeholder={t('Cerca un punto, un luogo…')} value={query} onChange={e => setQuery(e.target.value)} /><span>⌕</span></label>
@@ -116,13 +104,7 @@ export default function App() {
     {filtersOpen && <div className="mobile-scrim" onClick={() => setFiltersOpen(false)} />}
     <input hidden ref={fileInput} type="file" accept=".json,application/json" onChange={e => void importFile(e.target.files?.[0])} aria-label={t('Importa file progressi')} />
     {notice && <div className="toast" role="status">{notice}<button aria-label={t('Chiudi messaggio')} onClick={() => setNotice('')}><X size={16} /></button></div>}
-    {selected && <Dialog title={selected.title} className="point-dialog" onClose={() => setSelected(null)}>
-      <div className="point-header"><div className={`point-category ${selected.category}`}><CategoryIcon category={selected.category} /><span>{categories[selected.category].label} {selected.number.toString().padStart(2, '0')}</span>{completed.has(selected.id) && <span className="done-badge"><Check size={12} />{t('Completato')}</span>}</div><h1>{selected.title}</h1><p>{selected.location}</p></div>
-      <div className="point-scroll"><div className="point-map-section">{selected.position ? <><MapView mapId={selected.map} points={[selected]} completed={completed} mini selected={selected} /><div className="mini-map-caption"><span><span className="legend-dot" />{t(selected.category === 'bomb' ? 'Pedana' : 'Punto d’interesse')}</span>{selected.start && <span><span className="start-key">{language === 'en' ? 'S' : 'P'}</span>{t('Partenza · collegamento indicativo')}</span>}<button onClick={() => { chooseMap(selected.map); setSelected(null); }}>{t('Apri area')} <ArrowUpRight size={13} /></button></div></> : <div className="no-fixed-map"><MapIcon size={26} /><span>{t('Disponibile ovunque')}</span></div>}
-        {selected.gameCoordinates && <div className="game-coordinates"><span>{t('COORDINATE NEL GIOCO')}</span><code>{selected.gameCoordinates.join(', ')}</code></div>}{selected.locationNote && <p className="location-note">{selected.locationNote}</p>}
-      </div><div className="solution-section">{selected.requirements.length > 0 && <><h2>{t('Ti serve')}</h2><div className="requirements">{selected.requirements.map(r => <span key={r}>{r}</span>)}</div></>}<h2>{t('Come risolvere')}</h2><ol className="solution-steps">{selected.steps.map((s, i) => <li key={i}><span>{(i + 1).toString().padStart(2, '0')}</span><p>{s}</p></li>)}</ol>{mapById[selected.map].entryNote && <p className="entry-note"><Layers size={15} />{mapById[selected.map].entryNote}</p>}<details className="sources"><summary>{t('Fonti della soluzione')} <ChevronDown size={14} /></summary>{selected.sources.map(s => <a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.label}<ArrowUpRight size={13} /></a>)}{selected.video && <a href={selected.video} target="_blank" rel="noreferrer">{t('Guarda la soluzione video')} <ArrowUpRight size={13} /></a>}</details></div></div>
-      <div className="point-completion"><label className={completed.has(selected.id) ? 'is-completed' : ''}><input type="checkbox" checked={completed.has(selected.id)} onChange={() => toggle(selected)} /><span className="completion-checkbox">{completed.has(selected.id) && <Check size={17} />}</span><span><strong>{t('Completato')}</strong><small>{t(completed.has(selected.id) ? 'Salvato nei tuoi progressi' : 'Segna questa sfida come risolta')}</small></span></label><button onClick={() => setSelected(null)}>{t('Torna alla mappa')} <ChevronRight size={15} /></button></div>
-    </Dialog>}
+    {selected && <PointDialog point={selected} completed={completed.has(selected.id)} completedIds={completed} onToggle={() => toggle(selected.id)} onClose={() => setSelected(null)} onOpenMap={id => { chooseMap(id); setSelected(null); }} />}
     {tutorial && <Dialog title={t('Come funziona Enigmap')} className="tutorial-dialog" onClose={() => setTutorial(false)}><span className="tutorial-mark">?</span><div className="eyebrow">{t('TRE PASSI, ZERO MISTERI')}</div><h1>{t('La città è piena di domande.')}<br /><span>{t('Qui trovi le risposte.')}</span></h1><div className="tutorial-steps">{[{ Icon: MapIcon, title: 'Scegli un punto', text: 'Esplora la mappa o filtra per area e categoria.' }, { Icon: Search, title: 'Segui la soluzione', text: 'Apri la scheda: posizione, gadget e passaggi.' }, { Icon: Check, title: 'Spunta Completato', text: 'Il punto diventa grigio. I progressi restano nel browser.' }].map(({ Icon, title, text }, i) => <div key={i}><span><Icon size={21} /></span><div><h2>{t(title)}</h2><p>{t(text)}</p></div><small>0{i + 1}</small></div>)}</div><button className="primary-button" onClick={() => setTutorial(false)}>{t('Inizia l’indagine')} <ArrowUpRight size={17} /></button></Dialog>}
     {sourcesOpen && <Dialog title={t('Fonti e cartografia')} className="sources-dialog" onClose={() => setSourcesOpen(false)}><div className="eyebrow">{t('DIETRO LA MAPPA')}</div><h1>{t('Fonti e cartografia')}</h1><p>{t('315 elementi fisici, equivalenti a 243 sfide: 179 trofei, 40 enigmi, 6 rivoltosi e 90 distruttibili (18 sfide).')}</p><p>{t('Gotham e gli interni usano cartografia vettoriale ricostruita dai riferimenti del gioco. Le posizioni interne indicano stanza e piano; gli accessi ai complessi sono indicativi. Le note nelle schede segnalano coordinate discordanti.')}</p><p>{t('Le schede sono controllate sulle guide, senza verifica diretta in gioco. Gotham e i suoi personaggi appartengono ai rispettivi titolari; Enigmap è un progetto non ufficiale.')}</p><div className="source-links">{[['PowerPyx · inventario', 'https://www.powerpyx.com/guides/batman-arkham-knight-trophy-guide.html'], ['Gamer Guides · coordinate e procedure', 'https://www.gamerguides.com/batman-arkham-knight/guide/collectibles-guide/collectible-locations/'], ['GamesRadar · soluzioni e riferimenti', 'https://www.gamesradar.com/batman-arkham-knight-riddler-guide/'], ['GameFAQs · guida di confronto', 'https://gamefaqs.gamespot.com/ps4/768083-batman-arkham-knight/faqs/72018']].map(([name,url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{t(name)}<ArrowUpRight size={15} /></a>)}</div><p className="privacy-note">{t('I progressi sono salvati solo in questo browser. Dal menu ⋯ puoi esportarli e importarli su un altro dispositivo. La cancellazione dei dati del browser rimuove il salvataggio locale.')}</p></Dialog>}
   </div>;
