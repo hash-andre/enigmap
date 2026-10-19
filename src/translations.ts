@@ -4,6 +4,13 @@ export function readLanguage(storage: Pick<Storage, 'getItem'>): Language {
   try { return storage.getItem(LANGUAGE_KEY) === 'it' ? 'it' : 'en'; } catch { return 'en'; }
 }
 export const english: Record<string, string> = {
+  'La tua indagine · ⋯': 'Your investigation · ⋯',
+  'Apri il menu ⋯ accanto ai progressi. Su telefono lo trovi nei Filtri.': 'Open the ⋯ menu next to your progress. On mobile, find it in Filters.',
+  'Copia il codice e importalo sull’altro dispositivo: unisce le spunte e applica la lingua.': 'Copy the code and import it on the other device: it merges completions and applies the language.',
+  'Esporta / Importa progressi': 'Export / Import progress',
+  'Esporta un file JSON come backup, poi importalo per aggiungere le spunte salvate. La lingua resta invariata.': 'Export a JSON file as a backup, then import it to add the saved completions. The language stays unchanged.',
+  'Il trasferimento è manuale: i dispositivi non si sincronizzano automaticamente.': 'Transfers are manual: devices do not sync automatically.',
+
   'Trasferisci con codice': 'Transfer with code', 'Il tuo codice': 'Your code',
   'Importare un codice unisce i completamenti e applica la lingua ricevuta.': 'Importing a code merges completions and applies the received language.',
   'Copia codice': 'Copy code', 'Codice copiato.': 'Code copied.',
