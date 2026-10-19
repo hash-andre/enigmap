@@ -1,5 +1,8 @@
 import { chromium } from '@playwright/test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+const originals=JSON.parse(readFileSync(new URL('../src/data/catalog.json',import.meta.url)));
+const translations=JSON.parse(readFileSync(new URL('../src/data/catalog.en.json',import.meta.url)));
 const browser=await chromium.launch({executablePath:process.env.ENIGMAP_BROWSER||'/usr/bin/brave',headless:true,args:['--no-sandbox','--disable-gpu']});
 const errors=[];
 try{
@@ -41,6 +44,21 @@ try{
  await page.reload({waitUntil:'networkidle'});
  await page.getByRole('button',{name:'How it works',exact:true}).waitFor();
  await page.screenshot({path:'/tmp/enigmap-language-desktop.png'});
+ // Verify that complex solutions keep the original numbered list in both languages.
+ for(const id of ['panessa-trophy-17','hq-trophy-14','stagg-trophy-19']){
+  const point=originals.find(p=>p.id===id);
+  await page.getByLabel('Choose map or floor').selectOption(point.map);
+  await page.getByRole('searchbox',{name:'Search for a point',exact:true}).fill(id);
+  await page.getByRole('button',{name:`Trophy ${point.number}: ${translations[id].title}`,exact:true}).click();
+  assert.deepEqual(await page.getByRole('dialog').locator('.solution-steps > li > p').allTextContents(),translations[id].steps);
+  if(id==='panessa-trophy-17') await page.screenshot({path:'/tmp/enigmap-solution-steps.png'});
+  await page.getByRole('button',{name:'Back to map',exact:true}).click();
+  await page.getByRole('button',{name:'Switch to Italian'}).click();
+  await page.getByRole('button',{name:`Trofeo ${point.number}: ${point.title}`,exact:true}).click();
+  assert.deepEqual(await page.getByRole('dialog').locator('.solution-steps > li > p').allTextContents(),point.steps);
+  await page.getByRole('button',{name:'Torna alla mappa',exact:true}).click();
+  await page.getByRole('button',{name:'Passa all’inglese'}).click();
+ }
  await context.close();
  for(const [width,height] of [[360,780],[390,844]]){
   const mobile=await browser.newContext({viewport:{width,height},isMobile:true,hasTouch:true});

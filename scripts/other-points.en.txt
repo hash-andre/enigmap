@@ -31,7 +31,7 @@ Professor Pyg’s circus|After The Perfect Crime, scan the circus poster by the 
 GothCorp|Scan the GothCorp logo south of the stock exchange.
 Cobblepot Manor|Scan the sign above the door north of Port Adams.
 Bane’s equipment|Inside the half-open container in the port’s northwest corner, open the crate with the Batclaw and scan its contents.
-The Dark Knight’s steed|Get out of the Batmobile and scan it. This riddle can be solved anywhere.
+The Dark Knight’s steed|Get out of the Batmobile and scan it. || This riddle can be solved anywhere.
 [stagg-riddle]
 The white monkey|Alpha Research Laboratory: scan the albino monkey beneath the entrance platform.
 The reporter and Deadshot|Beta Biological Engineering: scan the magazine on the northern upper-level desk.

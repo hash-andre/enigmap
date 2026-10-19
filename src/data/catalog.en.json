@@ -26,13 +26,15 @@
   "bleake-trophy-05": {
     "title": "Moving containers",
     "steps": [
-      "Raise the containers using the up-arrow switch. Stand on the pad and use the Batclaw. To leave, guide a Remote Controlled Batarang to the down-arrow switch."
+      "Raise the containers using the up-arrow switch, stand on the pad and collect the trophy with the Batclaw.",
+      "To leave, guide a Remote Controlled Batarang to the down-arrow switch."
     ]
   },
   "bleake-trophy-06": {
     "title": "Trail toward ACE",
     "steps": [
-      "Scan the panel and follow the question marks toward ACE. Shoot the target at 1498, 1840."
+      "Scan the panel and follow the question marks toward ACE.",
+      "Shoot the target at 1498, 1840."
     ]
   },
   "bleake-trophy-07": {
@@ -68,13 +70,15 @@
   "bleake-trophy-12": {
     "title": "Race to Osamu Tower",
     "steps": [
-      "Activate the generator at 1665, 3171. Eject from the Batmobile and glide to the trophy before time runs out."
+      "Activate the generator at 1665, 3171.",
+      "Eject from the Batmobile and glide to the trophy before time runs out."
     ]
   },
   "bleake-trophy-13": {
     "title": "Robot and sentry guns",
     "steps": [
-      "Send the robot to disable the first sentry. Blind the second, order the robot to fetch the trophy and return, then defeat it."
+      "Send the robot to disable the first sentry gun, then blind the second sentry with the Remote Hacking Device.",
+      "Order the robot to fetch the trophy and return to you, then defeat it to collect the trophy."
     ]
   },
   "bleake-trophy-14": {
@@ -98,7 +102,8 @@
   "bleake-trophy-17": {
     "title": "Two anchor points",
     "steps": [
-      "Pull the left anchor, open the door with the question mark and enter. Remote-control the Batmobile to pull the right anchor."
+      "Pull the left anchor, open the door with the question-mark switch and enter.",
+      "Remote-control the Batmobile to pull the right anchor."
     ]
   },
   "bleake-trophy-18": {
@@ -110,7 +115,8 @@
   "bleake-trophy-19": {
     "title": "Race to Mendo Soap",
     "steps": [
-      "Activate the generator at 3496, 2540. Drive across the bridge, then eject and glide to the trophy."
+      "Activate the generator at 3496, 2540.",
+      "Drive across the bridge, then eject and glide to the trophy."
     ]
   },
   "bleake-trophy-20": {
@@ -140,13 +146,15 @@
   "bleake-trophy-24": {
     "title": "Steam-filled container",
     "steps": [
-      "Pull out the wall and apply Explosive Gel facing the pipes. Release, detonate and pull again, then slide inside."
+      "Pull out the wall and place Explosive Gel on the side facing the steam pipes.",
+      "Release the anchor, detonate the gel and pull the wall out again, then slide inside."
     ]
   },
   "bleake-trophy-25": {
     "title": "Two rooftop pads",
     "steps": [
-      "Put the robot on one pad and Batman on the other, then use the Batclaw."
+      "Put the robot on one pressure pad and Batman on the other.",
+      "Collect the trophy with the Batclaw."
     ]
   },
   "bleake-trophy-26": {
@@ -182,7 +190,8 @@
   "bleake-trophy-31": {
     "title": "Shield and missiles",
     "steps": [
-      "Supply power with the winch. Fire a Missile Barrage, then immediately use an EMP to lower the shield."
+      "Supply power using the Power Winch.",
+      "Fire a Missile Barrage, then immediately use an EMP to lower the shield."
     ]
   },
   "bleake-trophy-32": {
@@ -431,7 +440,8 @@
   "miagani-trophy-03": {
     "title": "Bridge robot",
     "steps": [
-      "Destroy the wall. Move the robot behind the panel, crush it, revive it and order it onto the pad."
+      "Destroy the weak wall.",
+      "Move the robot behind the panel, crush it, revive it with the switch and order it onto the pressure pad."
     ]
   },
   "miagani-trophy-04": {
@@ -443,7 +453,8 @@
   "miagani-trophy-05": {
     "title": "Cathedral trap",
     "steps": [
-      "Break the wall, pull the winch and enter through the grate. Release the anchor to crush the robots, then reopen it."
+      "Break the weak wall, pull the anchor with the Power Winch and enter through the floor grate.",
+      "Release the anchor to crush the robots, then pull it again to reopen your exit."
     ]
   },
   "miagani-trophy-06": {
@@ -473,7 +484,8 @@
   "miagani-trophy-10": {
     "title": "Trail from Wayne Tower",
     "steps": [
-      "Follow the scanner trail to Grand Avenue Station. Hack the shutter and shoot the target inside."
+      "Follow the scanner trail to Grand Avenue Station.",
+      "Hack the shutter and shoot the target inside."
     ]
   },
   "miagani-trophy-11": {
@@ -521,7 +533,8 @@
   "miagani-trophy-18": {
     "title": "The Gotham Pony",
     "steps": [
-      "Pull open the hatch and enter. Destroy the sentry with the remote-controlled Batmobile before leaving."
+      "Pull open the hatch and enter.",
+      "Destroy the sentry with the remote-controlled Batmobile before leaving."
     ]
   },
   "miagani-trophy-19": {
@@ -539,7 +552,8 @@
   "miagani-trophy-21": {
     "title": "Two sliders",
     "steps": [
-      "Upper winch: left, then right. Lower winch: right, then left. Collect the ball at the bottom."
+      "Use the upper winch anchor: move it left, then right.",
+      "Use the lower anchor: move it right, then left, and collect the ball at the bottom."
     ]
   },
   "miagani-trophy-22": {
@@ -551,7 +565,8 @@
   "miagani-trophy-23": {
     "title": "Gotham Herald robots",
     "steps": [
-      "Only attack green robots; the question mark swaps their colors. Defeat them all, then use the Batclaw."
+      "Only attack green robots; the question-mark switch swaps their colors.",
+      "Defeat them all, then collect the trophy with the Batclaw."
     ]
   },
   "miagani-trophy-24": {
@@ -569,7 +584,8 @@
   "miagani-trophy-26": {
     "title": "Four switches",
     "steps": [
-      "Robot on the lower pad; gel on the two support switches. Batman on the other pad: Batarang the other two and detonate within three seconds."
+      "Put the robot on the lower pressure pad and place Explosive Gel on the two switches on the bridge support.",
+      "Put Batman on the other pad, hit the other two switches with Batarangs and detonate the gel within three seconds."
     ]
   },
   "miagani-trophy-27": {
@@ -581,7 +597,8 @@
   "miagani-trophy-28": {
     "title": "Orphanage column",
     "steps": [
-      "Pull the top anchor and repel the upper generator. Pull the middle anchor, activate the second generator, then pull the bottom anchor."
+      "Pull the top anchor and repel the upper generator.",
+      "Pull the middle anchor, activate the second generator, then pull the bottom anchor."
     ]
   },
   "miagani-trophy-29": {
@@ -593,7 +610,8 @@
   "miagani-trophy-30": {
     "title": "Orphanage targets",
     "steps": [
-      "Batmobile on the pad: shoot each illuminated target and use a Missile Barrage for the final sequence."
+      "Park the Batmobile on the pressure pad and shoot each illuminated target.",
+      "Use a Missile Barrage for the final sequence."
     ]
   },
   "miagani-trophy-31": {
@@ -629,7 +647,8 @@
   "miagani-trophy-36": {
     "title": "Three dock pads",
     "steps": [
-      "Put the two robots on two pads and Batman on the third, then use the Batclaw."
+      "Put the two robots on two pressure pads and Batman on the third.",
+      "Collect the trophy with the Batclaw."
     ]
   },
   "miagani-trophy-37": {
@@ -854,7 +873,8 @@
   "founders-trophy-04": {
     "title": "Pressure-pad floor",
     "steps": [
-      "Open with the winch and stand on the green pad. Release the anchor, then cross with the Line Launcher without touching red pads."
+      "Open the entrance with the Power Winch and stand on the green pad.",
+      "Release the anchor, then cross with the Line Launcher without touching the red pressure pads."
     ]
   },
   "founders-trophy-05": {
@@ -866,7 +886,8 @@
   "founders-trophy-06": {
     "title": "Race to Killinger’s",
     "steps": [
-      "Activate the pad at 2147, 1492, then drive down into the slums before time runs out."
+      "Activate the pressure pad at 2147, 1492.",
+      "Drive down into the slums in the Batmobile before time runs out."
     ]
   },
   "founders-trophy-07": {
@@ -890,13 +911,15 @@
   "founders-trophy-10": {
     "title": "Sentry behind the shutter",
     "steps": [
-      "Open using the generator and shield the sentry with the question mark. Collect the trophy, release the sentry against the robots, then close it again."
+      "Open the door using the generator, then use the question-mark switch to close the shutter in front of the sentry.",
+      "Collect the trophy, reopen the sentry shutter so it destroys the robots, then close it again to leave safely."
     ]
   },
   "founders-trophy-11": {
     "title": "Slum robots",
     "steps": [
-      "Order a robot onto the pad. Enter, use gel on the wall, crawl through the vent and defeat the robots."
+      "Order a robot onto the pressure pad.",
+      "Enter, destroy the weak wall with Explosive Gel, crawl through the vent and defeat the robots."
     ]
   },
   "founders-trophy-12": {
@@ -908,7 +931,8 @@
   "founders-trophy-13": {
     "title": "Slum scanner trail",
     "steps": [
-      "Scan and follow the question marks. At the fan, surface through the matching manhole, continue the trail and destroy the target."
+      "Scan the panel and follow the question marks.",
+      "At the fan, surface through the corresponding manhole, continue following the trail and destroy the final target."
     ]
   },
   "founders-trophy-14": {
@@ -926,7 +950,8 @@
   "founders-trophy-16": {
     "title": "LexCorp balcony",
     "steps": [
-      "Robot on one pad, Batman on the other. Use smoke and the Batclaw before the robot attacks."
+      "Put the robot on one pad and Batman on the other.",
+      "Use a Smoke Pellet and collect the trophy with the Batclaw before the robot attacks."
     ]
   },
   "founders-trophy-17": {
@@ -938,7 +963,8 @@
   "founders-trophy-18": {
     "title": "Spiked door",
     "steps": [
-      "Open with the winch, stand on the pad and use the Batclaw. Immediately remote-control the Batmobile to pull back the door."
+      "Open with the Power Winch, stand on the pressure pad and collect the trophy with the Batclaw.",
+      "Immediately remote-control the Batmobile to pull the spiked door back."
     ]
   },
   "founders-trophy-19": {
@@ -956,7 +982,8 @@
   "founders-trophy-21": {
     "title": "Scanner trail and jump",
     "steps": [
-      "Follow the scanner trail, pull the ramp and jump with the Batmobile, then shoot the final target."
+      "Follow the scanner trail, pull the ramp into position and jump with the Batmobile.",
+      "Shoot the final target."
     ]
   },
   "founders-trophy-22": {
@@ -968,13 +995,15 @@
   "founders-trophy-23": {
     "title": "Race from GCPD",
     "steps": [
-      "Activate the generator at 2456, 2663. Accelerate along the waterfront, eject toward the statue and glide to the rail."
+      "Activate the generator at 2456, 2663.",
+      "Accelerate along the waterfront, eject toward the statue and glide to the rail."
     ]
   },
   "founders-trophy-24": {
     "title": "Robot on an electric floor",
     "steps": [
-      "Blind the sentry and order the robot to fetch the trophy and return, then defeat it."
+      "Blind the sentry and order the robot to fetch the trophy and return to you.",
+      "Defeat the robot to collect the trophy."
     ]
   },
   "founders-trophy-25": {
@@ -986,7 +1015,9 @@
   "founders-trophy-26": {
     "title": "Magnetic ball",
     "steps": [
-      "Upper generator left, right generator up: attract both and pull the upper one right. Attract right, then upper. At the bottom, attract upper and repel right."
+      "Move the upper generator fully left and the right-hand generator fully up. Attract with both generators, then pull the upper generator right to move the ball into the safe section.",
+      "With the upper generator fully right, attract with the right-hand generator first, then the upper generator to move the ball through the opening.",
+      "At the bottom, position the upper generator above the ball and attract it, then repel with the right-hand generator to send the ball to the exit."
     ]
   },
   "founders-trophy-27": {
@@ -1016,13 +1047,15 @@
   "founders-trophy-31": {
     "title": "Race to Port Adams",
     "steps": [
-      "Start at the pad at 3253, 2136 on Miagani. Glide to the port and use the Batclaw before time runs out."
+      "Start at the pressure pad at 3253, 2136 on Miagani Island.",
+      "Glide to Port Adams and collect the trophy with the Batclaw before time runs out."
     ]
   },
   "founders-trophy-32": {
     "title": "Three container bars",
     "steps": [
-      "Quickly pull out all three bars with the winch, then guide a Remote Controlled Batarang through the holes to the switch."
+      "Quickly pull out all three bars with the Power Winch.",
+      "Guide a Remote Controlled Batarang through the holes to the question-mark switch."
     ]
   },
   "founders-trophy-33": {
@@ -1088,7 +1121,8 @@
   "founders-riddle-10": {
     "title": "The Dark Knight’s steed",
     "steps": [
-      "Get out of the Batmobile and scan it. This riddle can be solved anywhere."
+      "Get out of the Batmobile and scan it.",
+      "This riddle can be solved anywhere."
     ]
   },
   "founders-breakable-01": {
@@ -1213,7 +1247,8 @@
   "subway-trophy-08": {
     "title": "Left branch",
     "steps": [
-      "Break through the left-hand wall and climb the ramp. Look right at the platform edge."
+      "Break through the left-hand wall and climb the ramp.",
+      "Look right at the platform edge."
     ]
   },
   "subway-breakable-01": {
@@ -1295,7 +1330,8 @@
   "stagg-trophy-09": {
     "title": "Alpha falling crate",
     "steps": [
-      "Apply gel to the ceiling above the table. Tilt to drop the crate, then tilt again to smash the window."
+      "Place Explosive Gel on the weak ceiling above the table.",
+      "Detonate the gel and tilt the airship to drop the crate, then tilt again so the crate breaks through the glass."
     ]
   },
   "stagg-trophy-10": {
@@ -1307,7 +1343,8 @@
   "stagg-trophy-11": {
     "title": "Alpha two pads",
     "steps": [
-      "Hack the panel and lead the monkey onto both pads, changing the barriers with the question mark."
+      "Hack the control panel.",
+      "Lead the monkey onto both pressure pads, using the question-mark switch to move the barriers."
     ]
   },
   "stagg-trophy-12": {
@@ -1319,7 +1356,8 @@
   "stagg-trophy-13": {
     "title": "Beta monkeys below the door",
     "steps": [
-      "Hack, move right and hit the question mark. When both monkeys stand on the pads, lock them there with the switch."
+      "Hack the panel, move to the right and activate the question-mark switch.",
+      "When both monkeys stand on the pressure pads, hit the switch again to lock them in place."
     ]
   },
   "stagg-trophy-14": {
@@ -1355,19 +1393,23 @@
   "stagg-trophy-19": {
     "title": "Beta crates and hatches",
     "steps": [
-      "Gel the southern wall, unlock the crates and tilt left. Climb through two hatches. Tilt right, lock the crate beside the grate, tilt back and drop down."
+      "Use Explosive Gel on the weak wall at the south end of Subject Testing.",
+      "Unlock the crates and tilt the airship left, then climb through the two hatches.",
+      "Tilt right to stack the crates on that side, lock the crate nearest the floor grate, then tilt back to uncover the grate and drop down to the trophy."
     ]
   },
   "stagg-trophy-20": {
     "title": "Beta exterior crate",
     "steps": [
-      "Open the voice lock opposite the sentries. Tilt right, then send the crate through the window; collect the trophy on the platform below."
+      "Open the voice-locked panel opposite the sentry guns.",
+      "Tilt right to release the crate, then send it through the window. Collect the trophy on the platform below the airship."
     ]
   },
   "stagg-trophy-21": {
     "title": "Beta airlock",
     "steps": [
-      "Open with the button and stand on the pad. Guide a Batarang to Alpha’s rightmost question mark as it lights up."
+      "Open the airlock with the button and stand on the pressure pad.",
+      "Guide a Remote Controlled Batarang to Alpha’s rightmost question mark and hit it when it lights up."
     ]
   },
   "stagg-riddle-01": {
@@ -1520,13 +1562,15 @@
   "panessa-trophy-05": {
     "title": "Rotating statue",
     "steps": [
-      "The question mark changes direction; the Electrical Charge starts or stops rotation. Stop at A, B and C without crossing Reset."
+      "Use the question-mark switch to change direction and the Remote Electrical Charge to start or stop the statue.",
+      "Stop on the Stage A, B and C sectors without crossing Reset."
     ]
   },
   "panessa-trophy-06": {
     "title": "Three electrified pads",
     "steps": [
-      "Open using the generator. From the first pad, use the Line Launcher and turn to reach the second. Head back toward the trophy and turn to the third."
+      "Open the door using the generator.",
+      "From the first pad, use the Line Launcher and change direction to reach the second. Head back toward the trophy, then change direction again to reach the third pad."
     ]
   },
   "panessa-trophy-07": {
@@ -1544,7 +1588,8 @@
   "panessa-trophy-09": {
     "title": "Stage A sentries",
     "steps": [
-      "Blind one sentry and disable the other from behind, then reapply the hack and disable the second."
+      "Blind one sentry and disable the other from behind.",
+      "Reapply the hack and disable the second sentry."
     ]
   },
   "panessa-trophy-10": {
@@ -1556,7 +1601,8 @@
   "panessa-trophy-11": {
     "title": "Steam above the set",
     "steps": [
-      "Climb to the hatch, cross with the Line Launcher and walk on the wire. Freeze both vents and grapple up."
+      "Climb to the hatch, cross with the Line Launcher and stand on the wire.",
+      "Freeze both steam vents, then grapple up."
     ]
   },
   "panessa-trophy-12": {
@@ -1568,7 +1614,8 @@
   "panessa-trophy-13": {
     "title": "Explosive counterweight",
     "steps": [
-      "Lower the weight and place gel facing the wall. Raise it and detonate beside the weak wall."
+      "Lower the counterweight and place Explosive Gel on the side facing the weak wall.",
+      "Raise the weight and detonate the gel as it passes the weak wall."
     ]
   },
   "panessa-trophy-14": {
@@ -1586,13 +1633,16 @@
   "panessa-trophy-16": {
     "title": "Sabotaged weapons crate",
     "steps": [
-      "Freeze the vent and climb up. Sabotage the crate with the Disruptor and order the robot to open it."
+      "Freeze the steam vent and climb up.",
+      "Sabotage the weapons crate with the Disruptor, then order the robot to open it."
     ]
   },
   "panessa-trophy-17": {
     "title": "Three vent throws",
     "steps": [
-      "Gel the wall and step on the pad. First Batarang: right, left. Second: right to the new switch. Third, electrified: right, right, then the fuse above the trophy."
+      "Use Explosive Gel to destroy the weak wall beside the Stage C entrance.",
+      "Stand on the pressure pad. Guide the first Batarang right, then left to the first switch. Guide the second right again to the newly exposed switch.",
+      "Guide the third Batarang right through the electricity, then right again into the trophy room. Hit the fuse box above the trophy."
     ]
   },
   "panessa-trophy-18": {
@@ -1610,7 +1660,8 @@
   "panessa-trophy-20": {
     "title": "Color memory",
     "steps": [
-      "Follow the letters’ color. Sequences: blue-green-red-yellow; yellow-green-blue-blue-yellow-red; green-blue-yellow-red-blue-red-yellow-green."
+      "Follow the color of the letters, not the color named by the word.",
+      "Sequences: blue-green-red-yellow; yellow-green-blue-blue-yellow-red; green-blue-yellow-red-blue-red-yellow-green."
     ]
   },
   "panessa-trophy-21": {
@@ -1745,7 +1796,8 @@
   "hq-trophy-01": {
     "title": "Ball track",
     "steps": [
-      "Lower the Batmobile with the winch. Shoot the question marks to block the holes: first one ball, then two together."
+      "Lower the Batmobile into the shaft using the Power Winch.",
+      "Shoot the question-mark switches to block the holes: guide one ball down, then two together."
     ]
   },
   "hq-trophy-02": {
@@ -1769,7 +1821,8 @@
   "hq-trophy-05": {
     "title": "Three wheels",
     "steps": [
-      "Hack the wheels; a Batarang changes direction. Start with all buckets at the top: rotate the first left, second right and third left."
+      "Hack the wheels to rotate them; use a Batarang on the switch to change direction.",
+      "Start with all collecting buckets at the top. Rotate the first wheel left, the second right and the third left."
     ]
   },
   "hq-trophy-06": {
@@ -1799,7 +1852,9 @@
   "hq-trophy-10": {
     "title": "Sentry and fuse box",
     "steps": [
-      "Blind the sentry and step on the pad. First Batarang: vent, left, end, right to the switch. Blind again, electrify the second Batarang and hit the fuse."
+      "Blind the sentry and stand on the pressure pad.",
+      "Guide the first Batarang into the vent, take the first left, continue to the end and turn right to hit the question mark.",
+      "Blind the sentry again. Electrify the second Batarang and guide it into the fuse box."
     ]
   },
   "hq-trophy-11": {
@@ -1811,7 +1866,8 @@
   "hq-trophy-12": {
     "title": "Under the elevator",
     "steps": [
-      "From the bottom, climb above the blocked Excavator entrance. Send the elevator up and drop into the shaft."
+      "From the bottom of the shaft, climb above the blocked Excavator entrance.",
+      "Send the elevator upward and drop into the shaft beneath it."
     ]
   },
   "hq-trophy-13": {
@@ -1823,7 +1879,10 @@
   "hq-trophy-14": {
     "title": "Two balls, two colors",
     "steps": [
-      "Hack the southern door in the east room. Align the first pipes before starting. Right ball enters first green: rotate green. Left leaves first red: rotate red. Right reaches lower pipe: green. Left enters second red: red. Right leaves second green: green. Right enters third green: green. Left enters third red: red."
+      "Hack the door along the southern wall of the eastern room.",
+      "Align both first pipe sections before starting the generator.",
+      "When the right ball enters the first green pipe, rotate the green pipes. When the left ball leaves the first red pipe, rotate the red pipes.",
+      "Right ball reaches the lower pipe: rotate green; left ball enters the second red pipe: rotate red; right ball leaves the second green pipe: rotate green; right ball reaches the third green pipe: rotate green; left ball reaches the third red pipe: rotate red."
     ]
   },
   "hq-trophy-15": {
@@ -1835,7 +1894,8 @@
   "hq-trophy-16": {
     "title": "Robot and two sentries",
     "steps": [
-      "Hack the upper eastern door. Blind right, order the robot to disable left, blind right again, step on the pad and use the Batclaw."
+      "Hack the upper-level entrance on the eastern wall.",
+      "Blind the right sentry and order the robot to disable the left one. Blind the right one again, step on the pad and use the Batclaw."
     ]
   },
   "hq-trophy-17": {
