@@ -12,7 +12,7 @@ npm run build
 
 Publish `dist/` at the root of an HTTPS origin. Cloudflare Pages is a suitable option: build command `npm run build`, output directory `dist`, repository root as the working directory. The project was checked locally with Node 24; use a compatible Node version in the host's build environment.
 
-The current implementation is on `ui/black-game-map`; `main` still contains the original UI. Select the current branch explicitly, or merge it into the intended production branch first. No deployment workflow or online publication has been configured here.
+The current implementation is on `main`. The initial UI and in-game screenshot variant have been removed from local Git history, along with the old branch/tag used for rollback. Later vector-map revisions were retained with rewritten commit hashes. No deployment workflow or online publication has been configured here.
 
 Do not serve the Vite development server publicly. `npm run preview` is for checking the build locally, not a production server.
 
@@ -24,7 +24,7 @@ Current assets use root-relative URLs, including `/maps/`, `/batman-logo.svg` an
 
 - Review [known content limitations](content-audit.md); keep the beta status explicit until markers and complex solutions have been checked in game.
 - Confirm redistribution rights for the two supplied background images and Batman logo. The project's 0BSD license does not grant rights to third-party assets or dependencies.
-- Review Git history as well as the working tree: a previous commit contains the removed `public/maps/gotham-game.jpg`. `.gitignore` does not remove tracked files or historical assets. History has been preserved for rollback and has not been rewritten.
+- The local history was cleaned before publication: the original city screenshot, its SVG wrapper and the initial UI revisions are no longer retained. This was a history rewrite, not a `.gitignore` change. Review any future additions and their provenance before publishing.
 - Confirm that no personal exports, local environment files or credentials are included. `.gitignore` helps with future additions but is not a secrets audit.
 - On the final HTTPS URL, check map/logo loading, mobile layout, language persistence, progress, transfer codes and JSON import/export. Export local progress first: localhost and the hosted domain have separate localStorage.
 

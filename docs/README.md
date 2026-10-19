@@ -4,6 +4,8 @@ Enigmap is a static, unofficial Batman: Arkham Knight collectible tracker: 315 i
 
 ## Useful documents
 
+- [Technologies explained, in Italian](technologies-explained.md): every package, command and browser technology, with project examples and blog/LinkedIn topics.
+
 - [Content audit](content-audit.md): inventory, sources, known inconsistencies and remaining map verification. Read before calling the guide fully verified.
 - [Transfer code](transfer-code.md): permanent ID ordering, bit layout, checksum and compatibility rules. Required reading before changing the code format.
 - [Import security review](import-security-review.md): boundaries and tests for JSON imports and transfer codes; not a complete security audit.

@@ -1,6 +1,6 @@
 > Documento storico: conserva il piano iniziale, non la specifica corrente. Per lo stato attuale e i documenti di manutenzione vedere [l’indice](README.md).
 >
-> Scelte successive: inglese predefinito e italiano selezionabile; nessun sottotitolo; prove Catwoman escluse; cartografia vettoriale nera/antracite, zoom meno sensibile e nessun elenco dei punti. Progressi trasferibili manualmente con codice (spunte e lingua) o JSON (solo spunte); tutorial esteso a entrambi i metodi. La versione precedente resta nel tag `before-ui-revision`. I requisiti di accuratezza non ancora soddisfatti sono elencati nella [verifica dei contenuti](content-audit.md).
+> Scelte successive: inglese predefinito e italiano selezionabile; nessun sottotitolo; prove Catwoman escluse; cartografia vettoriale nera/antracite, zoom meno sensibile e nessun elenco dei punti. Progressi trasferibili manualmente con codice (spunte e lingua) o JSON (solo spunte); tutorial esteso a entrambi i metodi. Su richiesta la vecchia UI iniziale, la variante con screenshot e i riferimenti di rollback sono stati eliminati dallo storico; la versione corrente è ora sul ramo `main`. I requisiti di accuratezza non ancora soddisfatti sono elencati nella [verifica dei contenuti](content-audit.md).
 
 # Enigmap — documento di progetto
 

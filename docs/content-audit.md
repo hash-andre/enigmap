@@ -46,6 +46,6 @@ Anteprima locale disponibile per revisione; nessun deploy eseguito. Una prima pu
 
 ## Stato attuale
 
-Interfaccia inglese/italiana, cartografia vettoriale nera/antracite, nessun elenco e nessuna prova Catwoman. Le immagini di sfondo fornite per desktop e telefono sono separate dalla cartografia e richiedono conferma dei diritti di riuso prima della pubblicazione. La variante cartografica raster resta solo nello storico Git.
+Interfaccia inglese/italiana, cartografia vettoriale nera/antracite, nessun elenco e nessuna prova Catwoman. Le immagini di sfondo fornite per desktop e telefono sono separate dalla cartografia e richiedono conferma dei diritti di riuso prima della pubblicazione. La vecchia UI iniziale e la variante con screenshot della città originale sono state eliminate anche dallo storico Git, inclusi screenshot e wrapper SVG. Gli sfondi desktop/mobile attuali sono asset separati e sono stati mantenuti.
 
 Salvataggi locali con ID stabili. Il JSON trasferisce e unisce le spunte; il codice trasferisce e unisce le spunte e applica anche la lingua. Nessuna sincronizzazione automatica. Le traduzioni conservano la lista numerata dei passaggi originali; la corrispondenza del numero di passaggi è verificata su tutte le 315 schede.
