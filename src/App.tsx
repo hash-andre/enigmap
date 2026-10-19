@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, ChevronRight, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, ShieldCheck, SlidersHorizontal, Languages, X } from 'lucide-react';
+import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, ChevronRight, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, SlidersHorizontal, Languages, X } from 'lucide-react';
 import { points as originalPoints, categories as originalCategories } from './data';
 import { useLanguage, useTranslatedData, pointSearchIndex } from './i18n';
 import type { Area, Category, MapId, Point } from './types';
@@ -101,7 +101,6 @@ export default function App() {
           <label className="pending-filter"><span>{t('Da completare')}</span><input type="checkbox" checked={pendingOnly} onChange={e => setPendingOnly(e.target.checked)} /><span className="switch" aria-hidden="true" /></label>
           <div className="filter-result"><span className="live-dot" />{t('{count} punti su questa mappa', { count: onMap.length })}<button title={t('Azzera filtri')} onClick={() => { setCategory('all'); setPendingOnly(false); setQuery(''); chooseArea('all'); }} aria-label={t('Azzera filtri')}><SlidersHorizontal size={14} /></button></div>
         </div>
-        <div className="sidebar-foot"><ShieldCheck size={16} /><span>{t('I tuoi progressi restano qui.')}<br /><span>{t('Nessun account necessario.')}</span></span></div>
       </aside>
       <main className="main">
         <div className="map-toolbar"><div className="map-selection"><Layers size={17} /><select id="map-selector" aria-label={t('Seleziona mappa o piano')} value={mapId} onChange={e => chooseMap(e.target.value as MapId)}>{maps.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}</select><ChevronDown size={15} /></div><div className="toolbar-right"><button className="mobile-filter-button" onClick={() => setFiltersOpen(true)} aria-label={t('Apri filtri')}><SlidersHorizontal size={16} /><span>{t('Filtri')}</span></button></div></div>
