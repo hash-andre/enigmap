@@ -14,3 +14,8 @@
 .roaming-riddle:hover{background:#232623;color:#d5ebb9}
 .other-results{bottom:91px}
 @media(max-width:760px){.roaming-riddle{left:12px;bottom:44px;padding:9px;font-size:10px}.other-results{left:12px;bottom:88px}}
+
+.game-identity{display:flex;align-items:center;gap:12px}
+.batman-logo{display:block;width:46px;height:28px;object-fit:contain}
+.map-bottomline{justify-content:flex-end}
+@media(max-width:760px){.game-identity{display:none}}

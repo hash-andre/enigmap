@@ -75,8 +75,8 @@ export default function App() {
 
   return <div className="app">
     <header className="header">
-      <a className="brand" href="/" aria-label="Enigmap, pagina iniziale"><span className="brand-mark">?</span><span><span className="wordmark">Enigmap<span className="brand-period">.</span></span><span className="tagline">Ogni enigma. Un passo più vicino.</span></span></a>
-      <div className="header-right"><span className="game-name">BATMAN<span>ARKHAM KNIGHT</span></span><span className="header-divider" /><button className="tutorial-button" onClick={() => setTutorial(true)}><HelpCircle size={17} /><span>Come funziona</span></button></div>
+      <a className="brand" href="/" aria-label="Enigmap, pagina iniziale"><span className="brand-mark">?</span><span><span className="wordmark">Enigmap</span></span></a>
+      <div className="header-right"><span className="game-identity"><img className="batman-logo" src="/batman-logo.svg" alt="" /><span className="game-name">BATMAN<span>ARKHAM KNIGHT</span></span></span><span className="header-divider" /><button className="tutorial-button" onClick={() => setTutorial(true)}><HelpCircle size={17} /><span>Come funziona</span></button></div>
     </header>
     <div className="workspace">
       <aside className={`sidebar ${filtersOpen ? 'sidebar-open' : ''}`} aria-label="Filtri e progressi">
