@@ -1,9 +1,35 @@
+# Dependencies, builds and caches
 node_modules/
-dist/
+/dist/
+.vite/
 *.tsbuildinfo
-.env*
-test-results/
-playwright-report/
-
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Local environment; keep a shareable template if added
+.env
+.env.*
+!.env.example
+
+# Test output and local deployment state
+/test-results/
+/playwright-report/
+/coverage/
+/test-artifacts/
+.vercel/
+.netlify/
+.wrangler/
+
+# Logs and editor/OS files
+*.log
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Personal progress exports accidentally saved in the project root
+/enigmap-progress-*.json
+/enigmap-progressi-*.json

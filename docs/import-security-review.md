@@ -1,6 +1,6 @@
 # Revisione importazione progressi
 
-L’importazione riguarda esclusivamente i progressi Enigmap, non un ripristino generico del localStorage. Il file non può cambiare lingua, catalogo, coordinate, soluzioni, URL o chiavi di salvataggio.
+Questa verifica riguarda il JSON dei progressi, non un ripristino generico del localStorage. Il file JSON non può cambiare lingua, catalogo, coordinate, soluzioni, URL o chiavi di salvataggio. Il codice di trasferimento è un percorso separato: unisce le spunte e applica anche la lingua, come descritto sotto.
 
 ## Esito
 
@@ -19,6 +19,12 @@ Non sono necessarie librerie aggiuntive di sanitizzazione: i dati importati util
 ## Verifiche
 
 Test automatici per JSON malformati, versione errata, tipi annidati, array e stringhe eccessivi, limite prima della lettura, payload HTML/JavaScript e chiavi di prototype pollution. Test browser con payload malevolo, conservazione dei progressi dopo file troppo grande e ricaricamento. Verificati anche desktop, mobile, traduzioni, modal e salvataggio negato. `npm audit --omit=dev` non ha segnalato vulnerabilità nelle dipendenze di produzione al momento della revisione.
+
+## Codice di trasferimento
+
+Il codice è limitato a 256 caratteri in ingresso e deve contenere 63 caratteri dopo il trim esterno, prefisso `EN1-`, Base64url canonico, bit riservati a zero e CRC-32 valido. La decodifica produce solo gli ID del manifesto congelato e una delle due lingue. Nessun JSON o HTML viene interpretato tramite questo percorso. Un codice rifiutato non cambia spunte o lingua.
+
+Il checksum rileva errori accidentali: non autentica l’autore e non cifra i progressi. I test coprono corruzione, versioni sconosciute, importazioni ripetute e persistenza fra sessioni isolate. Dettagli e compatibilità in [Transfer code v1](transfer-code.md).
 
 ## Limiti
 

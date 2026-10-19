@@ -19,4 +19,6 @@ npm run dev
 
 Open http://localhost:5173. Build with `npm run build`.
 
+[Project and deployment notes](docs/README.md).
+
 [0BSD license](LICENSE). Third-party assets and trademarks remain subject to their owners’ rights. Unofficial fan project.

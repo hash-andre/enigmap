@@ -34,7 +34,7 @@ Le istruzioni italiane sono redatte come note operative brevi; le guide original
 
 ## Limiti cartografici ancora da verificare
 
-Le mappe sono vettoriali, ricostruite manualmente dai riferimenti. La calibrazione affine delle isole usa alcuni punti noti e non garantisce precisione uniforme su tutte le immagini, che possono avere orientamento e proiezione diversi. Coste e strade sono semplificate. Port Adams è parte della costa digitalizzata: non è stata aggiunta un’isola separata. I marker dei dirigibili e della metropolitana derivano dai riferimenti visivi mediante la stessa calibrazione; gli accessi ai complessi e alle prove indicano il luogo, non una coordinata verificata della porta. I punti interni sono digitalizzati sui riferimenti visivi e possono indicare la stanza anziché il centimetro esatto.
+Le mappe sono vettoriali, ricostruite manualmente dai riferimenti. La calibrazione affine delle isole usa alcuni punti noti e non garantisce precisione uniforme su tutte le immagini, che possono avere orientamento e proiezione diversi. Coste e strade sono semplificate. Port Adams è parte della costa digitalizzata: non è stata aggiunta un’isola separata. I marker dei dirigibili e della metropolitana derivano dai riferimenti visivi mediante la stessa calibrazione; gli accessi ai complessi indicano il luogo, non una coordinata verificata della porta. I punti interni sono digitalizzati sui riferimenti visivi e possono indicare la stanza anziché il centimetro esatto.
 
 Prima di considerare soddisfatto il requisito «nessuna coordinata inventata / tutte le posizioni verificate», occorre controllare la trasformazione delle isole su una cartografia di gioco orientata coerentemente, verificare gli ingressi e confrontare ogni marker con le schermate del gioco. Non è stato effettuato un controllo diretto nel gioco. Le soluzioni complesse richiedono una revisione finale durante tale controllo.
 
@@ -42,10 +42,10 @@ Il contatore principale resta volutamente quello degli elementi fisici. Non sono
 
 ## Pubblicazione
 
-Anteprima locale disponibile per revisione. Nessuna pubblicazione online della versione dichiarata completa finché i limiti cartografici sopra indicati non saranno risolti.
+Anteprima locale disponibile per revisione; nessun deploy eseguito. Una prima pubblicazione può essere presentata come beta con limiti espliciti, non come guida interamente verificata. La versione dichiarata completa richiede la risoluzione dei limiti cartografici sopra indicati. Per configurazione e controlli vedere [Deploy](deployment.md).
 
-## Revisione attuale: ritorno alla cartografia vettoriale
+## Stato attuale
 
-Su richiesta è stato annullato soltanto il cambio di cartografia: tutte le mappe attive sono di nuovo vettoriali. La palette è ora nera/antracite, con strade e sagome grigie e accenti verdi sui controlli interattivi. La variante con screenshot resta nello storico Git al commit `3349de9`, senza asset raster attivi nel progetto.
+Interfaccia inglese/italiana, cartografia vettoriale nera/antracite, nessun elenco e nessuna prova Catwoman. Le immagini di sfondo fornite per desktop e telefono sono separate dalla cartografia e richiedono conferma dei diritti di riuso prima della pubblicazione. La variante cartografica raster resta solo nello storico Git.
 
-Restano la rotella meno sensibile, la rimozione dell’elenco e l’esclusione delle prove Catwoman. Catalogo e progressi non sono stati modificati. I limiti di precisione della cartografia ricostruita descritti sopra continuano ad applicarsi.
+Salvataggi locali con ID stabili. Il JSON trasferisce e unisce le spunte; il codice trasferisce e unisce le spunte e applica anche la lingua. Nessuna sincronizzazione automatica. Le traduzioni conservano la lista numerata dei passaggi originali; la corrispondenza del numero di passaggi è verificata su tutte le 315 schede.
