@@ -34,7 +34,7 @@ defs='''<defs><pattern id="grid" width="100" height="100" patternUnits="userSpac
 style='''<style>.land{fill:#20242a;stroke:#4a505a;stroke-width:2}.shore{fill:none;stroke:#30353d;stroke-width:15;opacity:.55}.road{fill:none;stroke:#525964;stroke-width:13;stroke-linecap:round;stroke-linejoin:round}.roadline{fill:none;stroke:#969da6;stroke-width:1;opacity:.3}.minor{fill:none;stroke:#363c44;stroke-width:5;stroke-linecap:round}.room{fill:#1b2026;stroke:#68717c;stroke-width:2.5;stroke-linejoin:round}.detail{fill:none;stroke:#454d58;stroke-width:1.5}.label{font-family:Arial,sans-serif;fill:#bdc4cd;font-size:20px;letter-spacing:4px;text-anchor:middle}.small{font-family:Arial,sans-serif;fill:#858f9d;font-size:12px;letter-spacing:2px;text-anchor:middle}</style>'''
 
 def svg(view,body):
- return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{view}">{defs}{style}<rect x="-10000" y="-10000" width="20000" height="20000" fill="#0b0d10"/><rect x="-10000" y="-10000" width="20000" height="20000" fill="url(#grid)"/>{body}</svg>'
+ return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{view}">{defs}{style}{body}</svg>'
 
 def land(path):return f'<path d="{path}" class="shore"/><path d="{path}" class="land"/>'
 def road(path):return f'<path d="{path}" class="road"/><path d="{path}" class="roadline"/>'

@@ -8,7 +8,7 @@
 
 /* Black/charcoal surfaces; green remains an accent for actionable markers. */
 :root{--panel:#141414;--line:#292b28;background:#090909}
-.leaflet-map,.mini-map .leaflet-container{background:#080a0b!important}
+.map-stage,.leaflet-map,.mini-map .leaflet-container{background:#0b0d10!important}
 .map-cartography{filter:none}
 .roaming-riddle{position:absolute;left:18px;bottom:45px;z-index:550;display:flex;align-items:center;gap:8px;background:#151719ed;border:1px solid #41483a;border-radius:6px;color:#b7cba0;padding:10px 12px;font-size:11px;box-shadow:0 4px 12px #0005}
 .roaming-riddle:hover{background:#232623;color:#d5ebb9}
