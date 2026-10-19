@@ -1,7 +1,7 @@
-import { useRef, useState } from 'react';
+import { useMemo, useRef, useState, type FormEvent } from 'react';
 import { Copy } from 'lucide-react';
 import { useLanguage } from '../i18n';
-import { decodeTransferCode, encodeTransferCode } from '../transfer';
+import { decodeTransferCode, encodeTransferCode, MAX_TRANSFER_INPUT_LENGTH } from '../transfer';
 import type { Language } from '../translations';
 import Dialog from './Dialog';
 
@@ -17,27 +17,29 @@ export default function TransferDialog({ completed, onImport, onClose }: Transfe
   const [error, setError] = useState('');
   const [copyNotice, setCopyNotice] = useState('');
   const output = useRef<HTMLTextAreaElement>(null);
-  const code = encodeTransferCode(completed, language);
+  const code = useMemo(() => encodeTransferCode(completed, language), [completed, language]);
 
   async function copy() {
     try {
       await navigator.clipboard.writeText(code);
-      setCopyNotice(t('Codice copiato.'));
+      setCopyNotice('Codice copiato.');
     } catch {
       output.current?.focus();
       output.current?.select();
-      setCopyNotice(t('Seleziona e copia il codice manualmente.'));
+      setCopyNotice('Seleziona e copia il codice manualmente.');
     }
   }
 
-  function importCode(event: React.FormEvent) {
+  function importCode(event: FormEvent) {
     event.preventDefault();
+    let decoded: ReturnType<typeof decodeTransferCode>;
     try {
-      const decoded = decodeTransferCode(input);
-      onImport(decoded.ids, decoded.language);
+      decoded = decodeTransferCode(input);
     } catch (cause) {
-      setError(t(cause instanceof Error ? cause.message : 'Codice non valido o danneggiato.'));
+      setError(cause instanceof Error ? cause.message : 'Codice non valido o danneggiato.');
+      return;
     }
+    onImport(decoded.ids, decoded.language);
   }
 
   return <Dialog title={t('Trasferisci con codice')} className="transfer-dialog" onClose={onClose}>
@@ -46,11 +48,11 @@ export default function TransferDialog({ completed, onImport, onClose }: Transfe
     <label htmlFor="transfer-output">{t('Il tuo codice')}</label>
     <textarea id="transfer-output" ref={output} readOnly value={code} rows={3} spellCheck={false} onFocus={e => e.currentTarget.select()} />
     <button className="tutorial-button" onClick={() => void copy()}><Copy size={16} />{t('Copia codice')}</button>
-    {copyNotice && <p role="status">{copyNotice}</p>}
+    {copyNotice && <p role="status">{t(copyNotice)}</p>}
     <form onSubmit={importCode}>
       <label htmlFor="transfer-input">{t('Incolla un codice')}</label>
-      <textarea id="transfer-input" value={input} onChange={e => { setInput(e.target.value); setError(''); }} maxLength={256} rows={3} spellCheck={false} autoCapitalize="off" autoCorrect="off" aria-invalid={!!error} aria-describedby={error ? 'transfer-error' : undefined} />
-      {error && <p id="transfer-error" role="alert">{error}</p>}
+      <textarea id="transfer-input" value={input} onChange={e => { setInput(e.target.value); setError(''); }} maxLength={MAX_TRANSFER_INPUT_LENGTH} rows={3} spellCheck={false} autoCapitalize="off" autoCorrect="off" aria-invalid={!!error} aria-describedby={error ? 'transfer-error' : undefined} />
+      {error && <p id="transfer-error" role="alert">{t(error)}</p>}
       <button className="primary-button" type="submit" disabled={!input.trim()}>{t('Importa codice')}</button>
     </form>
   </Dialog>;

@@ -26,7 +26,7 @@ export const english: Record<string, string> = {
   'Filtri e progressi': 'Filters and progress', 'Esplora Gotham': 'Explore Gotham',
   'Chiudi filtri': 'Close filters', 'LA TUA INDAGINE': 'YOUR INVESTIGATION',
   'Gestisci progressi': 'Manage progress', 'Esporta progressi': 'Export progress', 'Importa progressi': 'Import progress',
-  'Salvati in questo browser.': 'Saved in this browser.', 'Trasferiscili con un file.': 'Transfer them with a file.',
+  'Salvati in questo browser.': 'Saved in this browser.',
   'Elementi completati': 'Items completed', 'Locale': 'Local',
   'Cerca un punto': 'Search for a point', 'Cerca un punto, un luogo…': 'Search for a point or place…',
   'AREA': 'AREA', 'Tutte le aree': 'All areas', 'CATEGORIE': 'CATEGORIES', 'Tutte': 'All',

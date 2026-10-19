@@ -3,6 +3,7 @@ import type { Language } from './translations';
 
 // Wire format v1: never reorder or regenerate this manifest from a changing catalog.
 export const TRANSFER_V1_IDS: readonly string[] = Object.freeze(frozenIds);
+export const MAX_TRANSFER_INPUT_LENGTH = 256;
 const PREFIX = 'EN1-';
 const PAYLOAD_BYTES = 40;
 const TOTAL_BYTES = 44;
@@ -32,7 +33,7 @@ export function encodeTransferCode(completed: ReadonlySet<string>, language: Lan
 }
 
 export function decodeTransferCode(input: string): { ids: Set<string>; language: Language } {
-  if (input.length > 256) throw new Error(INVALID);
+  if (input.length > MAX_TRANSFER_INPUT_LENGTH) throw new Error(INVALID);
   const code = input.trim();
   if (/^EN\d+-/.test(code) && !code.startsWith(PREFIX)) throw new Error('Versione del codice non supportata.');
   if (!/^EN1-[A-Za-z0-9_-]{59}$/.test(code)) throw new Error(INVALID);

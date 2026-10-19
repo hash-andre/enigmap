@@ -7,7 +7,8 @@ import type { Area, Category, MapId, Point } from './types';
 import { readProgressFile, serializeProgress } from './progress';
 import { useProgress, knownPointIds } from './hooks/useProgress';
 import MapView from './components/MapView';
-import Dialog from './components/Dialog';
+import TutorialDialog from './components/TutorialDialog';
+import SourcesDialog from './components/SourcesDialog';
 import PointDialog from './components/PointDialog';
 import TransferDialog from './components/TransferDialog';
 import { translate } from './translations';
@@ -45,7 +46,15 @@ export default function App() {
     return () => { document.removeEventListener('click', close); document.removeEventListener('keydown', escape); };
   }, [progressMenu]);
 
-  const visible = useMemo(() => points.filter(p => (area === 'all' || p.area === area) && (category === 'all' || p.category === category) && (!pendingOnly || !completed.has(p.id)) && (!query || `${pointSearchIndex.get(p.id)} ${p.number} ${p.gameCoordinates?.join(' ')} ${p.id}`.toLocaleLowerCase(language).includes(query.toLocaleLowerCase(language).trim()))), [area, category, pendingOnly, completed, query, language, points]);
+  const normalizedQuery = query.toLocaleLowerCase(language).trim();
+  const visible = useMemo(() => points.filter(point => {
+    if (area !== 'all' && point.area !== area) return false;
+    if (category !== 'all' && point.category !== category) return false;
+    if (pendingOnly && completed.has(point.id)) return false;
+    if (!normalizedQuery) return true;
+    const searchable = `${pointSearchIndex.get(point.id)} ${point.number} ${point.gameCoordinates?.join(' ')} ${point.id}`;
+    return searchable.toLocaleLowerCase(language).includes(normalizedQuery);
+  }), [area, category, pendingOnly, completed, normalizedQuery, language, points]);
   const onMap = useMemo(() => visible.filter(p => p.map === mapId && p.position), [visible, mapId]);
   const offMap = visible.filter(p => p.map !== mapId || !p.position);
   const physicalDone = points.filter(p => completed.has(p.id)).length;
@@ -115,7 +124,7 @@ export default function App() {
       setTransferOpen(false);
       setNotice(translate('{count} nuovi completamenti importati.', importedLanguage, { count: added }));
     }} />}
-    {tutorial && <Dialog title={t('Come funziona Enigmap')} className="tutorial-dialog" onClose={() => setTutorial(false)}><span className="tutorial-mark">?</span><div className="eyebrow">{t('TRE PASSI, ZERO MISTERI')}</div><h1>{t('La città è piena di domande.')}<br /><span>{t('Qui trovi le risposte.')}</span></h1><div className="tutorial-steps">{[{ Icon: MapIcon, title: 'Scegli un punto', text: 'Esplora la mappa o filtra per area e categoria.' }, { Icon: Search, title: 'Segui la soluzione', text: 'Apri la scheda: posizione, gadget e passaggi.' }, { Icon: Check, title: 'Spunta Completato', text: 'Il punto diventa grigio. I progressi restano nel browser.' }].map(({ Icon, title, text }, i) => <div key={i}><span><Icon size={21} /></span><div><h2>{t(title)}</h2><p>{t(text)}</p></div><small>0{i + 1}</small></div>)}</div><section className="tutorial-transfer"><h2>{t('La tua indagine · ⋯')}</h2><p>{t('Apri il menu ⋯ accanto ai progressi. Su telefono lo trovi nei Filtri.')}</p><h3>{t('Trasferisci con codice')}</h3><p>{t('Copia il codice e importalo sull’altro dispositivo: unisce le spunte e applica la lingua.')}</p><h3>{t('Esporta / Importa progressi')}</h3><p>{t('Esporta un file JSON come backup, poi importalo per aggiungere le spunte salvate. La lingua resta invariata.')}</p><p>{t('Il trasferimento è manuale: i dispositivi non si sincronizzano automaticamente.')}</p></section><button className="primary-button" onClick={() => setTutorial(false)}>{t('Inizia l’indagine')} <ArrowUpRight size={17} /></button></Dialog>}
-    {sourcesOpen && <Dialog title={t('Fonti e cartografia')} className="sources-dialog" onClose={() => setSourcesOpen(false)}><div className="eyebrow">{t('DIETRO LA MAPPA')}</div><h1>{t('Fonti e cartografia')}</h1><p>{t('315 elementi fisici, equivalenti a 243 sfide: 179 trofei, 40 enigmi, 6 rivoltosi e 90 distruttibili (18 sfide).')}</p><p>{t('Gotham e gli interni usano cartografia vettoriale ricostruita dai riferimenti del gioco. Le posizioni interne indicano stanza e piano; gli accessi ai complessi sono indicativi. Le note nelle schede segnalano coordinate discordanti.')}</p><p>{t('Le schede sono controllate sulle guide, senza verifica diretta in gioco. Gotham e i suoi personaggi appartengono ai rispettivi titolari; Enigmap è un progetto non ufficiale.')}</p><div className="source-links">{[['PowerPyx · inventario', 'https://www.powerpyx.com/guides/batman-arkham-knight-trophy-guide.html'], ['Gamer Guides · coordinate e procedure', 'https://www.gamerguides.com/batman-arkham-knight/guide/collectibles-guide/collectible-locations/'], ['GamesRadar · soluzioni e riferimenti', 'https://www.gamesradar.com/batman-arkham-knight-riddler-guide/'], ['GameFAQs · guida di confronto', 'https://gamefaqs.gamespot.com/ps4/768083-batman-arkham-knight/faqs/72018']].map(([name,url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{t(name)}<ArrowUpRight size={15} /></a>)}</div><p className="privacy-note">{t('I progressi sono salvati solo in questo browser. Dal menu ⋯ puoi esportarli e importarli su un altro dispositivo. La cancellazione dei dati del browser rimuove il salvataggio locale.')}</p></Dialog>}
+    {tutorial && <TutorialDialog onClose={() => setTutorial(false)} />}
+    {sourcesOpen && <SourcesDialog onClose={() => setSourcesOpen(false)} />}
   </div>;
 }
