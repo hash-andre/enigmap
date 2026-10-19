@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, SlidersHorizontal, Languages, X } from 'lucide-react';
+import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, SlidersHorizontal, Languages, Copy, X } from 'lucide-react';
 import { categories as originalCategories } from './data';
 import { useLanguage, useTranslatedData, pointSearchIndex } from './i18n';
 import type { Area, Category, MapId, Point } from './types';
@@ -9,6 +9,8 @@ import { useProgress, knownPointIds } from './hooks/useProgress';
 import MapView from './components/MapView';
 import Dialog from './components/Dialog';
 import PointDialog from './components/PointDialog';
+import TransferDialog from './components/TransferDialog';
+import { translate } from './translations';
 import { CategoryIcon } from './components/Icons';
 
 const categoryKeys = Object.keys(originalCategories) as Category[];
@@ -30,6 +32,7 @@ export default function App() {
   const [tutorial, setTutorial] = useState(false);
   const [progressMenu, setProgressMenu] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [transferOpen, setTransferOpen] = useState(false);
   const [sourcesOpen, setSourcesOpen] = useState(false);
   const fileInput = useRef<HTMLInputElement>(null);
 
@@ -75,7 +78,7 @@ export default function App() {
       <aside className={`sidebar ${filtersOpen ? 'sidebar-open' : ''}`} aria-label={t('Filtri e progressi')}>
         <div className="sidebar-mobile-heading"><span>{t('Esplora Gotham')}</span><button className="icon-button" aria-label={t('Chiudi filtri')} onClick={() => setFiltersOpen(false)}><X size={20} /></button></div>
         <div className="progress-panel">
-          <div className="eyebrow">{t('LA TUA INDAGINE')}<div className="progress-actions"><button className="icon-button" aria-label={t('Gestisci progressi')} aria-expanded={progressMenu} onClick={() => setProgressMenu(!progressMenu)}><Ellipsis size={20} /></button>{progressMenu && <div className="progress-menu"><button onClick={exportFile}><ArrowDownToLine size={16} />{t('Esporta progressi')}</button><button onClick={() => fileInput.current?.click()}><ArrowUpFromLine size={16} />{t('Importa progressi')}</button><p>{t('Salvati in questo browser.')}<br />{t('Trasferiscili con un file.')}</p></div>}</div></div>
+          <div className="eyebrow">{t('LA TUA INDAGINE')}<div className="progress-actions"><button className="icon-button" aria-label={t('Gestisci progressi')} aria-expanded={progressMenu} onClick={() => setProgressMenu(!progressMenu)}><Ellipsis size={20} /></button>{progressMenu && <div className="progress-menu"><button onClick={() => { setProgressMenu(false); setFiltersOpen(false); setTransferOpen(true); }}><Copy size={16} />{t('Trasferisci con codice')}</button><button onClick={exportFile}><ArrowDownToLine size={16} />{t('Esporta progressi')}</button><button onClick={() => fileInput.current?.click()}><ArrowUpFromLine size={16} />{t('Importa progressi')}</button><p>{t('Salvati in questo browser.')}<br />{t('Trasferiscili con un codice o un file.')}</p></div>}</div></div>
           <div className="progress-number"><strong>{physicalDone}<span>/ {points.length}</span></strong><span className="percentage">{percent}%</span></div><div className="progress-track"><div style={{ width: `${percent}%` }} /></div><div className="progress-caption"><span>{t('Elementi completati')}</span><span className="local-indicator"><span />{t('Locale')}</span></div>
         </div>
         <div className="sidebar-filters">
@@ -105,6 +108,13 @@ export default function App() {
     <input hidden ref={fileInput} type="file" accept=".json,application/json" onChange={e => void importFile(e.target.files?.[0])} aria-label={t('Importa file progressi')} />
     {notice && <div className="toast" role="status">{notice}<button aria-label={t('Chiudi messaggio')} onClick={() => setNotice('')}><X size={16} /></button></div>}
     {selected && <PointDialog point={selected} completed={completed.has(selected.id)} completedIds={completed} onToggle={() => toggle(selected.id)} onClose={() => setSelected(null)} onOpenMap={id => { chooseMap(id); setSelected(null); }} />}
+    {transferOpen && <TransferDialog completed={completed} onClose={() => setTransferOpen(false)} onImport={(ids, importedLanguage) => {
+      const added = [...ids].filter(id => !completed.has(id)).length;
+      merge(ids);
+      setLanguage(importedLanguage);
+      setTransferOpen(false);
+      setNotice(translate('{count} nuovi completamenti importati.', importedLanguage, { count: added }));
+    }} />}
     {tutorial && <Dialog title={t('Come funziona Enigmap')} className="tutorial-dialog" onClose={() => setTutorial(false)}><span className="tutorial-mark">?</span><div className="eyebrow">{t('TRE PASSI, ZERO MISTERI')}</div><h1>{t('La città è piena di domande.')}<br /><span>{t('Qui trovi le risposte.')}</span></h1><div className="tutorial-steps">{[{ Icon: MapIcon, title: 'Scegli un punto', text: 'Esplora la mappa o filtra per area e categoria.' }, { Icon: Search, title: 'Segui la soluzione', text: 'Apri la scheda: posizione, gadget e passaggi.' }, { Icon: Check, title: 'Spunta Completato', text: 'Il punto diventa grigio. I progressi restano nel browser.' }].map(({ Icon, title, text }, i) => <div key={i}><span><Icon size={21} /></span><div><h2>{t(title)}</h2><p>{t(text)}</p></div><small>0{i + 1}</small></div>)}</div><button className="primary-button" onClick={() => setTutorial(false)}>{t('Inizia l’indagine')} <ArrowUpRight size={17} /></button></Dialog>}
     {sourcesOpen && <Dialog title={t('Fonti e cartografia')} className="sources-dialog" onClose={() => setSourcesOpen(false)}><div className="eyebrow">{t('DIETRO LA MAPPA')}</div><h1>{t('Fonti e cartografia')}</h1><p>{t('315 elementi fisici, equivalenti a 243 sfide: 179 trofei, 40 enigmi, 6 rivoltosi e 90 distruttibili (18 sfide).')}</p><p>{t('Gotham e gli interni usano cartografia vettoriale ricostruita dai riferimenti del gioco. Le posizioni interne indicano stanza e piano; gli accessi ai complessi sono indicativi. Le note nelle schede segnalano coordinate discordanti.')}</p><p>{t('Le schede sono controllate sulle guide, senza verifica diretta in gioco. Gotham e i suoi personaggi appartengono ai rispettivi titolari; Enigmap è un progetto non ufficiale.')}</p><div className="source-links">{[['PowerPyx · inventario', 'https://www.powerpyx.com/guides/batman-arkham-knight-trophy-guide.html'], ['Gamer Guides · coordinate e procedure', 'https://www.gamerguides.com/batman-arkham-knight/guide/collectibles-guide/collectible-locations/'], ['GamesRadar · soluzioni e riferimenti', 'https://www.gamesradar.com/batman-arkham-knight-riddler-guide/'], ['GameFAQs · guida di confronto', 'https://gamefaqs.gamespot.com/ps4/768083-batman-arkham-knight/faqs/72018']].map(([name,url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{t(name)}<ArrowUpRight size={15} /></a>)}</div><p className="privacy-note">{t('I progressi sono salvati solo in questo browser. Dal menu ⋯ puoi esportarli e importarli su un altro dispositivo. La cancellazione dei dati del browser rimuove il salvataggio locale.')}</p></Dialog>}
   </div>;

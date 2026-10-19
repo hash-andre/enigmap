@@ -4,6 +4,15 @@ export function readLanguage(storage: Pick<Storage, 'getItem'>): Language {
   try { return storage.getItem(LANGUAGE_KEY) === 'it' ? 'it' : 'en'; } catch { return 'en'; }
 }
 export const english: Record<string, string> = {
+  'Trasferisci con codice': 'Transfer with code', 'Il tuo codice': 'Your code',
+  'Importare un codice unisce i completamenti e applica la lingua ricevuta.': 'Importing a code merges completions and applies the received language.',
+  'Copia codice': 'Copy code', 'Codice copiato.': 'Code copied.',
+  'Seleziona e copia il codice manualmente.': 'Select and copy the code manually.',
+  'Incolla un codice': 'Paste a code', 'Importa codice': 'Import code',
+  'Codice non valido o danneggiato.': 'Invalid or damaged code.',
+  'Versione del codice non supportata.': 'Unsupported code version.',
+  'Trasferiscili con un codice o un file.': 'Transfer them with a code or file.',
+
   'Enigmap, pagina iniziale': 'Enigmap, home',
   'Come funziona': 'How it works', 'Come funziona Enigmap': 'How Enigmap works',
   'Cambia lingua': 'Change language', 'Passa all’italiano': 'Switch to Italian', 'Passa all’inglese': 'Switch to English',
