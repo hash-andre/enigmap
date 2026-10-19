@@ -42,7 +42,14 @@ export function useTranslatedData() {
   const { language } = useLanguage();
   return useMemo(() => {
     const t = (s: string) => translate(s, language);
-    const maps = originalMaps.map(m => ({ ...m, label: t(m.label), image: language === 'en' ? m.image.replace('.svg', '.en.svg') : m.image, entryNote: m.entryNote ? t(m.entryNote) : undefined }));
+    const maps = originalMaps.map(map => {
+      const image = language === 'en' ? map.image.replace('.svg', '.en.svg') : map.image;
+      return {
+        ...map, label: t(map.label),
+        image: `${import.meta.env.BASE_URL}${image.replace(/^\//, '')}`,
+        entryNote: map.entryNote ? t(map.entryNote) : undefined,
+      };
+    });
     return {
       points: originalPoints.map(p => localizePoint(p, language)),
       areas: Object.fromEntries(Object.entries(originalAreas).map(([key, value]) => [key, t(value)])) as Record<Area, string>,

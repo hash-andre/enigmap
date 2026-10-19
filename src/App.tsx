@@ -89,8 +89,8 @@ export default function App() {
 
   return <div className="app">
     <header className="header">
-      <a className="brand" href="/" aria-label={t('Enigmap, pagina iniziale')}><span className="brand-mark">?</span><span><span className="wordmark">Enigmap</span></span></a>
-      <div className="header-right"><span className="game-identity"><img className="batman-logo" src="/batman-logo.svg" alt="" /><span className="game-name">BATMAN<span>ARKHAM KNIGHT</span></span></span><span className="header-divider" /><button className="tutorial-button" onClick={() => setTutorial(true)}><HelpCircle size={17} /><span>{t('Come funziona')}</span></button><button className="language-button" aria-label={t(language === 'en' ? 'Passa all’italiano' : 'Passa all’inglese')} title={t('Cambia lingua')} onClick={() => setLanguage(language === 'en' ? 'it' : 'en')}><Languages size={16} /><span>{language.toUpperCase()}</span></button></div>
+      <a className="brand" href={import.meta.env.BASE_URL} aria-label={t('Enigmap, pagina iniziale')}><span className="brand-mark">?</span><span><span className="wordmark">Enigmap</span></span></a>
+      <div className="header-right"><span className="game-identity"><img className="batman-logo" src={`${import.meta.env.BASE_URL}batman-logo.svg`} alt="" /><span className="game-name">BATMAN<span>ARKHAM KNIGHT</span></span></span><span className="header-divider" /><button className="tutorial-button" onClick={() => setTutorial(true)}><HelpCircle size={17} /><span>{t('Come funziona')}</span></button><button className="language-button" aria-label={t(language === 'en' ? 'Passa all’italiano' : 'Passa all’inglese')} title={t('Cambia lingua')} onClick={() => setLanguage(language === 'en' ? 'it' : 'en')}><Languages size={16} /><span>{language.toUpperCase()}</span></button></div>
     </header>
     <div className="workspace">
       <aside className={`sidebar ${filtersOpen ? 'sidebar-open' : ''}`} aria-label={t('Filtri e progressi')}>

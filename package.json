@@ -11,7 +11,8 @@
     "test:browser": "node scripts/check-browser.mjs",
     "test:language": "node scripts/check-language.mjs",
     "test:transfer": "node scripts/check-transfer.mjs",
-    "test:categories": "node scripts/check-categories.mjs"
+    "test:categories": "node scripts/check-categories.mjs",
+    "test:pages": "npm run build -- --base /enigmap/ && node scripts/check-pages.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

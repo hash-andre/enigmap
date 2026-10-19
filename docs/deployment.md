@@ -12,13 +12,15 @@ npm run build
 
 Publish `dist/` at the root of an HTTPS origin. Cloudflare Pages is a suitable option: build command `npm run build`, output directory `dist`, repository root as the working directory. The project was checked locally with Node 24; use a compatible Node version in the host's build environment.
 
-The current implementation is on `main`. The initial UI and in-game screenshot variant have been removed from local Git history, along with the old branch/tag used for rollback. Later vector-map revisions were retained with rewritten commit hashes. No deployment workflow or online publication has been configured here.
+The current implementation is on `main`. The initial UI and in-game screenshot variant have been removed from local Git history, along with the old branch/tag used for rollback. Later vector-map revisions were retained with rewritten commit hashes. GitHub Pages deployment is configured in `.github/workflows/static.yml` for pushes to `main` and manual runs. The workflow installs dependencies, runs unit tests, builds with the base path reported by GitHub Pages, and uploads only `dist/`.
 
 Do not serve the Vite development server publicly. `npm run preview` is for checking the build locally, not a production server.
 
 ## Hosting paths
 
-Current assets use root-relative URLs, including `/maps/`, `/batman-logo.svg` and the home link. Hosting at a domain root works with the current Vite base. A GitHub **repository** Pages URL such as `user.github.io/enigmap/` needs both Vite's base configured and runtime asset/home URLs adapted to that base. Changing only the build command is insufficient. GitHub Pages on a root URL or custom domain does not have this subdirectory issue.
+Local development and normal builds keep Vite's default `/` base. The Pages workflow sets the build base from `actions/configure-pages`, so a repository site uses `/enigmap/` while a root/custom-domain site can use `/`. Runtime map images, the Batman logo and home navigation use `import.meta.env.BASE_URL`; Vite rewrites bundled assets and HTML asset references.
+
+To reproduce repository Pages locally, run `npm run test:pages`. It builds with `/enigmap/` and uses an isolated static server and browser to check desktop/mobile, English/Italian maps, logo, favicon, backgrounds, the point dialog and home navigation without local asset 404s. Set Pages → Source to **GitHub Actions** in repository settings. Publishing the raw source tree (`path: '.'`) will not run a Vite/TypeScript application.
 
 ## Before public release
 

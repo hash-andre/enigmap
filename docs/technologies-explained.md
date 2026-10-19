@@ -487,7 +487,15 @@ node scripts/check-categories.mjs
 
 Verifica le 16 combinazioni delle quattro categorie, tutte inizialmente spuntate, i marker esclusi, il ripristino, il cambio lingua e l’uso da tastiera su desktop e telefono. Le categorie si combinano liberamente: non sono una selezione esclusiva. Ricaricare la pagina le riattiva tutte.
 
-I quattro controlli browser richiedono il server su localhost e un browser compatibile installato. `npm test` e la build non ne hanno bisogno.
+### test:pages
+
+```sh
+npm run build -- --base /enigmap/ && node scripts/check-pages.mjs
+```
+
+Costruisce il sito con lo stesso sottopercorso del repository Pages e lo serve su una porta temporanea con percorsi rigorosi, senza fallback. Verifica che asset e navigazione mantengano il prefisso, anche nelle mappe interne e su telefono. Il test avvia e chiude da solo il server di prova.
+
+`test:browser`, `test:language`, `test:transfer` e `test:categories` richiedono il server di sviluppo su localhost. Tutti i controlli browser richiedono Chromium installato. `npm test` e la build non ne hanno bisogno.
 
 Riferimento per il meccanismo dei comandi: [npm scripts](https://docs.npmjs.com/cli/v11/using-npm/scripts/).
 
@@ -659,7 +667,7 @@ Il risultato di `npm run build` è una cartella di file. Un servizio come Cloudf
 
 **Perché lo stack è adatto.** Catalogo e mappe sono distribuiti con l’app; progressi e lingua restano nel browser. Per questa funzione non servono query a un database o sessioni di login.
 
-**Limiti attuali.** Il deploy non è stato eseguito. I percorsi degli asset assumono la radice del dominio; un GitHub Pages di repository sotto `/enigmap/` richiede adattamenti. La cartografia deve ancora essere verificata direttamente nel gioco. Non c’è un service worker, quindi non promettiamo un avvio offline affidabile.
+**Configurazione attuale.** Il workflow GitHub Pages installa le dipendenze, esegue i test e pubblica la build `dist/`. Il prefisso viene passato a Vite durante la build; mappe, logo e link iniziale usano `import.meta.env.BASE_URL`, quindi funzionano anche sotto `/enigmap/`. La cartografia deve ancora essere verificata direttamente nel gioco. Non c’è un service worker, quindi non promettiamo un avvio offline affidabile.
 
 Pubblicare il sito non trasferisce il localStorage da localhost: per conservare i progressi serve importare codice o JSON sul nuovo dominio.
 
