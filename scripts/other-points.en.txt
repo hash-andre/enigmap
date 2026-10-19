@@ -1,0 +1,151 @@
+[bleake-riddle]
+Bones beneath the warning light|Scan the smoking bones in the building beneath the offshore crane.
+Langstrom’s laboratory|After the first Man-Bat encounter, enter the laboratory and scan the whiteboard on the left.
+Deacon’s Mission|Scan the mission’s sign at street level.
+Oracle’s suit|Activate the bust in the clock tower, hack the panel and scan the suit in the closet.
+Masquerade ball|Scan the poster on the clock tower’s third floor.
+Bat-Signal|Scan the Bat-Signal on the GCPD rooftop.
+Arkham Asylum|From the Falcone water tower, look east, zoom in and scan the asylum across the water.
+Lady of Gotham|Scan the statue on the central island.
+The reporter’s desk|In GCPD’s maximum-security interrogation room, scan the table covered in documents.
+Cash’s family|Scan the family photograph on the desk beside Aaron Cash at GCPD.
+The mercenary’s file|In GCPD’s communications room, scan the board showing Deathstroke, Arkham Knight and Scarecrow.
+[miagani-riddle]
+The League’s return|Scan the “The Demon’s Head shall return” graffiti behind the burning barrel.
+Wonder Tower|Look northeast beyond the broken bridges, zoom in and scan Wonder Tower.
+The Wayne portrait|Scan the family portrait in the office at the top of Wayne Tower.
+Quincy Sharp for mayor|Scan the election poster in the alley.
+The Vicki Vale Show|Scan the neon sign on the rooftops.
+Hell’s Gate|Scan the sign beside the road.
+A flower for Ivy|After the final story events, scan the flower in front of the Botanical Gardens tree.
+Elliot Memorial Hospital|Frame the entire hospital from the southeast and scan it.
+The cat’s collar|Scan Catwoman’s collar inside the orphanage.
+Riddler’s blueprint|In the Final Exam room, hack the panel and scan the blueprint on the desk.
+[founders-riddle]
+Motionless fishermen|Follow the dock west and scan the three bodies posed as fishermen.
+Grundy’s song|In the slums beneath the crane, cross the fence and open the door, then scan the room.
+Saint Dumas|Scan the statue beneath the saint’s name on the church’s west side.
+The abandoned calendar|Enter the manhole between LexCorp and Logerquist Towers. Climb into the wooden structure and scan the desk and whiteboard.
+Wayne Manor|From the station west of Wayne International Plaza, zoom west across the water and scan the manor.
+Professor Pyg’s circus|After The Perfect Crime, scan the circus poster by the operating room entrance.
+GothCorp|Scan the GothCorp logo south of the stock exchange.
+Cobblepot Manor|Scan the sign above the door north of Port Adams.
+Bane’s equipment|Inside the half-open container in the port’s northwest corner, open the crate with the Batclaw and scan its contents.
+The Dark Knight’s steed|Get out of the Batmobile and scan it. This riddle can be solved anywhere.
+[stagg-riddle]
+The white monkey|Alpha Research Laboratory: scan the albino monkey beneath the entrance platform.
+The reporter and Deadshot|Beta Biological Engineering: scan the magazine on the northern upper-level desk.
+Refrigerated transport|Beta airlock office: scan the flyer beside the stability controls.
+[panessa-riddle]
+Weapons in front of the cell|Scan the weapons in front of the cell nearest the elevator.
+A candlelit love|Open the voice-locked door near Stage A and scan the statue among the candles.
+Inferno poster|In the room on the right when entering Stage A, scan the poster and boxes in one frame.
+[hq-riddle]
+The white rabbit|North entrance: between the fans, reach the southern elevator and descend, then scan the rabbit mannequins.
+The fear-filled shop|South entrance, southern room, lower floor: scan the shop filled with yellow gas through its window.
+Revenge in photographs|South entrance, western room, lower floor: scan the board beside the ammunition crates.
+[bleake-breakable]
+Royal Flush Gang|High on the wall between the Royal Flush Gang and Grinning Fishmonger signs.
+Happy Halloween|High beside the Happy Halloween billboard.
+Chinatown Urbarail|Left of the station’s red sign.
+Sushi and tattoos|High between the Sushi restaurant and tattoo shop.
+Facing the clock tower|On the building wall facing the clock tower.
+McKenzie’s Gems|High in the alley behind the sign.
+Empty canal|On the wall near the sewer entrance.
+Dixon Dock West|On the southwest wall; shoot from across the water.
+Panessa radio tower|Below the radio tower, on the wall facing the road.
+Panessa parking lot|At the top of the northeast gate.
+Lighthouse ramp|On the bridge support beside the lighthouse exit ramp.
+Panessa station|On the side of the raised walkway.
+Sionis crane|On the crane supports at the back of the compound.
+Northeast of GCPD|On the southern wall of the building opposite.
+GCPD eastern wall|On the station’s eastern wall.
+[miagani-breakable]
+Mercy Bridge|On the eastern bridge support.
+Dolphin sign|Beside the neon dolphins on the building.
+Bank of Gotham|High on the bank’s western tower.
+Grand Avenue tunnel|Above the tunnel entrance.
+Eastern tunnel|Above the tunnel entrance at the coordinates.
+East of the station|On the southern wall of the building east of Grand Avenue Station.
+Wayne Tower waterfront|Jump the Batmobile from the northwest ramp and look on the western wall.
+Parking garage|From the garage rooftop, look at the building opposite.
+Koul Brau|Above the sign, opposite Gotham Tailor.
+Horse-statue stairs|Beneath the walkway, above the stairs with horse statues.
+Eastern facade|High on the east-facing wall.
+Pinkney Orphanage|On the orphanage’s eastern wall.
+Newton Fairgrounds|On the fairground’s west side; shoot from the northwest across the water.
+Gotham Tonight north|On the northern facade.
+Gotham Tonight entrance|On the stone pillar opposite the entrance.
+[founders-breakable]
+City Vision Construction|On the construction site’s eastern side.
+LexCorp|Above the eastern entrance to the slums.
+Station parking lot|On the ceiling beneath the station west of Wayne International Plaza.
+Gotham Stock Exchange|Above the exchange entrance, on the right-hand wall.
+Opposite the fire station|On the grey building north of the fire station.
+Road walkway|Beneath the walkway spanning the road.
+South of the church|Beneath the ramp leading to the upper level.
+Statue courtyard|On the building’s southern facade.
+Port Adams east entrance|On the container east of the main gate.
+Port Adams crane|On the crane’s body inside the port.
+Port Adams west entrance|On the container behind the militia vehicles.
+[subway-breakable]
+Port elevator|Leaving the elevator, look up to the right.
+First ramp|On the circular doorway to the right before the ramp.
+Beyond the first ramp|At the first obstacle, turn around and look above the tunnel entrance.
+Three walls, middle branch|Break through the middle wall and look above the large rock.
+[stagg-breakable]
+Alpha entrance corridor|At the end of the corridor, opposite the first trophy.
+Alpha crate room|In the corner beneath the ladder.
+Alpha passage to Beta|Above the platform at the door toward Beta.
+Alpha main room|On the platform opposite the entrance.
+Alpha stability controls|Right of the console behind the voice lock.
+Alpha first shaft|After the underground puzzle, grapple up and turn around.
+Alpha beneath the stairs|On the shelf beneath the laboratory stairs.
+Alpha laboratory corner|On the shelf in the left corner from the entrance.
+Alpha above the laboratory|Above the laboratory at the back of the room.
+Beta Cloudburst|On the shelf right of the stairs leading to the security door.
+Beta southeast corner|On a shelf on the lower floor of Biological Engineering.
+Beta beneath the stairs|Beneath the southern stairs leading to the glass-roofed platform.
+Beta northern vent|Above the high vent entrance on the northern wall.
+Beta weak wall|Use Explosive Gel on the southern wall of Subject Testing.
+Beta airlock|On top of the cage in the airlock.
+[panessa-breakable]
+Cell corridor|On the floor between Quarantine Cells and Backstage.
+Backstage stairs|At the top of the stairs on the left as you enter.
+Backstage grate|Beside the grate on the left wall.
+Stage A cactus|On the floor beside the cactus on the way to Stage A.
+Stage A right room|On the floor in the room to the right as you enter.
+Stage A left room|On the desk in the left-hand room.
+Stage B entrance|In the right corner beside the main door.
+Stage B bookshelf|Beside the bookshelf in the minigunner corridor.
+Stage B west room|On the crates in the western room.
+Stage B middle room|On the floor beside the trophy in the middle room.
+Stage B east room|On the floor beneath the trophy in the eastern room.
+Toward Stage C|Turn left at the end of the corridor.
+Stage C weak wall|Use gel on the weak wall beside the entrance.
+Mirror corridor|On the couch in the corridor with the keypad.
+Stage C office|Crawl through the vent from the mirror corridor.
+[hq-breakable]
+Shaft entrance|On the right wall before lowering the Batmobile.
+Shaft left wall|On the left side near the entrance.
+Upper shaft|Lower the Batmobile with the winch and look above you.
+Between the fans, right|On the right wall between the two fans.
+Between the fans, elevator|On the ledge wall toward the elevator.
+Below the second fan|In the passage on the shaft’s eastern side.
+First elevator exit|High on the right wall of the exit room.
+Bottom of the shaft|Climb to the northern ledge and look on the left wall.
+Under the second elevator|On the underside of the elevator in the upper shaft.
+South entrance, east room|On the left wall as you enter the eastern room.
+South room upper wall|High on the left wall as you enter.
+South room escalator|Beneath the escalator, on the lower ceiling.
+West room ceiling|In the center of the lower-floor ceiling.
+West room upper wall|High on the left wall as you enter.
+Chinese restaurant|On the northern room’s ceiling.
+[bleake-bomb]
+Chinatown above the street|Step onto the pad between the buildings and search the street below.
+Clock tower east|Step onto the pad northeast of the tower and search beneath the parade floats.
+Northern Chinatown rooftop|Step onto the rooftop pad and search the streets below.
+[miagani-bomb]
+Ferris Mall|Pad west of the parking garage: search around the mall for the target.
+Wayne Tower northwest|Pad in the northwest corner: search north across the water, near the Cuffs sign.
+Salvation Bridge|Pad on the walkway between buildings: search the street directly below.

@@ -121,7 +121,7 @@ for area,slug in areas.items():
     p['position']=[2633,2399];p['locationNote']='Marker sull’edificio GCPD; entra nella centrale e segui la descrizione della stanza.';p['location']='GCPD · interno'
    if area=='miagani' and category=='trophy' and i==38:p['position']=[2285,2483];p['locationNote']='Marker della statua; il trofeo si trova nelle impalcature sottostanti.'
    if area=='miagani' and category=='riddle' and i>=9:p['locationNote']='Marker dell’orfanotrofio; il bersaglio è all’interno.'
-   if area=='founders' and category=='riddle' and i==10:p.pop('position',None);p['location']='Ovunque · Batmobile';p['locationNote']='Nessuna posizione fissa: questa sfida è disponibile dall’elenco.'
+   if area=='founders' and category=='riddle' and i==10:p.pop('position',None);p['location']='Ovunque · Batmobile';p['locationNote']='Nessuna posizione fissa: apri questa sfida dal pulsante Enigma della Batmobile sulla mappa.'
    result.append(p)
 
 # Trophy 36 has an erroneous duplicate coordinate in the written guide; fitted to

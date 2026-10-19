@@ -1,3 +1,5 @@
+> Aggiornamento lingua: inglese predefinito e italiano selezionabile dal pulsante EN/IT accanto al tutorial. Preferenza salvata nel browser, separata dai progressi. Interfaccia e 315 schede disponibili in entrambe le lingue.
+
 > Revisione richiesta: interfaccia nera, mappa vettoriale antracite (rollback della sola variante raster), rotella meno sensibile, rimozione elenco e prove Catwoman. La versione precedente è conservata nel tag Git `before-ui-revision`. Il documento sotto registra il piano originale; la revisione è descritta nel README.
 
 # Enigmap — documento di progetto

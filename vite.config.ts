@@ -10,5 +10,5 @@ export default defineConfig({
     hmr: true,
     watch: { usePolling: true, interval: 250 },
   },
-  build: { rollupOptions: { output: { manualChunks: { leaflet: ['leaflet', 'leaflet.markercluster'], react: ['react', 'react-dom'] } } } },
+  build: { rollupOptions: { output: { manualChunks: { leaflet: ['leaflet', 'leaflet.markercluster'], react: ['react', 'react-dom'], catalog: ['./src/data/catalog.json', './src/data/catalog.en.json'] } } } },
 });

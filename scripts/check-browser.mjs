@@ -5,6 +5,7 @@ const browser = await chromium.launch({ executablePath: process.env.ENIGMAP_BROW
 const errors=[];
 try {
  const context = await browser.newContext({ viewport: {width:1440,height:1000}, reducedMotion:'reduce' });
+ await context.addInitScript(() => localStorage.setItem('enigmap.language.v1', 'it'));
  const page = await context.newPage();
  page.on('pageerror',e=>errors.push(e.stack));
  await page.goto('http://localhost:5173/',{waitUntil:'networkidle'});
@@ -49,6 +50,7 @@ try {
  const deniedPage=await denied.newPage(); await deniedPage.goto('http://localhost:5173/');
  await deniedPage.getByRole('alert').waitFor(); await denied.close();
  const mobile = await browser.newContext({ viewport:{width:360,height:780}, isMobile:true, hasTouch:true });
+ await mobile.addInitScript(() => localStorage.setItem('enigmap.language.v1', 'it'));
  const phone = await mobile.newPage(); phone.on('pageerror',e=>errors.push(e.stack));
  await phone.goto('http://localhost:5173/',{waitUntil:'networkidle'});
  assert.equal(await phone.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);

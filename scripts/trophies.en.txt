@@ -1,0 +1,186 @@
+[bleake]
+Offshore crane|Reach the north end of the crane.
+Waterfront wall|Shoot the weak wall from the bridge to the southwest, then climb inside.
+Waterfront warehouse|Climb to the warehouse’s upper floors.
+Electrified floor|Order the robot to collect the trophy and return, then defeat it.
+Moving containers|Raise the containers using the up-arrow switch. Stand on the pad and use the Batclaw. To leave, guide a Remote Controlled Batarang to the down-arrow switch.
+Trail toward ACE|Scan the panel and follow the question marks toward ACE. Shoot the target at 1498, 1840.
+Under ACE Bridge|Look behind the generators beneath the bridge.
+ACE sign|Pull out the anchor point with the Power Winch.
+Wooden waterfront panels|Glide from the roof through the wooden boards.
+Chinatown sewers|After part four of Gunrunner, look beside the gate control panel.
+Three robots, three rounds|Defeat the robots three times, reviving them with the question-mark switch between rounds.
+Race to Osamu Tower|Activate the generator at 1665, 3171. Eject from the Batmobile and glide to the trophy before time runs out.
+Robot and sentry guns|Send the robot to disable the first sentry. Blind the second, order the robot to fetch the trophy and return, then defeat it.
+Winch and generator|Pull out the anchor point, then activate the generator with the Remote Electrical Charge.
+Abandoned building|Collect the trophy upstairs beneath the crane.
+Under the boardwalk|Use the Batclaw from the boat ramp.
+Two anchor points|Pull the left anchor, open the door with the question mark and enter. Remote-control the Batmobile to pull the right anchor.
+Window beside the monorail|Glide from the track through the weak window.
+Race to Mendo Soap|Activate the generator at 3496, 2540. Drive across the bridge, then eject and glide to the trophy.
+Weak ceiling|Shoot the ceiling beneath the building spanning the road, then use the Batclaw.
+Moving targets|Pull the winch and shoot the dots as they cross the rings, leaving the middle one until last.
+Under the train|Pull the train with the winch and enter the uncovered floor grate.
+Canal pinball|Control the winch carefully: launch the ball past the hatch without hitting the upper corner.
+Steam-filled container|Pull out the wall and apply Explosive Gel facing the pipes. Release, detonate and pull again, then slide inside.
+Two rooftop pads|Put the robot on one pad and Batman on the other, then use the Batclaw.
+Canal ramp|Break through the doors with the Batmobile, then climb to the catwalk.
+Suspended container|Glide or drop through the open door facing the water.
+Rooftop shelter|Search the western corner of the Panessa rooftop.
+Wall target sequence|Park the Batmobile on the pad and quickly shoot each illuminated question mark.
+Trail from Panessa|Scan the rooftop panel and follow the trail through the sewers. Shoot the target beneath the canal bridge.
+Shield and missiles|Supply power with the winch. Fire a Missile Barrage, then immediately use an EMP to lower the shield.
+Rotating glass panels|Turn the panels with the winch and hit each question mark when exposed.
+Tower on the rooftop route|Destroy the tower’s weak wall with the Batmobile.
+Boarded waterfront wall|Glide from the roof through the wooden boards.
+Platform under Merchant Bridge|Drop to the platform above the water southeast of Merchant Bridge.
+Lighthouse stall|Search the wooden stall at the foot of the lighthouse.
+GCPD display case|Break the glass of the Riddler display opposite the evidence room entrance.
+[miagani]
+Mercy Bridge support|Enter the small room on the west side of the support.
+Waterfront weak wall|Shoot the wall from Mercy Bridge.
+Bridge robot|Destroy the wall. Move the robot behind the panel, crush it, revive it and order it onto the pad.
+Mausoleum|Collect the trophy on the mausoleum north of the cathedral.
+Cathedral trap|Break the wall, pull the winch and enter through the grate. Release the anchor to crush the robots, then reopen it.
+Race to the cathedral|Start at the hospital rooftop pad at 2887, 2171 and glide to the trophy.
+Bridge gears|Pull until both gears turn. Use the Batclaw as the ball passes the opening.
+Wall over the water|Jump to Wayne Tower in the Batmobile and shoot the wall, then reach the opening with the Line Launcher.
+Wayne Tower fire escape|From the mid-level garden, enter the fire escape and climb to the storage room.
+Trail from Wayne Tower|Follow the scanner trail to Grand Avenue Station. Hack the shutter and shoot the target inside.
+Opposite windows|Glide through either weak window.
+Grand Avenue train|Collect the trophy on top of the stationary train.
+Station floor grate|Search beneath the hatch on the northwest side of the upper floor.
+Miagani tunnels|Collect the trophy on the ledge above the main room.
+Lacey’s Department Store|Pull the sign upward with the winch, then shoot the exposed weak wall.
+Paul’s Diner|Use the Batclaw behind the counter.
+Grand Avenue skyscraper|Climb to the top of the skyscraper west of the station.
+The Gotham Pony|Pull open the hatch and enter. Destroy the sentry with the remote-controlled Batmobile before leaving.
+Boarded tower|Glide from the rooftop, turn back and break through the boards.
+Dang-Good Donut|Glide into the sign’s ring and collect the trophy inside.
+Two sliders|Upper winch: left, then right. Lower winch: right, then left. Collect the ball at the bottom.
+Gotham Herald wall|Glide from the building to the south through the boards.
+Gotham Herald robots|Only attack green robots; the question mark swaps their colors. Defeat them all, then use the Batclaw.
+Casino weak wall|Destroy the wall halfway up the building with the Batmobile.
+Jump from the parking garage|Jump from the garage ramp onto the roof, then power the generator with the winch.
+Four switches|Robot on the lower pad; gel on the two support switches. Batman on the other pad: Batarang the other two and detonate within three seconds.
+Hospital scanner trail|Scan and follow the trail to the target at 2866, 2201, then shoot it.
+Orphanage column|Pull the top anchor and repel the upper generator. Pull the middle anchor, activate the second generator, then pull the bottom anchor.
+Orphanage rooftop|Look under the shelter in the northeast corner.
+Orphanage targets|Batmobile on the pad: shoot each illuminated target and use a Missile Barrage for the final sequence.
+Station balcony|Search the northeast balcony of the elevated station.
+Tower elevator|Enter the stalled elevator in the metal tower.
+Botanical storage room|Search the shelf in the upper-floor storage room on the west side.
+Illuminated plants|Search among the pots on the southern upper floor.
+Hanging monorail car|Drop into the carriage through its open side door.
+Three dock pads|Put the two robots on two pads and Batman on the third, then use the Batclaw.
+End of the pier|Collect the trophy on the rooftop beyond the Ferris wheel.
+Lady of Gotham|Glide through the boards in the scaffolding beneath the statue.
+[founders]
+Docks lighthouse|Climb to the upper deck and watch out for the sniper.
+Trade House|Glide from the roof through the boards facing the water.
+Opposite the Fish Market|Glide through the boards on the waterfront wall.
+Pressure-pad floor|Open with the winch and stand on the green pad. Release the anchor, then cross with the Line Launcher without touching red pads.
+Ruins over the water|Enter the ruined building above the slums.
+Race to Killinger’s|Activate the pad at 2147, 1492, then drive down into the slums before time runs out.
+Construction-site robot|Power the generator with the winch and order the robot onto the pad.
+Shelter beneath the arch|Clear the checkpoint and climb to the sheltered ledge.
+Three hidden switches|Pull the winch, hit all three question marks with quick Batarangs, then use the Batclaw.
+Sentry behind the shutter|Open using the generator and shield the sentry with the question mark. Collect the trophy, release the sentry against the robots, then close it again.
+Slum robots|Order a robot onto the pad. Enter, use gel on the wall, crawl through the vent and defeat the robots.
+Under the ramp|Search the ditch below the construction-site ramp.
+Slum scanner trail|Scan and follow the question marks. At the fan, surface through the matching manhole, continue the trail and destroy the target.
+Wayne International Plaza|Collect the trophy on the east-facing balcony.
+Unfinished station|Search the yellow crate in the northern waiting area.
+LexCorp balcony|Robot on one pad, Batman on the other. Use smoke and the Batclaw before the robot attacks.
+Pretty Dolls Parlour|After The Perfect Crime, enter the floor grate and destroy the weak wall with gel.
+Spiked door|Open with the winch, stand on the pad and use the Batclaw. Immediately remote-control the Batmobile to pull back the door.
+Stairs in the ruins|Collect the trophy on the upper stairs.
+Ruins weak wall|Shoot the northern wall from a raised position.
+Scanner trail and jump|Follow the scanner trail, pull the ramp and jump with the Batmobile, then shoot the final target.
+Bank of Gotham|Shoot the high eastern wall from the road to the northeast.
+Race from GCPD|Activate the generator at 2456, 2663. Accelerate along the waterfront, eject toward the statue and glide to the rail.
+Robot on an electric floor|Blind the sentry and order the robot to fetch the trophy and return, then defeat it.
+Under Penitence Bridge|Drop to the platform above the water south of the bridge.
+Magnetic ball|Upper generator left, right generator up: attract both and pull the upper one right. Attract right, then upper. At the bottom, attract upper and repel right.
+Elevated-road weak wall|Shoot the western wall from the road to the south.
+Scaffolding|Search among the broken walls on the upper floors.
+Port Adams office|Enter the office beneath the crane east of the entrance.
+Container and robots|Order all robots beneath the hanging container, then hit the question mark to crush them together.
+Race to Port Adams|Start at the pad at 3253, 2136 on Miagani. Glide to the port and use the Batclaw before time runs out.
+Three container bars|Quickly pull out all three bars with the winch, then guide a Remote Controlled Batarang through the holes to the switch.
+Crane platform|Drop beneath the crane on the east side of the port.
+[subway]
+Entrance office|Climb to the catwalk above the trains and drop into the office through the roof.
+Drone storage room|Search the shelf in the room with the stationary drone.
+Second ramp|Climb onto the control room roof.
+Upper walkway|In the room with three weak wooden walls, climb to the overhead walkway.
+Right branch stairs|Break through the right-hand wall and climb the construction-site stairs.
+Right branch ceiling|From the stairs, climb to the platforms near the ceiling.
+Construction pit|Continue along the right branch and look on the north platform of the pit.
+Left branch|Break through the left-hand wall and climb the ramp. Look right at the platform edge.
+[stagg]
+Alpha entrance|Hack the panel beside the cage.
+Alpha ball track|Hack the panel, then tilt the airship to move the ball along the track.
+Alpha generator|Return the crates to their initial positions and activate the generator above the shutter.
+Alpha vent|Unlock the crate and tilt right, then enter the uncovered vent.
+Alpha pressure pad|From the pad, guide a Batarang above the trophy to the question mark.
+Alpha underground crates|Move the lockable crate toward the wall destroyed with gel and enter the passage behind it.
+Alpha stability controls|Open the left voice-locked panel and search behind the sentry.
+Alpha pad-covered floor|Cross on the Line Launcher wire without touching the floor and grapple to the final hatch.
+Alpha falling crate|Apply gel to the ceiling above the table. Tilt to drop the crate, then tilt again to smash the window.
+Alpha three targets|Enter the vent above the fingerprint door and hit all three question marks with quick Batarangs.
+Alpha two pads|Hack the panel and lead the monkey onto both pads, changing the barriers with the question mark.
+Alpha monkey|Hack, activate the question mark and lead the monkey onto the pad.
+Beta monkeys below the door|Hack, move right and hit the question mark. When both monkeys stand on the pads, lock them there with the switch.
+Beta voice lock|Use the Voice Synthesizer on the door in the laboratory’s northeast corner.
+Beta three generators|Enter through the southern vents and activate the three ceiling generators.
+Beta western monkeys|Hack, lead both monkeys onto the pads and lock them in place with the question mark.
+Beta steam vent|Freeze the pipe on the northern wall and crawl inside.
+Beta cell|Use the computer upon entering Subject Testing and search the opened cell.
+Beta crates and hatches|Gel the southern wall, unlock the crates and tilt left. Climb through two hatches. Tilt right, lock the crate beside the grate, tilt back and drop down.
+Beta exterior crate|Open the voice lock opposite the sentries. Tilt right, then send the crate through the window; collect the trophy on the platform below.
+Beta airlock|Open with the button and stand on the pad. Guide a Batarang to Alpha’s rightmost question mark as it lights up.
+[panessa]
+Electrified Batarang|Electrify a Batarang above the Batcomputer, then guide it through the window and down the stairs to the fuse box.
+Stairway switches|After trophy 1, climb the stairs and turn off every question mark with Batarangs.
+Robots and fear|Enter the vent, break through the wall and use a Fear Multi-Takedown before the timer expires.
+Robot statue|Pull the chest ring with the Batclaw.
+Rotating statue|The question mark changes direction; the Electrical Charge starts or stops rotation. Stop at A, B and C without crossing Reset.
+Three electrified pads|Open using the generator. From the first pad, use the Line Launcher and turn to reach the second. Head back toward the trophy and turn to the third.
+Stage A colors|Use Batarangs to match the colors displayed in the opposite room.
+Statue generator|Climb behind the backdrop, open the statue’s chest with the Batclaw and overload the generator.
+Stage A sentries|Blind one sentry and disable the other from behind, then reapply the hack and disable the second.
+Stage B fan|Hack the panel above the fan to stop it.
+Steam above the set|Climb to the hatch, cross with the Line Launcher and walk on the wire. Freeze both vents and grapple up.
+Mines under the stairs|Disable the mines with the upgraded Disruptor and slide beneath the wall.
+Explosive counterweight|Lower the weight and place gel facing the wall. Raise it and detonate beside the weak wall.
+Middle-room vent|From the pressure pad, guide a Batarang through the vent to the question mark in the west room.
+Ball and steam pipes|Freeze the vent behind the ball each time it stops until it reaches the exit.
+Sabotaged weapons crate|Freeze the vent and climb up. Sabotage the crate with the Disruptor and order the robot to open it.
+Three vent throws|Gel the wall and step on the pad. First Batarang: right, left. Second: right to the new switch. Third, electrified: right, right, then the fuse above the trophy.
+The stages of life|Activate the generators in this order: pregnancy, baby, toddler, running child, young person, businessman, elderly man, gravestone.
+Stage C mirror|Turn away from the trophy and fire the Electrical Charge at the question mark above the vent.
+Color memory|Follow the letters’ color. Sequences: blue-green-red-yellow; yellow-green-blue-blue-yellow-red; green-blue-yellow-red-blue-red-yellow-green.
+Slot machine|Hack the controls beneath the reels and stop each on the same symbol.
+[hq]
+Ball track|Lower the Batmobile with the winch. Shoot the question marks to block the holes: first one ball, then two together.
+Screens and timing|Hit the switch when the orange circle reaches the green question mark. Complete three rounds.
+Upper workbench|Reach the first generator room and search the workbench.
+Upper-room pipes|Hack the door and use the Electrical Charge on the switch to align the pipes as the ball passes.
+Three wheels|Hack the wheels; a Batarang changes direction. Start with all buckets at the top: rotate the first left, second right and third left.
+Rotating maze|Use the eastern vent beneath the second fan. Repel until ball and exit share a section, then attract.
+Elevator weak wall|Move the elevator beside the weak wall with the Electrical Charge and use Explosive Gel.
+Behind the curtain|Take the first elevator down and look behind the curtain by the exit.
+Bar Lounge sign|Look above the pink sign after the second elevator.
+Sentry and fuse box|Blind the sentry and step on the pad. First Batarang: vent, left, end, right to the switch. Blind again, electrify the second Batarang and hit the fuse.
+Panel under the floor|Hack the door near the second fan, then the panel below the floor, and use the Batclaw.
+Under the elevator|From the bottom, climb above the blocked Excavator entrance. Send the elevator up and drop into the shaft.
+Eastern room planter|South entrance: look beneath the vantage point in the eastern room.
+Two balls, two colors|Hack the southern door in the east room. Align the first pipes before starting. Right ball enters first green: rotate green. Left leaves first red: rotate red. Right reaches lower pipe: green. Left enters second red: red. Right leaves second green: green. Right enters third green: green. Left enters third red: red.
+Southern walkway|Look beneath the walkway’s weak flooring.
+Robot and two sentries|Hack the upper eastern door. Blind right, order the robot to disable left, blind right again, step on the pad and use the Batclaw.
+Western room planter|Search the planter at the back of the lower floor.
+Rotating ball puzzle|Electrical Charge: attract three times, repel four times, attract three times.
+Chinese restaurant|Enter the floor vents beneath the central table.
+Screen memory|Hack the screens and match every pair of identical pictures.
+Vent toward the Excavator|From the upper center, follow the vents toward the Excavator. Use the Batclaw on the opposite wall before dropping down.

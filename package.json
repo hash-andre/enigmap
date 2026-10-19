@@ -7,8 +7,9 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --import tsx -e \"await import('./tests/catalog.test.ts'); await import('./tests/progress.test.ts')\"",
-    "test:browser": "node scripts/check-browser.mjs"
+    "test": "node --import tsx -e \"await import('./tests/catalog.test.ts'); await import('./tests/progress.test.ts'); await import('./tests/language.test.ts')\"",
+    "test:browser": "node scripts/check-browser.mjs",
+    "test:language": "node scripts/check-language.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",

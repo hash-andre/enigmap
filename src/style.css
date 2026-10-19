@@ -43,3 +43,9 @@ body::before{
   .app{background:rgba(7,9,11,.12)}
   .map-stage{background:rgba(8,10,13,.52)!important}
 }
+
+.language-button{display:flex;align-items:center;justify-content:center;gap:7px;background:#151915;border:1px solid #394334;border-radius:7px;padding:11px 12px;font-size:11px;font-weight:600;color:#c4d5b2;min-height:40px;flex-shrink:0}
+.language-button:hover{background:#263020;border-color:#6d8555}
+.header-right{gap:12px}
+@media(max-width:760px){.header-right{gap:7px}.language-button{padding:8px;gap:4px;min-height:34px;font-size:10px}.language-button svg{width:14px;height:14px}}
+@media(max-width:370px){.tutorial-button{font-size:9px;padding:9px 7px}.wordmark{font-size:24px}}

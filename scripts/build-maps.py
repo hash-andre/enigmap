@@ -120,3 +120,11 @@ hq+=label(898,540,'ATRIO',True)+label(737,526,'OVEST',True)+label(1069,544,'EST'
 views={'hq-1':'0 0 200 205','hq-2':'0 200 200 290','hq-3':'0 520 205 280','hq-4':'235 0 395 315','hq-5':'240 310 360 450','hq-south':'620 260 550 535'}
 for key,view in views.items():(OUT/f'{key}.svg').write_text(svg(view,hq))
 print('Generated 12 original SVG maps and reproducible calibration.')
+
+# Localized room labels share the exact same vector geometry.
+english_labels={'QUARANTENA':'QUARANTINE','METROPOLITANA':'SUBWAY','RICERCA':'RESEARCH','STIVA':'CARGO','ATRIO':'FOYER','OVEST':'WEST','EST':'EAST','SUD':'SOUTH','NORD':'NORTH'}
+for path in OUT.glob('*.svg'):
+ if path.name.endswith('.en.svg'): continue
+ text=path.read_text()
+ for original,translated in english_labels.items():text=text.replace('>'+original+'</text>','>'+translated+'</text>')
+ path.with_name(path.stem+'.en.svg').write_text(text)

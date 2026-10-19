@@ -1,6 +1,6 @@
 # Enigmap
 
-Web app statica in italiano per le attività dell’Enigmista in Batman: Arkham Knight.
+Web app statica in inglese e italiano per le attività dell’Enigmista in Batman: Arkham Knight.
 
 ## Anteprima locale con aggiornamento automatico
 
@@ -53,3 +53,11 @@ La versione originale è il commit `4803717`, tag `before-ui-revision`, sul ramo
 Questa revisione elimina elenco e prove Catwoman, mantiene i 315 elementi dell’Enigmista, usa mappa vettoriale e superfici nere e limita la sensibilità della rotella a 240 px per livello di zoom (prima 60). L’enigma della Batmobile, senza posizione fissa, rimane apribile dal pulsante sulla mappa.
 
 La variante con screenshot è stata annullata solo per la mappa: `public/maps/gotham.svg` è nuovamente la cartografia attiva. `scripts/build-maps.py` genera geometrie e palette antracite per tutte le mappe. Il commit `3349de9` conserva la variante raster in Git.
+
+## Lingua
+
+L’inglese è predefinito al primo accesso, indipendentemente dalla lingua di sistema. Il pulsante EN/IT a destra di “How it works / Come funziona” cambia immediatamente interfaccia, schede, gadget, note e nomi delle stanze nelle mappe. La scelta viene salvata in `localStorage` con chiave `enigmap.language.v1`; se il salvataggio non è disponibile, il cambio funziona per la visita corrente. I progressi usano una chiave separata e gli stessi ID in entrambe le lingue. La ricerca riconosce nomi italiani e inglesi.
+
+Le traduzioni delle 315 schede sono in `src/data/catalog.en.json`. Per rigenerarle dalle note inglesi originali (`scripts/trophies.en.txt`, `scripts/other-points.en.txt`), eseguire `python3 scripts/build-english.py` dopo la generazione del catalogo italiano. `scripts/build-maps.py` genera anche le varianti `.en.svg` senza cambiare geometrie o coordinate.
+
+`npm run test:language` verifica nel browser inglese predefinito, cambio lingua, persistenza al ricaricamento, progressi e inquadratura invariati, mappe tradotte e layout mobile a 360/390 px.

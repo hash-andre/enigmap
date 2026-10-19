@@ -1,0 +1,1994 @@
+{
+  "bleake-trophy-01": {
+    "title": "Offshore crane",
+    "steps": [
+      "Reach the north end of the crane."
+    ]
+  },
+  "bleake-trophy-02": {
+    "title": "Waterfront wall",
+    "steps": [
+      "Shoot the weak wall from the bridge to the southwest, then climb inside."
+    ]
+  },
+  "bleake-trophy-03": {
+    "title": "Waterfront warehouse",
+    "steps": [
+      "Climb to the warehouse’s upper floors."
+    ]
+  },
+  "bleake-trophy-04": {
+    "title": "Electrified floor",
+    "steps": [
+      "Order the robot to collect the trophy and return, then defeat it."
+    ]
+  },
+  "bleake-trophy-05": {
+    "title": "Moving containers",
+    "steps": [
+      "Raise the containers using the up-arrow switch. Stand on the pad and use the Batclaw. To leave, guide a Remote Controlled Batarang to the down-arrow switch."
+    ]
+  },
+  "bleake-trophy-06": {
+    "title": "Trail toward ACE",
+    "steps": [
+      "Scan the panel and follow the question marks toward ACE. Shoot the target at 1498, 1840."
+    ]
+  },
+  "bleake-trophy-07": {
+    "title": "Under ACE Bridge",
+    "steps": [
+      "Look behind the generators beneath the bridge."
+    ]
+  },
+  "bleake-trophy-08": {
+    "title": "ACE sign",
+    "steps": [
+      "Pull out the anchor point with the Power Winch."
+    ]
+  },
+  "bleake-trophy-09": {
+    "title": "Wooden waterfront panels",
+    "steps": [
+      "Glide from the roof through the wooden boards."
+    ]
+  },
+  "bleake-trophy-10": {
+    "title": "Chinatown sewers",
+    "steps": [
+      "After part four of Gunrunner, look beside the gate control panel."
+    ]
+  },
+  "bleake-trophy-11": {
+    "title": "Three robots, three rounds",
+    "steps": [
+      "Defeat the robots three times, reviving them with the question-mark switch between rounds."
+    ]
+  },
+  "bleake-trophy-12": {
+    "title": "Race to Osamu Tower",
+    "steps": [
+      "Activate the generator at 1665, 3171. Eject from the Batmobile and glide to the trophy before time runs out."
+    ]
+  },
+  "bleake-trophy-13": {
+    "title": "Robot and sentry guns",
+    "steps": [
+      "Send the robot to disable the first sentry. Blind the second, order the robot to fetch the trophy and return, then defeat it."
+    ]
+  },
+  "bleake-trophy-14": {
+    "title": "Winch and generator",
+    "steps": [
+      "Pull out the anchor point, then activate the generator with the Remote Electrical Charge."
+    ]
+  },
+  "bleake-trophy-15": {
+    "title": "Abandoned building",
+    "steps": [
+      "Collect the trophy upstairs beneath the crane."
+    ]
+  },
+  "bleake-trophy-16": {
+    "title": "Under the boardwalk",
+    "steps": [
+      "Use the Batclaw from the boat ramp."
+    ]
+  },
+  "bleake-trophy-17": {
+    "title": "Two anchor points",
+    "steps": [
+      "Pull the left anchor, open the door with the question mark and enter. Remote-control the Batmobile to pull the right anchor."
+    ]
+  },
+  "bleake-trophy-18": {
+    "title": "Window beside the monorail",
+    "steps": [
+      "Glide from the track through the weak window."
+    ]
+  },
+  "bleake-trophy-19": {
+    "title": "Race to Mendo Soap",
+    "steps": [
+      "Activate the generator at 3496, 2540. Drive across the bridge, then eject and glide to the trophy."
+    ]
+  },
+  "bleake-trophy-20": {
+    "title": "Weak ceiling",
+    "steps": [
+      "Shoot the ceiling beneath the building spanning the road, then use the Batclaw."
+    ]
+  },
+  "bleake-trophy-21": {
+    "title": "Moving targets",
+    "steps": [
+      "Pull the winch and shoot the dots as they cross the rings, leaving the middle one until last."
+    ]
+  },
+  "bleake-trophy-22": {
+    "title": "Under the train",
+    "steps": [
+      "Pull the train with the winch and enter the uncovered floor grate."
+    ]
+  },
+  "bleake-trophy-23": {
+    "title": "Canal pinball",
+    "steps": [
+      "Control the winch carefully: launch the ball past the hatch without hitting the upper corner."
+    ]
+  },
+  "bleake-trophy-24": {
+    "title": "Steam-filled container",
+    "steps": [
+      "Pull out the wall and apply Explosive Gel facing the pipes. Release, detonate and pull again, then slide inside."
+    ]
+  },
+  "bleake-trophy-25": {
+    "title": "Two rooftop pads",
+    "steps": [
+      "Put the robot on one pad and Batman on the other, then use the Batclaw."
+    ]
+  },
+  "bleake-trophy-26": {
+    "title": "Canal ramp",
+    "steps": [
+      "Break through the doors with the Batmobile, then climb to the catwalk."
+    ]
+  },
+  "bleake-trophy-27": {
+    "title": "Suspended container",
+    "steps": [
+      "Glide or drop through the open door facing the water."
+    ]
+  },
+  "bleake-trophy-28": {
+    "title": "Rooftop shelter",
+    "steps": [
+      "Search the western corner of the Panessa rooftop."
+    ]
+  },
+  "bleake-trophy-29": {
+    "title": "Wall target sequence",
+    "steps": [
+      "Park the Batmobile on the pad and quickly shoot each illuminated question mark."
+    ]
+  },
+  "bleake-trophy-30": {
+    "title": "Trail from Panessa",
+    "steps": [
+      "Scan the rooftop panel and follow the trail through the sewers. Shoot the target beneath the canal bridge."
+    ]
+  },
+  "bleake-trophy-31": {
+    "title": "Shield and missiles",
+    "steps": [
+      "Supply power with the winch. Fire a Missile Barrage, then immediately use an EMP to lower the shield."
+    ]
+  },
+  "bleake-trophy-32": {
+    "title": "Rotating glass panels",
+    "steps": [
+      "Turn the panels with the winch and hit each question mark when exposed."
+    ]
+  },
+  "bleake-trophy-33": {
+    "title": "Tower on the rooftop route",
+    "steps": [
+      "Destroy the tower’s weak wall with the Batmobile."
+    ]
+  },
+  "bleake-trophy-34": {
+    "title": "Boarded waterfront wall",
+    "steps": [
+      "Glide from the roof through the wooden boards."
+    ]
+  },
+  "bleake-trophy-35": {
+    "title": "Platform under Merchant Bridge",
+    "steps": [
+      "Drop to the platform above the water southeast of Merchant Bridge."
+    ]
+  },
+  "bleake-trophy-36": {
+    "title": "Lighthouse stall",
+    "steps": [
+      "Search the wooden stall at the foot of the lighthouse."
+    ]
+  },
+  "bleake-trophy-37": {
+    "title": "GCPD display case",
+    "steps": [
+      "Break the glass of the Riddler display opposite the evidence room entrance."
+    ]
+  },
+  "bleake-riddle-01": {
+    "title": "Bones beneath the warning light",
+    "steps": [
+      "Scan the smoking bones in the building beneath the offshore crane."
+    ]
+  },
+  "bleake-riddle-02": {
+    "title": "Langstrom’s laboratory",
+    "steps": [
+      "After the first Man-Bat encounter, enter the laboratory and scan the whiteboard on the left."
+    ]
+  },
+  "bleake-riddle-03": {
+    "title": "Deacon’s Mission",
+    "steps": [
+      "Scan the mission’s sign at street level."
+    ]
+  },
+  "bleake-riddle-04": {
+    "title": "Oracle’s suit",
+    "steps": [
+      "Activate the bust in the clock tower, hack the panel and scan the suit in the closet."
+    ]
+  },
+  "bleake-riddle-05": {
+    "title": "Masquerade ball",
+    "steps": [
+      "Scan the poster on the clock tower’s third floor."
+    ]
+  },
+  "bleake-riddle-06": {
+    "title": "Bat-Signal",
+    "steps": [
+      "Scan the Bat-Signal on the GCPD rooftop."
+    ]
+  },
+  "bleake-riddle-07": {
+    "title": "Arkham Asylum",
+    "steps": [
+      "From the Falcone water tower, look east, zoom in and scan the asylum across the water."
+    ]
+  },
+  "bleake-riddle-08": {
+    "title": "Lady of Gotham",
+    "steps": [
+      "Scan the statue on the central island."
+    ]
+  },
+  "bleake-riddle-09": {
+    "title": "The reporter’s desk",
+    "steps": [
+      "In GCPD’s maximum-security interrogation room, scan the table covered in documents."
+    ]
+  },
+  "bleake-riddle-10": {
+    "title": "Cash’s family",
+    "steps": [
+      "Scan the family photograph on the desk beside Aaron Cash at GCPD."
+    ]
+  },
+  "bleake-riddle-11": {
+    "title": "The mercenary’s file",
+    "steps": [
+      "In GCPD’s communications room, scan the board showing Deathstroke, Arkham Knight and Scarecrow."
+    ]
+  },
+  "bleake-breakable-01": {
+    "title": "Royal Flush Gang",
+    "steps": [
+      "High on the wall between the Royal Flush Gang and Grinning Fishmonger signs.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-02": {
+    "title": "Happy Halloween",
+    "steps": [
+      "High beside the Happy Halloween billboard.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-03": {
+    "title": "Chinatown Urbarail",
+    "steps": [
+      "Left of the station’s red sign.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-04": {
+    "title": "Sushi and tattoos",
+    "steps": [
+      "High between the Sushi restaurant and tattoo shop.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-05": {
+    "title": "Facing the clock tower",
+    "steps": [
+      "On the building wall facing the clock tower.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-06": {
+    "title": "McKenzie’s Gems",
+    "steps": [
+      "High in the alley behind the sign.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-07": {
+    "title": "Empty canal",
+    "steps": [
+      "On the wall near the sewer entrance.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-08": {
+    "title": "Dixon Dock West",
+    "steps": [
+      "On the southwest wall; shoot from across the water.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-09": {
+    "title": "Panessa radio tower",
+    "steps": [
+      "Below the radio tower, on the wall facing the road.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-10": {
+    "title": "Panessa parking lot",
+    "steps": [
+      "At the top of the northeast gate.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-11": {
+    "title": "Lighthouse ramp",
+    "steps": [
+      "On the bridge support beside the lighthouse exit ramp.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-12": {
+    "title": "Panessa station",
+    "steps": [
+      "On the side of the raised walkway.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-13": {
+    "title": "Sionis crane",
+    "steps": [
+      "On the crane supports at the back of the compound.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-14": {
+    "title": "Northeast of GCPD",
+    "steps": [
+      "On the southern wall of the building opposite.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-breakable-15": {
+    "title": "GCPD eastern wall",
+    "steps": [
+      "On the station’s eastern wall.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "bleake-bomb-01": {
+    "title": "Chinatown above the street",
+    "steps": [
+      "Step onto the pad between the buildings and search the street below.",
+      "Fly a Remote Controlled Batarang close to the rioters until you identify the target highlighted in red.",
+      "Disarm the bomb by hitting the target with the Remote Electrical Charge. Alternatively, fly a Batarang through nearby sparks to electrify it and guide it into the target."
+    ]
+  },
+  "bleake-bomb-02": {
+    "title": "Clock tower east",
+    "steps": [
+      "Step onto the pad northeast of the tower and search beneath the parade floats.",
+      "Fly a Remote Controlled Batarang close to the rioters until you identify the target highlighted in red.",
+      "Disarm the bomb by hitting the target with the Remote Electrical Charge. Alternatively, fly a Batarang through nearby sparks to electrify it and guide it into the target."
+    ]
+  },
+  "bleake-bomb-03": {
+    "title": "Northern Chinatown rooftop",
+    "steps": [
+      "Step onto the rooftop pad and search the streets below.",
+      "Fly a Remote Controlled Batarang close to the rioters until you identify the target highlighted in red.",
+      "Disarm the bomb by hitting the target with the Remote Electrical Charge. Alternatively, fly a Batarang through nearby sparks to electrify it and guide it into the target."
+    ]
+  },
+  "miagani-trophy-01": {
+    "title": "Mercy Bridge support",
+    "steps": [
+      "Enter the small room on the west side of the support."
+    ]
+  },
+  "miagani-trophy-02": {
+    "title": "Waterfront weak wall",
+    "steps": [
+      "Shoot the wall from Mercy Bridge."
+    ]
+  },
+  "miagani-trophy-03": {
+    "title": "Bridge robot",
+    "steps": [
+      "Destroy the wall. Move the robot behind the panel, crush it, revive it and order it onto the pad."
+    ]
+  },
+  "miagani-trophy-04": {
+    "title": "Mausoleum",
+    "steps": [
+      "Collect the trophy on the mausoleum north of the cathedral."
+    ]
+  },
+  "miagani-trophy-05": {
+    "title": "Cathedral trap",
+    "steps": [
+      "Break the wall, pull the winch and enter through the grate. Release the anchor to crush the robots, then reopen it."
+    ]
+  },
+  "miagani-trophy-06": {
+    "title": "Race to the cathedral",
+    "steps": [
+      "Start at the hospital rooftop pad at 2887, 2171 and glide to the trophy."
+    ]
+  },
+  "miagani-trophy-07": {
+    "title": "Bridge gears",
+    "steps": [
+      "Pull until both gears turn. Use the Batclaw as the ball passes the opening."
+    ]
+  },
+  "miagani-trophy-08": {
+    "title": "Wall over the water",
+    "steps": [
+      "Jump to Wayne Tower in the Batmobile and shoot the wall, then reach the opening with the Line Launcher."
+    ]
+  },
+  "miagani-trophy-09": {
+    "title": "Wayne Tower fire escape",
+    "steps": [
+      "From the mid-level garden, enter the fire escape and climb to the storage room."
+    ]
+  },
+  "miagani-trophy-10": {
+    "title": "Trail from Wayne Tower",
+    "steps": [
+      "Follow the scanner trail to Grand Avenue Station. Hack the shutter and shoot the target inside."
+    ]
+  },
+  "miagani-trophy-11": {
+    "title": "Opposite windows",
+    "steps": [
+      "Glide through either weak window."
+    ]
+  },
+  "miagani-trophy-12": {
+    "title": "Grand Avenue train",
+    "steps": [
+      "Collect the trophy on top of the stationary train."
+    ]
+  },
+  "miagani-trophy-13": {
+    "title": "Station floor grate",
+    "steps": [
+      "Search beneath the hatch on the northwest side of the upper floor."
+    ]
+  },
+  "miagani-trophy-14": {
+    "title": "Miagani tunnels",
+    "steps": [
+      "Collect the trophy on the ledge above the main room."
+    ]
+  },
+  "miagani-trophy-15": {
+    "title": "Lacey’s Department Store",
+    "steps": [
+      "Pull the sign upward with the winch, then shoot the exposed weak wall."
+    ]
+  },
+  "miagani-trophy-16": {
+    "title": "Paul’s Diner",
+    "steps": [
+      "Use the Batclaw behind the counter."
+    ]
+  },
+  "miagani-trophy-17": {
+    "title": "Grand Avenue skyscraper",
+    "steps": [
+      "Climb to the top of the skyscraper west of the station."
+    ]
+  },
+  "miagani-trophy-18": {
+    "title": "The Gotham Pony",
+    "steps": [
+      "Pull open the hatch and enter. Destroy the sentry with the remote-controlled Batmobile before leaving."
+    ]
+  },
+  "miagani-trophy-19": {
+    "title": "Boarded tower",
+    "steps": [
+      "Glide from the rooftop, turn back and break through the boards."
+    ]
+  },
+  "miagani-trophy-20": {
+    "title": "Dang-Good Donut",
+    "steps": [
+      "Glide into the sign’s ring and collect the trophy inside."
+    ]
+  },
+  "miagani-trophy-21": {
+    "title": "Two sliders",
+    "steps": [
+      "Upper winch: left, then right. Lower winch: right, then left. Collect the ball at the bottom."
+    ]
+  },
+  "miagani-trophy-22": {
+    "title": "Gotham Herald wall",
+    "steps": [
+      "Glide from the building to the south through the boards."
+    ]
+  },
+  "miagani-trophy-23": {
+    "title": "Gotham Herald robots",
+    "steps": [
+      "Only attack green robots; the question mark swaps their colors. Defeat them all, then use the Batclaw."
+    ]
+  },
+  "miagani-trophy-24": {
+    "title": "Casino weak wall",
+    "steps": [
+      "Destroy the wall halfway up the building with the Batmobile."
+    ]
+  },
+  "miagani-trophy-25": {
+    "title": "Jump from the parking garage",
+    "steps": [
+      "Jump from the garage ramp onto the roof, then power the generator with the winch."
+    ]
+  },
+  "miagani-trophy-26": {
+    "title": "Four switches",
+    "steps": [
+      "Robot on the lower pad; gel on the two support switches. Batman on the other pad: Batarang the other two and detonate within three seconds."
+    ]
+  },
+  "miagani-trophy-27": {
+    "title": "Hospital scanner trail",
+    "steps": [
+      "Scan and follow the trail to the target at 2866, 2201, then shoot it."
+    ]
+  },
+  "miagani-trophy-28": {
+    "title": "Orphanage column",
+    "steps": [
+      "Pull the top anchor and repel the upper generator. Pull the middle anchor, activate the second generator, then pull the bottom anchor."
+    ]
+  },
+  "miagani-trophy-29": {
+    "title": "Orphanage rooftop",
+    "steps": [
+      "Look under the shelter in the northeast corner."
+    ]
+  },
+  "miagani-trophy-30": {
+    "title": "Orphanage targets",
+    "steps": [
+      "Batmobile on the pad: shoot each illuminated target and use a Missile Barrage for the final sequence."
+    ]
+  },
+  "miagani-trophy-31": {
+    "title": "Station balcony",
+    "steps": [
+      "Search the northeast balcony of the elevated station."
+    ]
+  },
+  "miagani-trophy-32": {
+    "title": "Tower elevator",
+    "steps": [
+      "Enter the stalled elevator in the metal tower."
+    ]
+  },
+  "miagani-trophy-33": {
+    "title": "Botanical storage room",
+    "steps": [
+      "Search the shelf in the upper-floor storage room on the west side."
+    ]
+  },
+  "miagani-trophy-34": {
+    "title": "Illuminated plants",
+    "steps": [
+      "Search among the pots on the southern upper floor."
+    ]
+  },
+  "miagani-trophy-35": {
+    "title": "Hanging monorail car",
+    "steps": [
+      "Drop into the carriage through its open side door."
+    ]
+  },
+  "miagani-trophy-36": {
+    "title": "Three dock pads",
+    "steps": [
+      "Put the two robots on two pads and Batman on the third, then use the Batclaw."
+    ]
+  },
+  "miagani-trophy-37": {
+    "title": "End of the pier",
+    "steps": [
+      "Collect the trophy on the rooftop beyond the Ferris wheel."
+    ]
+  },
+  "miagani-trophy-38": {
+    "title": "Lady of Gotham",
+    "steps": [
+      "Glide through the boards in the scaffolding beneath the statue."
+    ]
+  },
+  "miagani-riddle-01": {
+    "title": "The League’s return",
+    "steps": [
+      "Scan the “The Demon’s Head shall return” graffiti behind the burning barrel."
+    ]
+  },
+  "miagani-riddle-02": {
+    "title": "Wonder Tower",
+    "steps": [
+      "Look northeast beyond the broken bridges, zoom in and scan Wonder Tower."
+    ]
+  },
+  "miagani-riddle-03": {
+    "title": "The Wayne portrait",
+    "steps": [
+      "Scan the family portrait in the office at the top of Wayne Tower."
+    ]
+  },
+  "miagani-riddle-04": {
+    "title": "Quincy Sharp for mayor",
+    "steps": [
+      "Scan the election poster in the alley."
+    ]
+  },
+  "miagani-riddle-05": {
+    "title": "The Vicki Vale Show",
+    "steps": [
+      "Scan the neon sign on the rooftops."
+    ]
+  },
+  "miagani-riddle-06": {
+    "title": "Hell’s Gate",
+    "steps": [
+      "Scan the sign beside the road."
+    ]
+  },
+  "miagani-riddle-07": {
+    "title": "A flower for Ivy",
+    "steps": [
+      "After the final story events, scan the flower in front of the Botanical Gardens tree."
+    ]
+  },
+  "miagani-riddle-08": {
+    "title": "Elliot Memorial Hospital",
+    "steps": [
+      "Frame the entire hospital from the southeast and scan it."
+    ]
+  },
+  "miagani-riddle-09": {
+    "title": "The cat’s collar",
+    "steps": [
+      "Scan Catwoman’s collar inside the orphanage."
+    ]
+  },
+  "miagani-riddle-10": {
+    "title": "Riddler’s blueprint",
+    "steps": [
+      "In the Final Exam room, hack the panel and scan the blueprint on the desk."
+    ]
+  },
+  "miagani-breakable-01": {
+    "title": "Mercy Bridge",
+    "steps": [
+      "On the eastern bridge support.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-02": {
+    "title": "Dolphin sign",
+    "steps": [
+      "Beside the neon dolphins on the building.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-03": {
+    "title": "Bank of Gotham",
+    "steps": [
+      "High on the bank’s western tower.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-04": {
+    "title": "Grand Avenue tunnel",
+    "steps": [
+      "Above the tunnel entrance.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-05": {
+    "title": "Eastern tunnel",
+    "steps": [
+      "Above the tunnel entrance at the coordinates.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-06": {
+    "title": "East of the station",
+    "steps": [
+      "On the southern wall of the building east of Grand Avenue Station.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-07": {
+    "title": "Wayne Tower waterfront",
+    "steps": [
+      "Jump the Batmobile from the northwest ramp and look on the western wall.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-08": {
+    "title": "Parking garage",
+    "steps": [
+      "From the garage rooftop, look at the building opposite.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-09": {
+    "title": "Koul Brau",
+    "steps": [
+      "Above the sign, opposite Gotham Tailor.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-10": {
+    "title": "Horse-statue stairs",
+    "steps": [
+      "Beneath the walkway, above the stairs with horse statues.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-11": {
+    "title": "Eastern facade",
+    "steps": [
+      "High on the east-facing wall.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-12": {
+    "title": "Pinkney Orphanage",
+    "steps": [
+      "On the orphanage’s eastern wall.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-13": {
+    "title": "Newton Fairgrounds",
+    "steps": [
+      "On the fairground’s west side; shoot from the northwest across the water.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-14": {
+    "title": "Gotham Tonight north",
+    "steps": [
+      "On the northern facade.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-breakable-15": {
+    "title": "Gotham Tonight entrance",
+    "steps": [
+      "On the stone pillar opposite the entrance.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "miagani-bomb-01": {
+    "title": "Ferris Mall",
+    "steps": [
+      "Pad west of the parking garage: search around the mall for the target.",
+      "Fly a Remote Controlled Batarang close to the rioters until you identify the target highlighted in red.",
+      "Disarm the bomb by hitting the target with the Remote Electrical Charge. Alternatively, fly a Batarang through nearby sparks to electrify it and guide it into the target."
+    ]
+  },
+  "miagani-bomb-02": {
+    "title": "Wayne Tower northwest",
+    "steps": [
+      "Pad in the northwest corner: search north across the water, near the Cuffs sign.",
+      "Fly a Remote Controlled Batarang close to the rioters until you identify the target highlighted in red.",
+      "Disarm the bomb by hitting the target with the Remote Electrical Charge. Alternatively, fly a Batarang through nearby sparks to electrify it and guide it into the target."
+    ]
+  },
+  "miagani-bomb-03": {
+    "title": "Salvation Bridge",
+    "steps": [
+      "Pad on the walkway between buildings: search the street directly below.",
+      "Fly a Remote Controlled Batarang close to the rioters until you identify the target highlighted in red.",
+      "Disarm the bomb by hitting the target with the Remote Electrical Charge. Alternatively, fly a Batarang through nearby sparks to electrify it and guide it into the target."
+    ]
+  },
+  "founders-trophy-01": {
+    "title": "Docks lighthouse",
+    "steps": [
+      "Climb to the upper deck and watch out for the sniper."
+    ]
+  },
+  "founders-trophy-02": {
+    "title": "Trade House",
+    "steps": [
+      "Glide from the roof through the boards facing the water."
+    ]
+  },
+  "founders-trophy-03": {
+    "title": "Opposite the Fish Market",
+    "steps": [
+      "Glide through the boards on the waterfront wall."
+    ]
+  },
+  "founders-trophy-04": {
+    "title": "Pressure-pad floor",
+    "steps": [
+      "Open with the winch and stand on the green pad. Release the anchor, then cross with the Line Launcher without touching red pads."
+    ]
+  },
+  "founders-trophy-05": {
+    "title": "Ruins over the water",
+    "steps": [
+      "Enter the ruined building above the slums."
+    ]
+  },
+  "founders-trophy-06": {
+    "title": "Race to Killinger’s",
+    "steps": [
+      "Activate the pad at 2147, 1492, then drive down into the slums before time runs out."
+    ]
+  },
+  "founders-trophy-07": {
+    "title": "Construction-site robot",
+    "steps": [
+      "Power the generator with the winch and order the robot onto the pad."
+    ]
+  },
+  "founders-trophy-08": {
+    "title": "Shelter beneath the arch",
+    "steps": [
+      "Clear the checkpoint and climb to the sheltered ledge."
+    ]
+  },
+  "founders-trophy-09": {
+    "title": "Three hidden switches",
+    "steps": [
+      "Pull the winch, hit all three question marks with quick Batarangs, then use the Batclaw."
+    ]
+  },
+  "founders-trophy-10": {
+    "title": "Sentry behind the shutter",
+    "steps": [
+      "Open using the generator and shield the sentry with the question mark. Collect the trophy, release the sentry against the robots, then close it again."
+    ]
+  },
+  "founders-trophy-11": {
+    "title": "Slum robots",
+    "steps": [
+      "Order a robot onto the pad. Enter, use gel on the wall, crawl through the vent and defeat the robots."
+    ]
+  },
+  "founders-trophy-12": {
+    "title": "Under the ramp",
+    "steps": [
+      "Search the ditch below the construction-site ramp."
+    ]
+  },
+  "founders-trophy-13": {
+    "title": "Slum scanner trail",
+    "steps": [
+      "Scan and follow the question marks. At the fan, surface through the matching manhole, continue the trail and destroy the target."
+    ]
+  },
+  "founders-trophy-14": {
+    "title": "Wayne International Plaza",
+    "steps": [
+      "Collect the trophy on the east-facing balcony."
+    ]
+  },
+  "founders-trophy-15": {
+    "title": "Unfinished station",
+    "steps": [
+      "Search the yellow crate in the northern waiting area."
+    ]
+  },
+  "founders-trophy-16": {
+    "title": "LexCorp balcony",
+    "steps": [
+      "Robot on one pad, Batman on the other. Use smoke and the Batclaw before the robot attacks."
+    ]
+  },
+  "founders-trophy-17": {
+    "title": "Pretty Dolls Parlour",
+    "steps": [
+      "After The Perfect Crime, enter the floor grate and destroy the weak wall with gel."
+    ]
+  },
+  "founders-trophy-18": {
+    "title": "Spiked door",
+    "steps": [
+      "Open with the winch, stand on the pad and use the Batclaw. Immediately remote-control the Batmobile to pull back the door."
+    ]
+  },
+  "founders-trophy-19": {
+    "title": "Stairs in the ruins",
+    "steps": [
+      "Collect the trophy on the upper stairs."
+    ]
+  },
+  "founders-trophy-20": {
+    "title": "Ruins weak wall",
+    "steps": [
+      "Shoot the northern wall from a raised position."
+    ]
+  },
+  "founders-trophy-21": {
+    "title": "Scanner trail and jump",
+    "steps": [
+      "Follow the scanner trail, pull the ramp and jump with the Batmobile, then shoot the final target."
+    ]
+  },
+  "founders-trophy-22": {
+    "title": "Bank of Gotham",
+    "steps": [
+      "Shoot the high eastern wall from the road to the northeast."
+    ]
+  },
+  "founders-trophy-23": {
+    "title": "Race from GCPD",
+    "steps": [
+      "Activate the generator at 2456, 2663. Accelerate along the waterfront, eject toward the statue and glide to the rail."
+    ]
+  },
+  "founders-trophy-24": {
+    "title": "Robot on an electric floor",
+    "steps": [
+      "Blind the sentry and order the robot to fetch the trophy and return, then defeat it."
+    ]
+  },
+  "founders-trophy-25": {
+    "title": "Under Penitence Bridge",
+    "steps": [
+      "Drop to the platform above the water south of the bridge."
+    ]
+  },
+  "founders-trophy-26": {
+    "title": "Magnetic ball",
+    "steps": [
+      "Upper generator left, right generator up: attract both and pull the upper one right. Attract right, then upper. At the bottom, attract upper and repel right."
+    ]
+  },
+  "founders-trophy-27": {
+    "title": "Elevated-road weak wall",
+    "steps": [
+      "Shoot the western wall from the road to the south."
+    ]
+  },
+  "founders-trophy-28": {
+    "title": "Scaffolding",
+    "steps": [
+      "Search among the broken walls on the upper floors."
+    ]
+  },
+  "founders-trophy-29": {
+    "title": "Port Adams office",
+    "steps": [
+      "Enter the office beneath the crane east of the entrance."
+    ]
+  },
+  "founders-trophy-30": {
+    "title": "Container and robots",
+    "steps": [
+      "Order all robots beneath the hanging container, then hit the question mark to crush them together."
+    ]
+  },
+  "founders-trophy-31": {
+    "title": "Race to Port Adams",
+    "steps": [
+      "Start at the pad at 3253, 2136 on Miagani. Glide to the port and use the Batclaw before time runs out."
+    ]
+  },
+  "founders-trophy-32": {
+    "title": "Three container bars",
+    "steps": [
+      "Quickly pull out all three bars with the winch, then guide a Remote Controlled Batarang through the holes to the switch."
+    ]
+  },
+  "founders-trophy-33": {
+    "title": "Crane platform",
+    "steps": [
+      "Drop beneath the crane on the east side of the port."
+    ]
+  },
+  "founders-riddle-01": {
+    "title": "Motionless fishermen",
+    "steps": [
+      "Follow the dock west and scan the three bodies posed as fishermen."
+    ]
+  },
+  "founders-riddle-02": {
+    "title": "Grundy’s song",
+    "steps": [
+      "In the slums beneath the crane, cross the fence and open the door, then scan the room."
+    ]
+  },
+  "founders-riddle-03": {
+    "title": "Saint Dumas",
+    "steps": [
+      "Scan the statue beneath the saint’s name on the church’s west side."
+    ]
+  },
+  "founders-riddle-04": {
+    "title": "The abandoned calendar",
+    "steps": [
+      "Enter the manhole between LexCorp and Logerquist Towers. Climb into the wooden structure and scan the desk and whiteboard."
+    ]
+  },
+  "founders-riddle-05": {
+    "title": "Wayne Manor",
+    "steps": [
+      "From the station west of Wayne International Plaza, zoom west across the water and scan the manor."
+    ]
+  },
+  "founders-riddle-06": {
+    "title": "Professor Pyg’s circus",
+    "steps": [
+      "After The Perfect Crime, scan the circus poster by the operating room entrance."
+    ]
+  },
+  "founders-riddle-07": {
+    "title": "GothCorp",
+    "steps": [
+      "Scan the GothCorp logo south of the stock exchange."
+    ]
+  },
+  "founders-riddle-08": {
+    "title": "Cobblepot Manor",
+    "steps": [
+      "Scan the sign above the door north of Port Adams."
+    ]
+  },
+  "founders-riddle-09": {
+    "title": "Bane’s equipment",
+    "steps": [
+      "Inside the half-open container in the port’s northwest corner, open the crate with the Batclaw and scan its contents."
+    ]
+  },
+  "founders-riddle-10": {
+    "title": "The Dark Knight’s steed",
+    "steps": [
+      "Get out of the Batmobile and scan it. This riddle can be solved anywhere."
+    ]
+  },
+  "founders-breakable-01": {
+    "title": "City Vision Construction",
+    "steps": [
+      "On the construction site’s eastern side.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-02": {
+    "title": "LexCorp",
+    "steps": [
+      "Above the eastern entrance to the slums.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-03": {
+    "title": "Station parking lot",
+    "steps": [
+      "On the ceiling beneath the station west of Wayne International Plaza.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-04": {
+    "title": "Gotham Stock Exchange",
+    "steps": [
+      "Above the exchange entrance, on the right-hand wall.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-05": {
+    "title": "Opposite the fire station",
+    "steps": [
+      "On the grey building north of the fire station.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-06": {
+    "title": "Road walkway",
+    "steps": [
+      "Beneath the walkway spanning the road.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-07": {
+    "title": "South of the church",
+    "steps": [
+      "Beneath the ramp leading to the upper level.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-08": {
+    "title": "Statue courtyard",
+    "steps": [
+      "On the building’s southern facade.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-09": {
+    "title": "Port Adams east entrance",
+    "steps": [
+      "On the container east of the main gate.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-10": {
+    "title": "Port Adams crane",
+    "steps": [
+      "On the crane’s body inside the port.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "founders-breakable-11": {
+    "title": "Port Adams west entrance",
+    "steps": [
+      "On the container behind the militia vehicles.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "subway-trophy-01": {
+    "title": "Entrance office",
+    "steps": [
+      "Climb to the catwalk above the trains and drop into the office through the roof."
+    ]
+  },
+  "subway-trophy-02": {
+    "title": "Drone storage room",
+    "steps": [
+      "Search the shelf in the room with the stationary drone."
+    ]
+  },
+  "subway-trophy-03": {
+    "title": "Second ramp",
+    "steps": [
+      "Climb onto the control room roof."
+    ]
+  },
+  "subway-trophy-04": {
+    "title": "Upper walkway",
+    "steps": [
+      "In the room with three weak wooden walls, climb to the overhead walkway."
+    ]
+  },
+  "subway-trophy-05": {
+    "title": "Right branch stairs",
+    "steps": [
+      "Break through the right-hand wall and climb the construction-site stairs."
+    ]
+  },
+  "subway-trophy-06": {
+    "title": "Right branch ceiling",
+    "steps": [
+      "From the stairs, climb to the platforms near the ceiling."
+    ]
+  },
+  "subway-trophy-07": {
+    "title": "Construction pit",
+    "steps": [
+      "Continue along the right branch and look on the north platform of the pit."
+    ]
+  },
+  "subway-trophy-08": {
+    "title": "Left branch",
+    "steps": [
+      "Break through the left-hand wall and climb the ramp. Look right at the platform edge."
+    ]
+  },
+  "subway-breakable-01": {
+    "title": "Port elevator",
+    "steps": [
+      "Leaving the elevator, look up to the right.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "subway-breakable-02": {
+    "title": "First ramp",
+    "steps": [
+      "On the circular doorway to the right before the ramp.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "subway-breakable-03": {
+    "title": "Beyond the first ramp",
+    "steps": [
+      "At the first obstacle, turn around and look above the tunnel entrance.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "subway-breakable-04": {
+    "title": "Three walls, middle branch",
+    "steps": [
+      "Break through the middle wall and look above the large rock.",
+      "Destroy it with the Batmobile cannon."
+    ]
+  },
+  "stagg-trophy-01": {
+    "title": "Alpha entrance",
+    "steps": [
+      "Hack the panel beside the cage."
+    ]
+  },
+  "stagg-trophy-02": {
+    "title": "Alpha ball track",
+    "steps": [
+      "Hack the panel, then tilt the airship to move the ball along the track."
+    ]
+  },
+  "stagg-trophy-03": {
+    "title": "Alpha generator",
+    "steps": [
+      "Return the crates to their initial positions and activate the generator above the shutter."
+    ]
+  },
+  "stagg-trophy-04": {
+    "title": "Alpha vent",
+    "steps": [
+      "Unlock the crate and tilt right, then enter the uncovered vent."
+    ]
+  },
+  "stagg-trophy-05": {
+    "title": "Alpha pressure pad",
+    "steps": [
+      "From the pad, guide a Batarang above the trophy to the question mark."
+    ]
+  },
+  "stagg-trophy-06": {
+    "title": "Alpha underground crates",
+    "steps": [
+      "Move the lockable crate toward the wall destroyed with gel and enter the passage behind it."
+    ]
+  },
+  "stagg-trophy-07": {
+    "title": "Alpha stability controls",
+    "steps": [
+      "Open the left voice-locked panel and search behind the sentry."
+    ]
+  },
+  "stagg-trophy-08": {
+    "title": "Alpha pad-covered floor",
+    "steps": [
+      "Cross on the Line Launcher wire without touching the floor and grapple to the final hatch."
+    ]
+  },
+  "stagg-trophy-09": {
+    "title": "Alpha falling crate",
+    "steps": [
+      "Apply gel to the ceiling above the table. Tilt to drop the crate, then tilt again to smash the window."
+    ]
+  },
+  "stagg-trophy-10": {
+    "title": "Alpha three targets",
+    "steps": [
+      "Enter the vent above the fingerprint door and hit all three question marks with quick Batarangs."
+    ]
+  },
+  "stagg-trophy-11": {
+    "title": "Alpha two pads",
+    "steps": [
+      "Hack the panel and lead the monkey onto both pads, changing the barriers with the question mark."
+    ]
+  },
+  "stagg-trophy-12": {
+    "title": "Alpha monkey",
+    "steps": [
+      "Hack, activate the question mark and lead the monkey onto the pad."
+    ]
+  },
+  "stagg-trophy-13": {
+    "title": "Beta monkeys below the door",
+    "steps": [
+      "Hack, move right and hit the question mark. When both monkeys stand on the pads, lock them there with the switch."
+    ]
+  },
+  "stagg-trophy-14": {
+    "title": "Beta voice lock",
+    "steps": [
+      "Use the Voice Synthesizer on the door in the laboratory’s northeast corner."
+    ]
+  },
+  "stagg-trophy-15": {
+    "title": "Beta three generators",
+    "steps": [
+      "Enter through the southern vents and activate the three ceiling generators."
+    ]
+  },
+  "stagg-trophy-16": {
+    "title": "Beta western monkeys",
+    "steps": [
+      "Hack, lead both monkeys onto the pads and lock them in place with the question mark."
+    ]
+  },
+  "stagg-trophy-17": {
+    "title": "Beta steam vent",
+    "steps": [
+      "Freeze the pipe on the northern wall and crawl inside."
+    ]
+  },
+  "stagg-trophy-18": {
+    "title": "Beta cell",
+    "steps": [
+      "Use the computer upon entering Subject Testing and search the opened cell."
+    ]
+  },
+  "stagg-trophy-19": {
+    "title": "Beta crates and hatches",
+    "steps": [
+      "Gel the southern wall, unlock the crates and tilt left. Climb through two hatches. Tilt right, lock the crate beside the grate, tilt back and drop down."
+    ]
+  },
+  "stagg-trophy-20": {
+    "title": "Beta exterior crate",
+    "steps": [
+      "Open the voice lock opposite the sentries. Tilt right, then send the crate through the window; collect the trophy on the platform below."
+    ]
+  },
+  "stagg-trophy-21": {
+    "title": "Beta airlock",
+    "steps": [
+      "Open with the button and stand on the pad. Guide a Batarang to Alpha’s rightmost question mark as it lights up."
+    ]
+  },
+  "stagg-riddle-01": {
+    "title": "The white monkey",
+    "steps": [
+      "Alpha Research Laboratory: scan the albino monkey beneath the entrance platform."
+    ]
+  },
+  "stagg-riddle-02": {
+    "title": "The reporter and Deadshot",
+    "steps": [
+      "Beta Biological Engineering: scan the magazine on the northern upper-level desk."
+    ]
+  },
+  "stagg-riddle-03": {
+    "title": "Refrigerated transport",
+    "steps": [
+      "Beta airlock office: scan the flyer beside the stability controls."
+    ]
+  },
+  "stagg-breakable-01": {
+    "title": "Alpha entrance corridor",
+    "steps": [
+      "At the end of the corridor, opposite the first trophy.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-02": {
+    "title": "Alpha crate room",
+    "steps": [
+      "In the corner beneath the ladder.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-03": {
+    "title": "Alpha passage to Beta",
+    "steps": [
+      "Above the platform at the door toward Beta.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-04": {
+    "title": "Alpha main room",
+    "steps": [
+      "On the platform opposite the entrance.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-05": {
+    "title": "Alpha stability controls",
+    "steps": [
+      "Right of the console behind the voice lock.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-06": {
+    "title": "Alpha first shaft",
+    "steps": [
+      "After the underground puzzle, grapple up and turn around.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-07": {
+    "title": "Alpha beneath the stairs",
+    "steps": [
+      "On the shelf beneath the laboratory stairs.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-08": {
+    "title": "Alpha laboratory corner",
+    "steps": [
+      "On the shelf in the left corner from the entrance.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-09": {
+    "title": "Alpha above the laboratory",
+    "steps": [
+      "Above the laboratory at the back of the room.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-10": {
+    "title": "Beta Cloudburst",
+    "steps": [
+      "On the shelf right of the stairs leading to the security door.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-11": {
+    "title": "Beta southeast corner",
+    "steps": [
+      "On a shelf on the lower floor of Biological Engineering.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-12": {
+    "title": "Beta beneath the stairs",
+    "steps": [
+      "Beneath the southern stairs leading to the glass-roofed platform.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-13": {
+    "title": "Beta northern vent",
+    "steps": [
+      "Above the high vent entrance on the northern wall.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-14": {
+    "title": "Beta weak wall",
+    "steps": [
+      "Use Explosive Gel on the southern wall of Subject Testing.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "stagg-breakable-15": {
+    "title": "Beta airlock",
+    "steps": [
+      "On top of the cage in the airlock.",
+      "Grab the ring with the Batclaw and pull it down."
+    ]
+  },
+  "panessa-trophy-01": {
+    "title": "Electrified Batarang",
+    "steps": [
+      "Electrify a Batarang above the Batcomputer, then guide it through the window and down the stairs to the fuse box."
+    ]
+  },
+  "panessa-trophy-02": {
+    "title": "Stairway switches",
+    "steps": [
+      "After trophy 1, climb the stairs and turn off every question mark with Batarangs."
+    ]
+  },
+  "panessa-trophy-03": {
+    "title": "Robots and fear",
+    "steps": [
+      "Enter the vent, break through the wall and use a Fear Multi-Takedown before the timer expires."
+    ]
+  },
+  "panessa-trophy-04": {
+    "title": "Robot statue",
+    "steps": [
+      "Pull the chest ring with the Batclaw."
+    ]
+  },
+  "panessa-trophy-05": {
+    "title": "Rotating statue",
+    "steps": [
+      "The question mark changes direction; the Electrical Charge starts or stops rotation. Stop at A, B and C without crossing Reset."
+    ]
+  },
+  "panessa-trophy-06": {
+    "title": "Three electrified pads",
+    "steps": [
+      "Open using the generator. From the first pad, use the Line Launcher and turn to reach the second. Head back toward the trophy and turn to the third."
+    ]
+  },
+  "panessa-trophy-07": {
+    "title": "Stage A colors",
+    "steps": [
+      "Use Batarangs to match the colors displayed in the opposite room."
+    ]
+  },
+  "panessa-trophy-08": {
+    "title": "Statue generator",
+    "steps": [
+      "Climb behind the backdrop, open the statue’s chest with the Batclaw and overload the generator."
+    ]
+  },
+  "panessa-trophy-09": {
+    "title": "Stage A sentries",
+    "steps": [
+      "Blind one sentry and disable the other from behind, then reapply the hack and disable the second."
+    ]
+  },
+  "panessa-trophy-10": {
+    "title": "Stage B fan",
+    "steps": [
+      "Hack the panel above the fan to stop it."
+    ]
+  },
+  "panessa-trophy-11": {
+    "title": "Steam above the set",
+    "steps": [
+      "Climb to the hatch, cross with the Line Launcher and walk on the wire. Freeze both vents and grapple up."
+    ]
+  },
+  "panessa-trophy-12": {
+    "title": "Mines under the stairs",
+    "steps": [
+      "Disable the mines with the upgraded Disruptor and slide beneath the wall."
+    ]
+  },
+  "panessa-trophy-13": {
+    "title": "Explosive counterweight",
+    "steps": [
+      "Lower the weight and place gel facing the wall. Raise it and detonate beside the weak wall."
+    ]
+  },
+  "panessa-trophy-14": {
+    "title": "Middle-room vent",
+    "steps": [
+      "From the pressure pad, guide a Batarang through the vent to the question mark in the west room."
+    ]
+  },
+  "panessa-trophy-15": {
+    "title": "Ball and steam pipes",
+    "steps": [
+      "Freeze the vent behind the ball each time it stops until it reaches the exit."
+    ]
+  },
+  "panessa-trophy-16": {
+    "title": "Sabotaged weapons crate",
+    "steps": [
+      "Freeze the vent and climb up. Sabotage the crate with the Disruptor and order the robot to open it."
+    ]
+  },
+  "panessa-trophy-17": {
+    "title": "Three vent throws",
+    "steps": [
+      "Gel the wall and step on the pad. First Batarang: right, left. Second: right to the new switch. Third, electrified: right, right, then the fuse above the trophy."
+    ]
+  },
+  "panessa-trophy-18": {
+    "title": "The stages of life",
+    "steps": [
+      "Activate the generators in this order: pregnancy, baby, toddler, running child, young person, businessman, elderly man, gravestone."
+    ]
+  },
+  "panessa-trophy-19": {
+    "title": "Stage C mirror",
+    "steps": [
+      "Turn away from the trophy and fire the Electrical Charge at the question mark above the vent."
+    ]
+  },
+  "panessa-trophy-20": {
+    "title": "Color memory",
+    "steps": [
+      "Follow the letters’ color. Sequences: blue-green-red-yellow; yellow-green-blue-blue-yellow-red; green-blue-yellow-red-blue-red-yellow-green."
+    ]
+  },
+  "panessa-trophy-21": {
+    "title": "Slot machine",
+    "steps": [
+      "Hack the controls beneath the reels and stop each on the same symbol."
+    ]
+  },
+  "panessa-riddle-01": {
+    "title": "Weapons in front of the cell",
+    "steps": [
+      "Scan the weapons in front of the cell nearest the elevator."
+    ]
+  },
+  "panessa-riddle-02": {
+    "title": "A candlelit love",
+    "steps": [
+      "Open the voice-locked door near Stage A and scan the statue among the candles."
+    ]
+  },
+  "panessa-riddle-03": {
+    "title": "Inferno poster",
+    "steps": [
+      "In the room on the right when entering Stage A, scan the poster and boxes in one frame."
+    ]
+  },
+  "panessa-breakable-01": {
+    "title": "Cell corridor",
+    "steps": [
+      "On the floor between Quarantine Cells and Backstage.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-02": {
+    "title": "Backstage stairs",
+    "steps": [
+      "At the top of the stairs on the left as you enter.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-03": {
+    "title": "Backstage grate",
+    "steps": [
+      "Beside the grate on the left wall.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-04": {
+    "title": "Stage A cactus",
+    "steps": [
+      "On the floor beside the cactus on the way to Stage A.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-05": {
+    "title": "Stage A right room",
+    "steps": [
+      "On the floor in the room to the right as you enter.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-06": {
+    "title": "Stage A left room",
+    "steps": [
+      "On the desk in the left-hand room.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-07": {
+    "title": "Stage B entrance",
+    "steps": [
+      "In the right corner beside the main door.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-08": {
+    "title": "Stage B bookshelf",
+    "steps": [
+      "Beside the bookshelf in the minigunner corridor.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-09": {
+    "title": "Stage B west room",
+    "steps": [
+      "On the crates in the western room.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-10": {
+    "title": "Stage B middle room",
+    "steps": [
+      "On the floor beside the trophy in the middle room.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-11": {
+    "title": "Stage B east room",
+    "steps": [
+      "On the floor beneath the trophy in the eastern room.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-12": {
+    "title": "Toward Stage C",
+    "steps": [
+      "Turn left at the end of the corridor.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-13": {
+    "title": "Stage C weak wall",
+    "steps": [
+      "Use gel on the weak wall beside the entrance.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-14": {
+    "title": "Mirror corridor",
+    "steps": [
+      "On the couch in the corridor with the keypad.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "panessa-breakable-15": {
+    "title": "Stage C office",
+    "steps": [
+      "Crawl through the vent from the mirror corridor.",
+      "Destroy the jack-in-the-box with a Batarang."
+    ]
+  },
+  "hq-trophy-01": {
+    "title": "Ball track",
+    "steps": [
+      "Lower the Batmobile with the winch. Shoot the question marks to block the holes: first one ball, then two together."
+    ]
+  },
+  "hq-trophy-02": {
+    "title": "Screens and timing",
+    "steps": [
+      "Hit the switch when the orange circle reaches the green question mark. Complete three rounds."
+    ]
+  },
+  "hq-trophy-03": {
+    "title": "Upper workbench",
+    "steps": [
+      "Reach the first generator room and search the workbench."
+    ]
+  },
+  "hq-trophy-04": {
+    "title": "Upper-room pipes",
+    "steps": [
+      "Hack the door and use the Electrical Charge on the switch to align the pipes as the ball passes."
+    ]
+  },
+  "hq-trophy-05": {
+    "title": "Three wheels",
+    "steps": [
+      "Hack the wheels; a Batarang changes direction. Start with all buckets at the top: rotate the first left, second right and third left."
+    ]
+  },
+  "hq-trophy-06": {
+    "title": "Rotating maze",
+    "steps": [
+      "Use the eastern vent beneath the second fan. Repel until ball and exit share a section, then attract."
+    ]
+  },
+  "hq-trophy-07": {
+    "title": "Elevator weak wall",
+    "steps": [
+      "Move the elevator beside the weak wall with the Electrical Charge and use Explosive Gel."
+    ]
+  },
+  "hq-trophy-08": {
+    "title": "Behind the curtain",
+    "steps": [
+      "Take the first elevator down and look behind the curtain by the exit."
+    ]
+  },
+  "hq-trophy-09": {
+    "title": "Bar Lounge sign",
+    "steps": [
+      "Look above the pink sign after the second elevator."
+    ]
+  },
+  "hq-trophy-10": {
+    "title": "Sentry and fuse box",
+    "steps": [
+      "Blind the sentry and step on the pad. First Batarang: vent, left, end, right to the switch. Blind again, electrify the second Batarang and hit the fuse."
+    ]
+  },
+  "hq-trophy-11": {
+    "title": "Panel under the floor",
+    "steps": [
+      "Hack the door near the second fan, then the panel below the floor, and use the Batclaw."
+    ]
+  },
+  "hq-trophy-12": {
+    "title": "Under the elevator",
+    "steps": [
+      "From the bottom, climb above the blocked Excavator entrance. Send the elevator up and drop into the shaft."
+    ]
+  },
+  "hq-trophy-13": {
+    "title": "Eastern room planter",
+    "steps": [
+      "South entrance: look beneath the vantage point in the eastern room."
+    ]
+  },
+  "hq-trophy-14": {
+    "title": "Two balls, two colors",
+    "steps": [
+      "Hack the southern door in the east room. Align the first pipes before starting. Right ball enters first green: rotate green. Left leaves first red: rotate red. Right reaches lower pipe: green. Left enters second red: red. Right leaves second green: green. Right enters third green: green. Left enters third red: red."
+    ]
+  },
+  "hq-trophy-15": {
+    "title": "Southern walkway",
+    "steps": [
+      "Look beneath the walkway’s weak flooring."
+    ]
+  },
+  "hq-trophy-16": {
+    "title": "Robot and two sentries",
+    "steps": [
+      "Hack the upper eastern door. Blind right, order the robot to disable left, blind right again, step on the pad and use the Batclaw."
+    ]
+  },
+  "hq-trophy-17": {
+    "title": "Western room planter",
+    "steps": [
+      "Search the planter at the back of the lower floor."
+    ]
+  },
+  "hq-trophy-18": {
+    "title": "Rotating ball puzzle",
+    "steps": [
+      "Electrical Charge: attract three times, repel four times, attract three times."
+    ]
+  },
+  "hq-trophy-19": {
+    "title": "Chinese restaurant",
+    "steps": [
+      "Enter the floor vents beneath the central table."
+    ]
+  },
+  "hq-trophy-20": {
+    "title": "Screen memory",
+    "steps": [
+      "Hack the screens and match every pair of identical pictures."
+    ]
+  },
+  "hq-trophy-21": {
+    "title": "Vent toward the Excavator",
+    "steps": [
+      "From the upper center, follow the vents toward the Excavator. Use the Batclaw on the opposite wall before dropping down."
+    ]
+  },
+  "hq-riddle-01": {
+    "title": "The white rabbit",
+    "steps": [
+      "North entrance: between the fans, reach the southern elevator and descend, then scan the rabbit mannequins."
+    ]
+  },
+  "hq-riddle-02": {
+    "title": "The fear-filled shop",
+    "steps": [
+      "South entrance, southern room, lower floor: scan the shop filled with yellow gas through its window."
+    ]
+  },
+  "hq-riddle-03": {
+    "title": "Revenge in photographs",
+    "steps": [
+      "South entrance, western room, lower floor: scan the board beside the ammunition crates."
+    ]
+  },
+  "hq-breakable-01": {
+    "title": "Shaft entrance",
+    "steps": [
+      "On the right wall before lowering the Batmobile.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-02": {
+    "title": "Shaft left wall",
+    "steps": [
+      "On the left side near the entrance.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-03": {
+    "title": "Upper shaft",
+    "steps": [
+      "Lower the Batmobile with the winch and look above you.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-04": {
+    "title": "Between the fans, right",
+    "steps": [
+      "On the right wall between the two fans.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-05": {
+    "title": "Between the fans, elevator",
+    "steps": [
+      "On the ledge wall toward the elevator.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-06": {
+    "title": "Below the second fan",
+    "steps": [
+      "In the passage on the shaft’s eastern side.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-07": {
+    "title": "First elevator exit",
+    "steps": [
+      "High on the right wall of the exit room.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-08": {
+    "title": "Bottom of the shaft",
+    "steps": [
+      "Climb to the northern ledge and look on the left wall.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-09": {
+    "title": "Under the second elevator",
+    "steps": [
+      "On the underside of the elevator in the upper shaft.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-10": {
+    "title": "South entrance, east room",
+    "steps": [
+      "On the left wall as you enter the eastern room.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-11": {
+    "title": "South room upper wall",
+    "steps": [
+      "High on the left wall as you enter.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-12": {
+    "title": "South room escalator",
+    "steps": [
+      "Beneath the escalator, on the lower ceiling.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-13": {
+    "title": "West room ceiling",
+    "steps": [
+      "In the center of the lower-floor ceiling.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-14": {
+    "title": "West room upper wall",
+    "steps": [
+      "High on the left wall as you enter.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  },
+  "hq-breakable-15": {
+    "title": "Chinese restaurant",
+    "steps": [
+      "On the northern room’s ceiling.",
+      "Destroy the spider drone with a Batarang."
+    ]
+  }
+}

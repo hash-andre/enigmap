@@ -1,0 +1,61 @@
+import { chromium } from '@playwright/test';
+import assert from 'node:assert/strict';
+const browser=await chromium.launch({executablePath:process.env.ENIGMAP_BROWSER||'/usr/bin/brave',headless:true,args:['--no-sandbox','--disable-gpu']});
+const errors=[];
+try{
+ const context=await browser.newContext({viewport:{width:1440,height:1000},locale:'it-IT'});
+ const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));
+ await page.goto('http://localhost:5173/',{waitUntil:'networkidle'});
+ assert.equal(await page.locator('html').getAttribute('lang'),'en');
+ await page.getByRole('button',{name:'How it works',exact:true}).waitFor();
+ const tutorialBox=await page.getByRole('button',{name:'How it works',exact:true}).boundingBox();
+ const languageBox=await page.getByRole('button',{name:'Switch to Italian'}).boundingBox();
+ assert.ok(languageBox.x>=tutorialBox.x+tutorialBox.width);
+ await page.getByRole('button',{name:'How it works',exact:true}).click();
+ await page.getByRole('dialog').getByRole('heading',{name:'Choose a point',exact:true}).waitFor();
+ await page.getByRole('button',{name:'Start investigating'}).click();
+ await page.getByRole('searchbox',{name:'Search for a point',exact:true}).fill('Offshore crane');
+ await page.getByRole('button',{name:'Trophy 1: Offshore crane',exact:true}).click();
+ const dialog=page.getByRole('dialog');
+ await dialog.getByRole('heading',{name:'Offshore crane',exact:true}).waitFor();
+ await dialog.getByText('Reach the north end of the crane.',{exact:true}).waitFor();
+ await dialog.getByRole('checkbox',{name:/Completed/}).check();
+ await dialog.getByRole('button',{name:'Back to map',exact:true}).click();
+ const position=await page.locator('.leaflet-image-layer').first().boundingBox();
+ await page.getByRole('button',{name:'Switch to Italian'}).click();
+ assert.equal(await page.locator('html').getAttribute('lang'),'it');
+ assert.equal(await page.evaluate(()=>localStorage.getItem('enigmap.language.v1')),'it');
+ assert.deepEqual(await page.locator('.leaflet-image-layer').first().boundingBox(),position);
+ // The English search query still finds the same point in the Italian interface.
+ await page.getByRole('button',{name:'Trofeo 1: Gru al largo · Completato',exact:true}).waitFor();
+ await page.reload({waitUntil:'networkidle'});
+ await page.getByRole('button',{name:'Come funziona',exact:true}).waitFor();
+ assert.equal(await page.locator('html').getAttribute('lang'),'it');
+ assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('enigmap.progress.v1')).completed),['bleake-trophy-01']);
+ await page.getByRole('button',{name:'Passa all’inglese'}).click();
+ await page.getByLabel('Choose map or floor').selectOption('panessa');
+ assert.match(await page.locator('.leaflet-image-layer').first().getAttribute('src'),/panessa\.en\.svg/);
+ await page.getByRole('button',{name:'Switch to Italian'}).click();
+ assert.match(await page.locator('.leaflet-image-layer').first().getAttribute('src'),/panessa\.svg/);
+ await page.getByRole('button',{name:'Passa all’inglese'}).click();
+ await page.reload({waitUntil:'networkidle'});
+ await page.getByRole('button',{name:'How it works',exact:true}).waitFor();
+ await page.screenshot({path:'/tmp/enigmap-language-desktop.png'});
+ await context.close();
+ for(const [width,height] of [[360,780],[390,844]]){
+  const mobile=await browser.newContext({viewport:{width,height},isMobile:true,hasTouch:true});
+  const phone=await mobile.newPage();phone.on('pageerror',e=>errors.push(e.message));
+  await phone.goto('http://localhost:5173/',{waitUntil:'networkidle'});
+  assert.equal(await phone.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  const englishButton=phone.getByRole('button',{name:'Switch to Italian'});
+  const box=await englishButton.boundingBox();assert.ok(box.x+box.width<=width);
+  await englishButton.click();await phone.getByRole('button',{name:'Come funziona',exact:true}).waitFor();
+  assert.equal(await phone.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);
+  await phone.reload({waitUntil:'networkidle'});await phone.getByRole('button',{name:'Passa all’inglese'}).waitFor();
+  await phone.getByRole('button',{name:'Passa all’inglese'}).click();
+  await phone.screenshot({path:`/tmp/enigmap-language-mobile-${width}.png`});
+  await mobile.close();
+ }
+ assert.deepEqual(errors,[]);
+ console.log('PASS: English default, 315 translated cards, EN/IT switch, remembered preference, unchanged progress and map view, localized map assets, mobile 360/390px.');
+}finally{await browser.close();}

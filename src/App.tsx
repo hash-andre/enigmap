@@ -1,15 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
-import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, ChevronRight, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, ShieldCheck, SlidersHorizontal, X } from 'lucide-react';
-import { areas, categories, mapById, maps, points } from './data';
+import { ArrowDownToLine, ArrowUpFromLine, ArrowUpRight, Check, ChevronDown, ChevronRight, Ellipsis, Car, HelpCircle, Layers, Map as MapIcon, Search, ShieldCheck, SlidersHorizontal, Languages, X } from 'lucide-react';
+import { points as originalPoints, categories as originalCategories } from './data';
+import { useLanguage, useTranslatedData, pointSearchIndex } from './i18n';
 import type { Area, Category, MapId, Point } from './types';
 import { parseProgress, readProgress, serializeProgress, STORAGE_KEY } from './progress';
 import MapView from './components/MapView';
 import Dialog from './components/Dialog';
 import { CategoryIcon } from './components/Icons';
 
-const known = new Set(points.map(p => p.id));
-const categoryKeys = Object.keys(categories) as Category[];
+const known = new Set(originalPoints.map(p => p.id));
+const categoryKeys = Object.keys(originalCategories) as Category[];
 function initial() {
   try { return { ids: readProgress(localStorage, known), error: '' }; }
   catch { return { ids: new Set<string>(), error: 'Salvataggio locale non disponibile o danneggiato. Esporta i progressi prima di chiudere.' }; }
@@ -17,6 +18,8 @@ function initial() {
 const mapForArea: Partial<Record<Area, MapId>> = { panessa: 'panessa', subway: 'subway', stagg: 'stagg-alpha', hq: 'hq-2' };
 
 export default function App() {
+  const { language, setLanguage, t } = useLanguage();
+  const { points, areas, categories, maps, mapById } = useTranslatedData();
   const [loaded] = useState(initial);
   const [completed, setCompleted] = useState(loaded.ids);
   const [storageError, setStorageError] = useState(loaded.error);
@@ -26,7 +29,9 @@ export default function App() {
   const [category, setCategory] = useState<Category | 'all'>('all');
   const [query, setQuery] = useState('');
   const [pendingOnly, setPendingOnly] = useState(false);
-  const [selected, setSelected] = useState<Point | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const selected = points.find(p => p.id === selectedId) ?? null;
+  function setSelected(point: Point | null) { setSelectedId(point?.id ?? null); }
   const [tutorial, setTutorial] = useState(false);
   const [progressMenu, setProgressMenu] = useState(false);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -47,7 +52,7 @@ export default function App() {
     return () => { document.removeEventListener('click', close); document.removeEventListener('keydown', escape); };
   }, [progressMenu]);
 
-  const visible = useMemo(() => points.filter(p => (area === 'all' || p.area === area) && (category === 'all' || p.category === category) && (!pendingOnly || !completed.has(p.id)) && (!query || `${p.title} ${p.location} ${p.number} ${p.gameCoordinates?.join(' ')} ${p.requirements.join(' ')} ${p.id}`.toLocaleLowerCase('it').includes(query.toLocaleLowerCase('it').trim()))), [area, category, pendingOnly, completed, query]);
+  const visible = useMemo(() => points.filter(p => (area === 'all' || p.area === area) && (category === 'all' || p.category === category) && (!pendingOnly || !completed.has(p.id)) && (!query || `${pointSearchIndex.get(p.id)} ${p.number} ${p.gameCoordinates?.join(' ')} ${p.id}`.toLocaleLowerCase(language).includes(query.toLocaleLowerCase(language).trim()))), [area, category, pendingOnly, completed, query, language, points]);
   const onMap = useMemo(() => visible.filter(p => p.map === mapId && p.position), [visible, mapId]);
   const offMap = visible.filter(p => p.map !== mapId || !p.position);
   const physicalDone = points.filter(p => completed.has(p.id)).length;
@@ -58,7 +63,7 @@ export default function App() {
   function chooseArea(value: Area | 'all') { setArea(value); setMapId(value === 'all' ? 'gotham' : mapForArea[value] ?? 'gotham'); }
   function exportFile() {
     const url = URL.createObjectURL(new Blob([serializeProgress(completed)], { type: 'application/json' }));
-    const link = document.createElement('a'); link.href = url; link.download = `enigmap-progressi-${new Date().toISOString().slice(0, 10)}.json`; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); setProgressMenu(false);
+    const link = document.createElement('a'); link.href = url; link.download = `enigmap-${language === 'en' ? 'progress' : 'progressi'}-${new Date().toISOString().slice(0, 10)}.json`; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); setProgressMenu(false);
   }
   async function importFile(file: File | undefined) {
     if (!file) return;
@@ -67,59 +72,59 @@ export default function App() {
       const { ids, ignored } = parseProgress(await file.text(), known);
       const added = [...ids].filter(id => !completed.has(id)).length;
       setCompleted(previous => new Set([...previous, ...ids]));
-      setNotice(`${added} nuovi completamenti importati.${ignored ? ` ${ignored} ID sconosciuti ignorati.` : ''}`);
-    } catch (error) { setNotice(error instanceof Error ? error.message : 'Impossibile leggere il file. I progressi non sono stati modificati.'); }
+      setNotice(t('{count} nuovi completamenti importati.', { count: added }) + (ignored ? t(' {count} ID sconosciuti ignorati.', { count: ignored }) : ''));
+    } catch (error) { setNotice(t(error instanceof Error ? error.message : 'Impossibile leggere il file. I progressi non sono stati modificati.')); }
     if (fileInput.current) fileInput.current.value = '';
     setProgressMenu(false);
   }
 
   return <div className="app">
     <header className="header">
-      <a className="brand" href="/" aria-label="Enigmap, pagina iniziale"><span className="brand-mark">?</span><span><span className="wordmark">Enigmap</span></span></a>
-      <div className="header-right"><span className="game-identity"><img className="batman-logo" src="/batman-logo.svg" alt="" /><span className="game-name">BATMAN<span>ARKHAM KNIGHT</span></span></span><span className="header-divider" /><button className="tutorial-button" onClick={() => setTutorial(true)}><HelpCircle size={17} /><span>Come funziona</span></button></div>
+      <a className="brand" href="/" aria-label={t('Enigmap, pagina iniziale')}><span className="brand-mark">?</span><span><span className="wordmark">Enigmap</span></span></a>
+      <div className="header-right"><span className="game-identity"><img className="batman-logo" src="/batman-logo.svg" alt="" /><span className="game-name">BATMAN<span>ARKHAM KNIGHT</span></span></span><span className="header-divider" /><button className="tutorial-button" onClick={() => setTutorial(true)}><HelpCircle size={17} /><span>{t('Come funziona')}</span></button><button className="language-button" aria-label={t(language === 'en' ? 'Passa all’italiano' : 'Passa all’inglese')} title={t('Cambia lingua')} onClick={() => setLanguage(language === 'en' ? 'it' : 'en')}><Languages size={16} /><span>{language.toUpperCase()}</span></button></div>
     </header>
     <div className="workspace">
-      <aside className={`sidebar ${filtersOpen ? 'sidebar-open' : ''}`} aria-label="Filtri e progressi">
-        <div className="sidebar-mobile-heading"><span>Esplora Gotham</span><button className="icon-button" aria-label="Chiudi filtri" onClick={() => setFiltersOpen(false)}><X size={20} /></button></div>
+      <aside className={`sidebar ${filtersOpen ? 'sidebar-open' : ''}`} aria-label={t('Filtri e progressi')}>
+        <div className="sidebar-mobile-heading"><span>{t('Esplora Gotham')}</span><button className="icon-button" aria-label={t('Chiudi filtri')} onClick={() => setFiltersOpen(false)}><X size={20} /></button></div>
         <div className="progress-panel">
-          <div className="eyebrow">LA TUA INDAGINE<div className="progress-actions"><button className="icon-button" aria-label="Gestisci progressi" aria-expanded={progressMenu} onClick={() => setProgressMenu(!progressMenu)}><Ellipsis size={20} /></button>{progressMenu && <div className="progress-menu"><button onClick={exportFile}><ArrowDownToLine size={16} />Esporta progressi</button><button onClick={() => fileInput.current?.click()}><ArrowUpFromLine size={16} />Importa progressi</button><p>Salvati in questo browser.<br />Trasferiscili con un file.</p></div>}</div></div>
-          <div className="progress-number"><strong>{physicalDone}<span>/ 315</span></strong><span className="percentage">{percent}%</span></div><div className="progress-track"><div style={{ width: `${percent}%` }} /></div><div className="progress-caption"><span>Elementi completati</span><span className="local-indicator"><span />Locale</span></div>
+          <div className="eyebrow">{t('LA TUA INDAGINE')}<div className="progress-actions"><button className="icon-button" aria-label={t('Gestisci progressi')} aria-expanded={progressMenu} onClick={() => setProgressMenu(!progressMenu)}><Ellipsis size={20} /></button>{progressMenu && <div className="progress-menu"><button onClick={exportFile}><ArrowDownToLine size={16} />{t('Esporta progressi')}</button><button onClick={() => fileInput.current?.click()}><ArrowUpFromLine size={16} />{t('Importa progressi')}</button><p>{t('Salvati in questo browser.')}<br />{t('Trasferiscili con un file.')}</p></div>}</div></div>
+          <div className="progress-number"><strong>{physicalDone}<span>/ 315</span></strong><span className="percentage">{percent}%</span></div><div className="progress-track"><div style={{ width: `${percent}%` }} /></div><div className="progress-caption"><span>{t('Elementi completati')}</span><span className="local-indicator"><span />{t('Locale')}</span></div>
         </div>
         <div className="sidebar-filters">
-          <label className="search"><Search size={17} /><input type="search" aria-label="Cerca un punto" placeholder="Cerca un punto, un luogo…" value={query} onChange={e => setQuery(e.target.value)} /><span>⌕</span></label>
-          <label className="field-label" htmlFor="area-selector">AREA</label><div className="select-wrap"><MapIcon size={16} /><select id="area-selector" value={area} onChange={e => chooseArea(e.target.value as Area | 'all')}><option value="all">Tutte le aree</option>{Object.entries(areas).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select><ChevronDown size={15} /></div>
-          <div className="filter-title"><span>CATEGORIE</span><button onClick={() => setCategory('all')} className={category === 'all' ? 'selected-text' : ''}>Tutte</button></div>
+          <label className="search"><Search size={17} /><input type="search" aria-label={t('Cerca un punto')} placeholder={t('Cerca un punto, un luogo…')} value={query} onChange={e => setQuery(e.target.value)} /><span>⌕</span></label>
+          <label className="field-label" htmlFor="area-selector">{t('AREA')}</label><div className="select-wrap"><MapIcon size={16} /><select id="area-selector" value={area} onChange={e => chooseArea(e.target.value as Area | 'all')}><option value="all">{t('Tutte le aree')}</option>{Object.entries(areas).map(([id, label]) => <option key={id} value={id}>{label}</option>)}</select><ChevronDown size={15} /></div>
+          <div className="filter-title"><span>{t('CATEGORIE')}</span><button onClick={() => setCategory('all')} className={category === 'all' ? 'selected-text' : ''}>{t('Tutte')}</button></div>
           <div className="category-list">{categoryKeys.map(key => {
             const total = points.filter(p => p.category === key && (area === 'all' || p.area === area)); const done = total.filter(p => completed.has(p.id)).length;
             return <button key={key} className={`category-row ${category === key ? 'active' : ''}`} aria-pressed={category === key} onClick={() => setCategory(category === key ? 'all' : key)} style={{ '--category-color': categories[key].color } as CSSProperties}><span className="category-icon"><CategoryIcon category={key} /></span><span>{categories[key].plural}</span><span className="category-count">{done}<span> / {total.length}</span></span><span className="category-check">{category === key && <Check size={11} />}</span></button>;
           })}</div>
-          <label className="pending-filter"><span>Da completare</span><input type="checkbox" checked={pendingOnly} onChange={e => setPendingOnly(e.target.checked)} /><span className="switch" aria-hidden="true" /></label>
-          <div className="filter-result"><span className="live-dot" />{onMap.length} punti su questa mappa<button title="Azzera filtri" onClick={() => { setCategory('all'); setPendingOnly(false); setQuery(''); chooseArea('all'); }} aria-label="Azzera filtri"><SlidersHorizontal size={14} /></button></div>
+          <label className="pending-filter"><span>{t('Da completare')}</span><input type="checkbox" checked={pendingOnly} onChange={e => setPendingOnly(e.target.checked)} /><span className="switch" aria-hidden="true" /></label>
+          <div className="filter-result"><span className="live-dot" />{t('{count} punti su questa mappa', { count: onMap.length })}<button title={t('Azzera filtri')} onClick={() => { setCategory('all'); setPendingOnly(false); setQuery(''); chooseArea('all'); }} aria-label={t('Azzera filtri')}><SlidersHorizontal size={14} /></button></div>
         </div>
-        <div className="sidebar-foot"><ShieldCheck size={16} /><span>I tuoi progressi restano qui.<br /><span>Nessun account necessario.</span></span></div>
+        <div className="sidebar-foot"><ShieldCheck size={16} /><span>{t('I tuoi progressi restano qui.')}<br /><span>{t('Nessun account necessario.')}</span></span></div>
       </aside>
       <main className="main">
-        <div className="map-toolbar"><div className="map-selection"><Layers size={17} /><select id="map-selector" aria-label="Seleziona mappa o piano" value={mapId} onChange={e => chooseMap(e.target.value as MapId)}>{maps.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}</select><ChevronDown size={15} /></div><div className="toolbar-right"><button className="mobile-filter-button" onClick={() => setFiltersOpen(true)} aria-label="Apri filtri"><SlidersHorizontal size={16} /><span>Filtri</span></button></div></div>
-        {storageError && <div className="storage-warning" role="alert">{storageError}<button onClick={exportFile}>Esporta</button></div>}
+        <div className="map-toolbar"><div className="map-selection"><Layers size={17} /><select id="map-selector" aria-label={t('Seleziona mappa o piano')} value={mapId} onChange={e => chooseMap(e.target.value as MapId)}>{maps.map(m => <option key={m.id} value={m.id}>{m.label}</option>)}</select><ChevronDown size={15} /></div><div className="toolbar-right"><button className="mobile-filter-button" onClick={() => setFiltersOpen(true)} aria-label={t('Apri filtri')}><SlidersHorizontal size={16} /><span>{t('Filtri')}</span></button></div></div>
+        {storageError && <div className="storage-warning" role="alert">{t(storageError)}<button onClick={exportFile}>{t('Esporta')}</button></div>}
         <div className="map-stage"><MapView mapId={mapId} points={onMap} completed={completed} onSelect={setSelected} onMapChange={chooseMap} area={area} />
-          {!onMap.length && <div className="map-empty"><Search size={22} /><strong>Nessun punto su questa mappa</strong><button onClick={() => { const next = offMap.find(p => p.position); if (next) chooseMap(next.map); else { setCategory('all'); setQuery(''); setPendingOnly(false); } }}>{offMap.some(p => p.position) ? 'Vai alla mappa con i risultati' : 'Azzera filtri'}</button></div>}
-          {query && offMap.some(p => p.position) && <button className="other-results" onClick={() => chooseMap(offMap.find(p => p.position)!.map)}>Vai ai risultati in un’altra mappa <ArrowUpRight size={15} /></button>}
-          {visible.some(p => !p.position) && <button className="roaming-riddle" onClick={() => setSelected(points.find(p => p.id === 'founders-riddle-10')!)}><Car size={15} />Enigma della Batmobile <ArrowUpRight size={13} /></button>}
+          {!onMap.length && <div className="map-empty"><Search size={22} /><strong>{t('Nessun punto su questa mappa')}</strong><button onClick={() => { const next = offMap.find(p => p.position); if (next) chooseMap(next.map); else { setCategory('all'); setQuery(''); setPendingOnly(false); } }}>{t(offMap.some(p => p.position) ? 'Vai alla mappa con i risultati' : 'Azzera filtri')}</button></div>}
+          {query && offMap.some(p => p.position) && <button className="other-results" onClick={() => chooseMap(offMap.find(p => p.position)!.map)}>{t('Vai ai risultati in un’altra mappa')} <ArrowUpRight size={15} /></button>}
+          {visible.some(p => !p.position) && <button className="roaming-riddle" onClick={() => setSelected(points.find(p => p.id === 'founders-riddle-10')!)}><Car size={15} />{t('Enigma della Batmobile')} <ArrowUpRight size={13} /></button>}
         </div>
-        <footer className="map-footer"><div><span className="legend-dot" /><span>Da completare</span><span className="legend-done"><Check size={10} /></span><span>Completato</span><span className="legend-portal">↳</span><span>Interno</span></div><button onClick={() => setSourcesOpen(true)}>Fonti e mappa <ArrowUpRight size={12} /></button></footer>
+        <footer className="map-footer"><div><span className="legend-dot" /><span>{t('Da completare')}</span><span className="legend-done"><Check size={10} /></span><span>{t('Completato')}</span><span className="legend-portal">↳</span><span>{t('Interno')}</span></div><button onClick={() => setSourcesOpen(true)}>{t('Fonti e mappa')} <ArrowUpRight size={12} /></button></footer>
       </main>
     </div>
     {filtersOpen && <div className="mobile-scrim" onClick={() => setFiltersOpen(false)} />}
-    <input hidden ref={fileInput} type="file" accept=".json,application/json" onChange={e => void importFile(e.target.files?.[0])} aria-label="Importa file progressi" />
-    {notice && <div className="toast" role="status">{notice}<button aria-label="Chiudi messaggio" onClick={() => setNotice('')}><X size={16} /></button></div>}
+    <input hidden ref={fileInput} type="file" accept=".json,application/json" onChange={e => void importFile(e.target.files?.[0])} aria-label={t('Importa file progressi')} />
+    {notice && <div className="toast" role="status">{notice}<button aria-label={t('Chiudi messaggio')} onClick={() => setNotice('')}><X size={16} /></button></div>}
     {selected && <Dialog title={selected.title} className="point-dialog" onClose={() => setSelected(null)}>
-      <div className="point-header"><div className={`point-category ${selected.category}`}><CategoryIcon category={selected.category} /><span>{categories[selected.category].label} {selected.number.toString().padStart(2, '0')}</span>{completed.has(selected.id) && <span className="done-badge"><Check size={12} />Completato</span>}</div><h1>{selected.title}</h1><p>{selected.location}</p></div>
-      <div className="point-scroll"><div className="point-map-section">{selected.position ? <><MapView mapId={selected.map} points={[selected]} completed={completed} mini selected={selected} /><div className="mini-map-caption"><span><span className="legend-dot" />{selected.category === 'bomb' ? 'Pedana' : 'Punto d’interesse'}</span>{selected.start && <span><span className="start-key">P</span>Partenza · collegamento indicativo</span>}<button onClick={() => { chooseMap(selected.map); setSelected(null); }}>Apri area <ArrowUpRight size={13} /></button></div></> : <div className="no-fixed-map"><MapIcon size={26} /><span>Disponibile ovunque</span></div>}
-        {selected.gameCoordinates && <div className="game-coordinates"><span>COORDINATE NEL GIOCO</span><code>{selected.gameCoordinates.join(', ')}</code></div>}{selected.locationNote && <p className="location-note">{selected.locationNote}</p>}
-      </div><div className="solution-section">{selected.requirements.length > 0 && <><h2>Ti serve</h2><div className="requirements">{selected.requirements.map(r => <span key={r}>{r}</span>)}</div></>}<h2>Come risolvere</h2><ol className="solution-steps">{selected.steps.map((s, i) => <li key={i}><span>{(i + 1).toString().padStart(2, '0')}</span><p>{s}</p></li>)}</ol>{mapById[selected.map].entryNote && <p className="entry-note"><Layers size={15} />{mapById[selected.map].entryNote}</p>}<details className="sources"><summary>Fonti della soluzione <ChevronDown size={14} /></summary>{selected.sources.map(s => <a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.label}<ArrowUpRight size={13} /></a>)}{selected.video && <a href={selected.video} target="_blank" rel="noreferrer">Guarda la soluzione video <ArrowUpRight size={13} /></a>}</details></div></div>
-      <div className="point-completion"><label className={completed.has(selected.id) ? 'is-completed' : ''}><input type="checkbox" checked={completed.has(selected.id)} onChange={() => toggle(selected)} /><span className="completion-checkbox">{completed.has(selected.id) && <Check size={17} />}</span><span><strong>Completato</strong><small>{completed.has(selected.id) ? 'Salvato nei tuoi progressi' : 'Segna questa sfida come risolta'}</small></span></label><button onClick={() => setSelected(null)}>Torna alla mappa <ChevronRight size={15} /></button></div>
+      <div className="point-header"><div className={`point-category ${selected.category}`}><CategoryIcon category={selected.category} /><span>{categories[selected.category].label} {selected.number.toString().padStart(2, '0')}</span>{completed.has(selected.id) && <span className="done-badge"><Check size={12} />{t('Completato')}</span>}</div><h1>{selected.title}</h1><p>{selected.location}</p></div>
+      <div className="point-scroll"><div className="point-map-section">{selected.position ? <><MapView mapId={selected.map} points={[selected]} completed={completed} mini selected={selected} /><div className="mini-map-caption"><span><span className="legend-dot" />{t(selected.category === 'bomb' ? 'Pedana' : 'Punto d’interesse')}</span>{selected.start && <span><span className="start-key">{language === 'en' ? 'S' : 'P'}</span>{t('Partenza · collegamento indicativo')}</span>}<button onClick={() => { chooseMap(selected.map); setSelected(null); }}>{t('Apri area')} <ArrowUpRight size={13} /></button></div></> : <div className="no-fixed-map"><MapIcon size={26} /><span>{t('Disponibile ovunque')}</span></div>}
+        {selected.gameCoordinates && <div className="game-coordinates"><span>{t('COORDINATE NEL GIOCO')}</span><code>{selected.gameCoordinates.join(', ')}</code></div>}{selected.locationNote && <p className="location-note">{selected.locationNote}</p>}
+      </div><div className="solution-section">{selected.requirements.length > 0 && <><h2>{t('Ti serve')}</h2><div className="requirements">{selected.requirements.map(r => <span key={r}>{r}</span>)}</div></>}<h2>{t('Come risolvere')}</h2><ol className="solution-steps">{selected.steps.map((s, i) => <li key={i}><span>{(i + 1).toString().padStart(2, '0')}</span><p>{s}</p></li>)}</ol>{mapById[selected.map].entryNote && <p className="entry-note"><Layers size={15} />{mapById[selected.map].entryNote}</p>}<details className="sources"><summary>{t('Fonti della soluzione')} <ChevronDown size={14} /></summary>{selected.sources.map(s => <a key={s.url} href={s.url} target="_blank" rel="noreferrer">{s.label}<ArrowUpRight size={13} /></a>)}{selected.video && <a href={selected.video} target="_blank" rel="noreferrer">{t('Guarda la soluzione video')} <ArrowUpRight size={13} /></a>}</details></div></div>
+      <div className="point-completion"><label className={completed.has(selected.id) ? 'is-completed' : ''}><input type="checkbox" checked={completed.has(selected.id)} onChange={() => toggle(selected)} /><span className="completion-checkbox">{completed.has(selected.id) && <Check size={17} />}</span><span><strong>{t('Completato')}</strong><small>{t(completed.has(selected.id) ? 'Salvato nei tuoi progressi' : 'Segna questa sfida come risolta')}</small></span></label><button onClick={() => setSelected(null)}>{t('Torna alla mappa')} <ChevronRight size={15} /></button></div>
     </Dialog>}
-    {tutorial && <Dialog title="Come funziona Enigmap" className="tutorial-dialog" onClose={() => setTutorial(false)}><span className="tutorial-mark">?</span><div className="eyebrow">TRE PASSI, ZERO MISTERI</div><h1>La città è piena di domande.<br /><span>Qui trovi le risposte.</span></h1><div className="tutorial-steps">{[{ Icon: MapIcon, title: 'Scegli un punto', text: 'Esplora la mappa o filtra per area e categoria.' }, { Icon: Search, title: 'Segui la soluzione', text: 'Apri la scheda: posizione, gadget e passaggi.' }, { Icon: Check, title: 'Spunta Completato', text: 'Il punto diventa grigio. I progressi restano nel browser.' }].map(({ Icon, title, text }, i) => <div key={i}><span><Icon size={21} /></span><div><h2>{title}</h2><p>{text}</p></div><small>0{i + 1}</small></div>)}</div><button className="primary-button" onClick={() => setTutorial(false)}>Inizia l’indagine <ArrowUpRight size={17} /></button></Dialog>}
-    {sourcesOpen && <Dialog title="Fonti e cartografia" className="sources-dialog" onClose={() => setSourcesOpen(false)}><div className="eyebrow">DIETRO LA MAPPA</div><h1>Fonti e cartografia</h1><p>315 elementi fisici, equivalenti a 243 sfide: 179 trofei, 40 enigmi, 6 rivoltosi e 90 distruttibili (18 sfide).</p><p>Gotham e gli interni usano cartografia vettoriale ricostruita dai riferimenti del gioco. Le posizioni interne indicano stanza e piano; gli accessi ai complessi sono indicativi. Le note nelle schede segnalano coordinate discordanti.</p><p>Le schede sono controllate sulle guide, senza verifica diretta in gioco. Gotham e i suoi personaggi appartengono ai rispettivi titolari; Enigmap è un progetto non ufficiale.</p><div className="source-links">{[['PowerPyx · inventario', 'https://www.powerpyx.com/guides/batman-arkham-knight-trophy-guide.html'], ['Gamer Guides · coordinate e procedure', 'https://www.gamerguides.com/batman-arkham-knight/guide/collectibles-guide/collectible-locations/'], ['GamesRadar · soluzioni e riferimenti', 'https://www.gamesradar.com/batman-arkham-knight-riddler-guide/'], ['GameFAQs · guida di confronto', 'https://gamefaqs.gamespot.com/ps4/768083-batman-arkham-knight/faqs/72018']].map(([name,url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{name}<ArrowUpRight size={15} /></a>)}</div><p className="privacy-note">I progressi sono salvati solo in questo browser. Dal menu ⋯ puoi esportarli e importarli su un altro dispositivo. La cancellazione dei dati del browser rimuove il salvataggio locale.</p></Dialog>}
+    {tutorial && <Dialog title={t('Come funziona Enigmap')} className="tutorial-dialog" onClose={() => setTutorial(false)}><span className="tutorial-mark">?</span><div className="eyebrow">{t('TRE PASSI, ZERO MISTERI')}</div><h1>{t('La città è piena di domande.')}<br /><span>{t('Qui trovi le risposte.')}</span></h1><div className="tutorial-steps">{[{ Icon: MapIcon, title: 'Scegli un punto', text: 'Esplora la mappa o filtra per area e categoria.' }, { Icon: Search, title: 'Segui la soluzione', text: 'Apri la scheda: posizione, gadget e passaggi.' }, { Icon: Check, title: 'Spunta Completato', text: 'Il punto diventa grigio. I progressi restano nel browser.' }].map(({ Icon, title, text }, i) => <div key={i}><span><Icon size={21} /></span><div><h2>{t(title)}</h2><p>{t(text)}</p></div><small>0{i + 1}</small></div>)}</div><button className="primary-button" onClick={() => setTutorial(false)}>{t('Inizia l’indagine')} <ArrowUpRight size={17} /></button></Dialog>}
+    {sourcesOpen && <Dialog title={t('Fonti e cartografia')} className="sources-dialog" onClose={() => setSourcesOpen(false)}><div className="eyebrow">{t('DIETRO LA MAPPA')}</div><h1>{t('Fonti e cartografia')}</h1><p>{t('315 elementi fisici, equivalenti a 243 sfide: 179 trofei, 40 enigmi, 6 rivoltosi e 90 distruttibili (18 sfide).')}</p><p>{t('Gotham e gli interni usano cartografia vettoriale ricostruita dai riferimenti del gioco. Le posizioni interne indicano stanza e piano; gli accessi ai complessi sono indicativi. Le note nelle schede segnalano coordinate discordanti.')}</p><p>{t('Le schede sono controllate sulle guide, senza verifica diretta in gioco. Gotham e i suoi personaggi appartengono ai rispettivi titolari; Enigmap è un progetto non ufficiale.')}</p><div className="source-links">{[['PowerPyx · inventario', 'https://www.powerpyx.com/guides/batman-arkham-knight-trophy-guide.html'], ['Gamer Guides · coordinate e procedure', 'https://www.gamerguides.com/batman-arkham-knight/guide/collectibles-guide/collectible-locations/'], ['GamesRadar · soluzioni e riferimenti', 'https://www.gamesradar.com/batman-arkham-knight-riddler-guide/'], ['GameFAQs · guida di confronto', 'https://gamefaqs.gamespot.com/ps4/768083-batman-arkham-knight/faqs/72018']].map(([name,url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{t(name)}<ArrowUpRight size={15} /></a>)}</div><p className="privacy-note">{t('I progressi sono salvati solo in questo browser. Dal menu ⋯ puoi esportarli e importarli su un altro dispositivo. La cancellazione dei dati del browser rimuove il salvataggio locale.')}</p></Dialog>}
   </div>;
 }
