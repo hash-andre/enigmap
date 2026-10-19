@@ -4,7 +4,9 @@ An interactive map for all 315 Riddler collectibles in **Batman: Arkham Knight**
 
 Choose a marker, follow the solution, and mark it completed. No account or backend.
 
-Progress and language preferences are saved in your browser’s `localStorage`. The main limitation: no automatic sync between devices. To switch devices, copy your transfer code from the ⋯ menu and import it on the other device. It merges completions and applies the saved language. JSON export/import is also available.
+Progress and language preferences stay in your browser’s `localStorage`; there is no automatic sync between devices.
+
+To transfer progress, open **⋯ → Transfer with code**, copy the 63-character code, and import it on the other device. Importing merges completions and applies the saved language. Codes include an error-detection checksum; they are not encrypted. JSON export/import remains available.
 
 Built with React, TypeScript, Vite, and Leaflet.
 
